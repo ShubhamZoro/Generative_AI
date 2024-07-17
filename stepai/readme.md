@@ -45,7 +45,7 @@ This project is a combination of a web crawler and a question-answering system. 
 
 4** Run File**
 
-    run Crawler.py->merge.py->stepai.py
+    run Crawler.py->merge.py->StepAI.ipynb
     ```
 
 
