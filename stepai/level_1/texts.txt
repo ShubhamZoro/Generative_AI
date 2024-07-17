@@ -1,0 +1,5244 @@
+
+
+
+
+
+
+
+CUDA 12.5 Update 1 Release Notes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. CUDA 12.5 Update 1 Release Notes
+1.1. CUDA Toolkit Major Component Versions
+1.2. New Features
+1.2.1. General CUDA
+1.2.2. CUDA Compiler
+1.2.3. CUDA Developer Tools
+
+
+1.3. Resolved Issues
+1.3.1. CUDA Compiler
+
+
+1.4. Known Issues and Limitations
+1.5. Deprecated or Dropped Features
+1.5.1. Deprecated or Dropped Architectures
+1.5.2. Deprecated Operating Systems
+1.5.3. Deprecated Toolchains
+1.5.4. CUDA Tools
+
+
+
+
+2. CUDA Libraries
+2.1. cuBLAS Library
+2.1.1. cuBLAS: Release 12.5 Update 1
+2.1.2. cuBLAS: Release 12.5
+2.1.3. cuBLAS: Release 12.4 Update 1
+2.1.4. cuBLAS: Release 12.4
+2.1.5. cuBLAS: Release 12.3 Update 1
+2.1.6. cuBLAS: Release 12.3
+2.1.7. cuBLAS: Release 12.2 Update 2
+2.1.8. cuBLAS: Release 12.2
+2.1.9. cuBLAS: Release 12.1 Update 1
+2.1.10. cuBLAS: Release 12.0 Update 1
+2.1.11. cuBLAS: Release 12.0
+
+
+2.2. cuFFT Library
+2.2.1. cuFFT: Release 12.5
+2.2.2. cuFFT: Release 12.4 Update 1
+2.2.3. cuFFT: Release 12.4
+2.2.4. cuFFT: Release 12.3 Update 1
+2.2.5. cuFFT: Release 12.3
+2.2.6. cuFFT: Release 12.2
+2.2.7. cuFFT: Release 12.1 Update 1
+2.2.8. cuFFT: Release 12.1
+2.2.9. cuFFT: Release 12.0 Update 1
+2.2.10. cuFFT: Release 12.0
+
+
+2.3. cuSOLVER Library
+2.3.1. cuSOLVER: Release 12.5 Update 1
+2.3.2. cuSOLVER: Release 12.5
+2.3.3. cuSOLVER: Release 12.4 Update 1
+2.3.4. cuSOLVER: Release 12.4
+2.3.5. cuSOLVER: Release 12.2 Update 2
+2.3.6. cuSOLVER: Release 12.2
+
+
+2.4. cuSPARSE Library
+2.4.1. cuSPARSE: Release 12.5 Update 1
+2.4.2. cuSPARSE: Release 12.5
+2.4.3. cuSPARSE: Release 12.4
+2.4.4. cuSPARSE: Release 12.3 Update 1
+2.4.5. cuSPARSE: Release 12.3
+2.4.6. cuSPARSE: Release 12.2 Update 1
+2.4.7. cuSPARSE: Release 12.1 Update 1
+2.4.8. cuSPARSE: Release 12.0 Update 1
+2.4.9. cuSPARSE: Release 12.0
+
+
+2.5. Math Library
+2.5.1. CUDA Math: Release 12.5
+2.5.2. CUDA Math: Release 12.4
+2.5.3. CUDA Math: Release 12.3
+2.5.4. CUDA Math: Release 12.2
+2.5.5. CUDA Math: Release 12.1
+2.5.6. CUDA Math: Release 12.0
+
+
+2.6. NVIDIA Performance Primitives (NPP)
+2.6.1. NPP: Release 12.4
+2.6.2. NPP: Release 12.0
+
+
+2.7. nvJPEG Library
+2.7.1. nvJPEG: Release 12.4
+2.7.2. nvJPEG: Release 12.3 Update 1
+2.7.3. nvJPEG: Release 12.2
+2.7.4. nvJPEG: Release 12.0
+
+
+
+
+3. Notices
+3.1. Notice
+3.2. OpenCL
+3.3. Trademarks
+
+
+
+
+
+
+
+
+Release Notes
+
+
+
+
+
+ »
+1. CUDA 12.5 Update 1 Release Notes
+
+
+
+v12.5 |
+PDF
+|
+Archive
+ 
+
+
+
+
+
+
+NVIDIA CUDA Toolkit Release Notes
+The Release Notes for the CUDA Toolkit.
+
+1. CUDA 12.5 Update 1 Release Notesï
+The release notes for the NVIDIAÂ® CUDAÂ® Toolkit can be found online at https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html.
+
+Note
+The release notes have been reorganized into two major sections: the general CUDA release notes, and the CUDA libraries release notes including historical information for 12.x releases.
+
+
+1.1. CUDA Toolkit Major Component Versionsï
+
+CUDA ComponentsStarting with CUDA 11, the various components in the toolkit are versioned independently.
+For CUDA 12.5 Update 1, the table below indicates the versions:
+
+
+
+Table 1 CUDA 12.5 Update 1 Component Versionsï
+
+
+
+
+
+
+
+
+Component Name
+Version Information
+Supported Architectures
+Supported Platforms
+
+
+
+CUDA C++ Core Compute Libraries
+Thrust
+2.4.0
+x86_64, arm64-sbsa, aarch64-jetson
+Linux, Windows
+
+CUB
+2.4.0
+
+libcu++
+2.4.0
+
+Cooperative Groups
+12.5.82
+
+CUDA Compatibility
+12.5.36505571
+aarch64-jetson
+Linux
+
+CUDA Runtime (cudart)
+12.5.82
+x86_64, arm64-sbsa, aarch64-jetson
+Linux, Windows, WSL
+
+cuobjdump
+12.5.39
+x86_64, arm64-sbsa, aarch64-jetson
+Linux, Windows
+
+CUPTI
+12.5.82
+x86_64, arm64-sbsa, aarch64-jetson
+Linux, Windows, WSL
+
+CUDA cuxxfilt (demangler)
+12.5.82
+x86_64, arm64-sbsa, aarch64-jetson
+Linux, Windows
+
+CUDA Demo Suite
+12.5.82
+x86_64
+Linux, Windows
+
+CUDA GDB
+12.5.82
+x86_64, arm64-sbsa, aarch64-jetson
+Linux, WSL
+
+CUDA Nsight Eclipse Plugin
+12.5.82
+x86_64
+Linux
+
+CUDA NVCC
+12.5.82
+x86_64, arm64-sbsa, aarch64-jetson
+Linux, Windows, WSL
+
+CUDA nvdisasm
+12.5.39
+x86_64, arm64-sbsa, aarch64-jetson
+Linux, Windows
+
+CUDA NVML Headers
+12.5.82
+x86_64, arm64-sbsa, aarch64-jetson
+Linux, Windows, WSL
+
+CUDA nvprof
+12.5.82
+x86_64
+Linux, Windows
+
+CUDA nvprune
+12.5.82
+x86_64, arm64-sbsa, aarch64-jetson
+Linux, Windows, WSL
+
+CUDA NVRTC
+12.5.82
+x86_64, arm64-sbsa, aarch64-jetson
+Linux, Windows, WSL
+
+NVTX
+12.5.82
+x86_64, arm64-sbsa, aarch64-jetson
+Linux, Windows, WSL
+
+CUDA NVVP
+12.5.82
+x86_64,
+Linux, Windows
+
+CUDA OpenCL
+12.5.39
+x86_64
+Linux, Windows
+
+CUDA Profiler API
+12.5.39
+x86_64, arm64-sbsa, aarch64-jetson
+Linux, Windows, WSL
+
+CUDA Compute Sanitizer API
+12.5.81
+x86_64, arm64-sbsa, aarch64-jetson
+Linux, Windows, WSL
+
+CUDA cuBLAS
+12.5.3.2
+x86_64, arm64-sbsa, aarch64-jetson
+Linux, Windows, WSL
+
+cuDLA
+12.5.82
+aarch64-jetson
+Linux
+
+CUDA cuFFT
+11.2.3.61
+x86_64, arm64-sbsa, aarch64-jetson
+Linux, Windows, WSL
+
+CUDA cuFile
+1.10.1.7
+x86_64, arm64-sbsa, aarch64-jetson
+Linux
+
+CUDA cuRAND
+10.3.6.82
+x86_64, arm64-sbsa, aarch64-jetson
+Linux, Windows, WSL
+
+CUDA cuSOLVER
+11.6.3.83
+x86_64, arm64-sbsa, aarch64-jetson
+Linux, Windows, WSL
+
+CUDA cuSPARSE
+12.5.1.3
+x86_64, arm64-sbsa, aarch64-jetson
+Linux, Windows, WSL
+
+CUDA NPP
+12.3.0.159
+x86_64, arm64-sbsa, aarch64-jetson
+Linux, Windows, WSL
+
+CUDA nvFatbin
+12.5.82
+x86_64, arm64-sbsa, aarch64-jetson
+Linux, Windows, WSL
+
+CUDA nvJitLink
+12.5.82
+x86_64, arm64-sbsa, aarch64-jetson
+Linux, Windows, WSL
+
+CUDA nvJPEG
+12.3.2.81
+x86_64, arm64-sbsa, aarch64-jetson
+Linux, Windows, WSL
+
+Nsight Compute
+2024.2.1.2
+x86_64, arm64-sbsa, aarch64-jetson
+Linux, Windows, WSL (Windows 11)
+
+Nsight Systems
+2024.2.3.38
+x86_64, arm64-sbsa,
+Linux, Windows, WSL
+
+Nsight Visual Studio Edition (VSE)
+2024.2.1.24155
+x86_64 (Windows)
+Windows
+
+nvidia_fs1
+2.20.6
+x86_64, arm64-sbsa, aarch64-jetson
+Linux
+
+Visual Studio Integration
+12.5.82
+x86_64 (Windows)
+Windows
+
+NVIDIA Linux Driver
+555.42.06
+x86_64, arm64-sbsa
+Linux
+
+NVIDIA Windows Driver
+555.85
+x86_64 (Windows)
+Windows, WSL
+
+
+
+
+CUDA DriverRunning a CUDA application requires the system with at least one CUDA capable GPU and a driver that is compatible with the CUDA Toolkit. See Table 3. For more information various GPU products that are CUDA capable, visit https://developer.nvidia.com/cuda-gpus.
+Each release of the CUDA Toolkit requires a minimum version of the CUDA driver. The CUDA driver is backward compatible, meaning that applications compiled against a particular version of the CUDA will continue to work on subsequent (later) driver releases.
+More information on compatibility can be found at https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#cuda-compatibility-and-upgrades.
+Note: Starting with CUDA 11.0, the toolkit components are individually versioned, and the toolkit itself is versioned as shown in the table below.
+The minimum required driver version for CUDA minor version compatibility is shown below. CUDA minor version compatibility is described in detail in https://docs.nvidia.com/deploy/cuda-compatibility/index.html
+
+
+
+Table 2 CUDA Toolkit and Minimum Required Driver Version for CUDA Minor Version Compatibilityï
+
+
+
+
+
+
+CUDA Toolkit
+Minimum Required Driver Version for CUDA Minor Version Compatibility*
+
+
+
+
+Linux x86_64 Driver Version
+Windows x86_64 Driver Version
+
+CUDA 12.x
+>=525.60.13
+>=528.33
+
+CUDA 11.8.x
+CUDA 11.7.x
+CUDA 11.6.x
+CUDA 11.5.x
+CUDA 11.4.x
+CUDA 11.3.x
+CUDA 11.2.x
+CUDA 11.1.x
+>=450.80.02
+>=452.39
+
+CUDA 11.0 (11.0.3)
+>=450.36.06**
+>=451.22**
+
+
+
+* Using a Minimum Required Version that is different from Toolkit Driver Version could be allowed in compatibility mode â please read the CUDA Compatibility Guide for details.
+** CUDA 11.0 was released with an earlier driver version, but by upgrading to Tesla Recommended Drivers 450.80.02 (Linux) / 452.39 (Windows), minor version compatibility is possible across the CUDA 11.x family of toolkits.
+The version of the development NVIDIA GPU Driver packaged in each CUDA Toolkit release is shown below.
+
+Table 3 CUDA Toolkit and Corresponding Driver Versionsï
+
+
+
+
+
+
+CUDA Toolkit
+Toolkit Driver Version
+
+
+
+
+Linux x86_64 Driver Version
+Windows x86_64 Driver Version
+
+CUDA 12.5 Update 1
+>=555.42.06
+>=555.85
+
+CUDA 12.5 GA
+>=555.42.02
+>=555.85
+
+CUDA 12.4 Update 1
+>=550.54.15
+>=551.78
+
+CUDA 12.4 GA
+>=550.54.14
+>=551.61
+
+CUDA 12.3 Update 1
+>=545.23.08
+>=546.12
+
+CUDA 12.3 GA
+>=545.23.06
+>=545.84
+
+CUDA 12.2 Update 2
+>=535.104.05
+>=537.13
+
+CUDA 12.2 Update 1
+>=535.86.09
+>=536.67
+
+CUDA 12.2 GA
+>=535.54.03
+>=536.25
+
+CUDA 12.1 Update 1
+>=530.30.02
+>=531.14
+
+CUDA 12.1 GA
+>=530.30.02
+>=531.14
+
+CUDA 12.0 Update 1
+>=525.85.12
+>=528.33
+
+CUDA 12.0 GA
+>=525.60.13
+>=527.41
+
+CUDA 11.8 GA
+>=520.61.05
+>=520.06
+
+CUDA 11.7 Update 1
+>=515.48.07
+>=516.31
+
+CUDA 11.7 GA
+>=515.43.04
+>=516.01
+
+CUDA 11.6 Update 2
+>=510.47.03
+>=511.65
+
+CUDA 11.6 Update 1
+>=510.47.03
+>=511.65
+
+CUDA 11.6 GA
+>=510.39.01
+>=511.23
+
+CUDA 11.5 Update 2
+>=495.29.05
+>=496.13
+
+CUDA 11.5 Update 1
+>=495.29.05
+>=496.13
+
+CUDA 11.5 GA
+>=495.29.05
+>=496.04
+
+CUDA 11.4 Update 4
+>=470.82.01
+>=472.50
+
+CUDA 11.4 Update 3
+>=470.82.01
+>=472.50
+
+CUDA 11.4 Update 2
+>=470.57.02
+>=471.41
+
+CUDA 11.4 Update 1
+>=470.57.02
+>=471.41
+
+CUDA 11.4.0 GA
+>=470.42.01
+>=471.11
+
+CUDA 11.3.1 Update 1
+>=465.19.01
+>=465.89
+
+CUDA 11.3.0 GA
+>=465.19.01
+>=465.89
+
+CUDA 11.2.2 Update 2
+>=460.32.03
+>=461.33
+
+CUDA 11.2.1 Update 1
+>=460.32.03
+>=461.09
+
+CUDA 11.2.0 GA
+>=460.27.03
+>=460.82
+
+CUDA 11.1.1 Update 1
+>=455.32
+>=456.81
+
+CUDA 11.1 GA
+>=455.23
+>=456.38
+
+CUDA 11.0.3 Update 1
+>= 450.51.06
+>= 451.82
+
+CUDA 11.0.2 GA
+>= 450.51.05
+>= 451.48
+
+CUDA 11.0.1 RC
+>= 450.36.06
+>= 451.22
+
+CUDA 10.2.89
+>= 440.33
+>= 441.22
+
+CUDA 10.1 (10.1.105 general release, and updates)
+>= 418.39
+>= 418.96
+
+CUDA 10.0.130
+>= 410.48
+>= 411.31
+
+CUDA 9.2 (9.2.148 Update 1)
+>= 396.37
+>= 398.26
+
+CUDA 9.2 (9.2.88)
+>= 396.26
+>= 397.44
+
+CUDA 9.1 (9.1.85)
+>= 390.46
+>= 391.29
+
+CUDA 9.0 (9.0.76)
+>= 384.81
+>= 385.54
+
+CUDA 8.0 (8.0.61 GA2)
+>= 375.26
+>= 376.51
+
+CUDA 8.0 (8.0.44)
+>= 367.48
+>= 369.30
+
+CUDA 7.5 (7.5.16)
+>= 352.31
+>= 353.66
+
+CUDA 7.0 (7.0.28)
+>= 346.46
+>= 347.62
+
+
+
+For convenience, the NVIDIA driver is installed as part of the CUDA Toolkit installation. Note that this driver is for development purposes and is not recommended for use in production with Tesla GPUs.
+For running CUDA applications in production with Tesla GPUs, it is recommended to download the latest driver for Tesla GPUs from the NVIDIA driver downloads site at https://www.nvidia.com/drivers.
+During the installation of the CUDA Toolkit, the installation of the NVIDIA driver may be skipped on Windows (when using the interactive or silent installation) or on Linux (by using meta packages).
+For more information on customizing the install process on Windows, see https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#install-cuda-software.
+For meta packages on Linux, see https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#package-manager-metas.
+
+
+1.2. New Featuresï
+This section lists new general CUDA and CUDA compilers features.
+
+1.2.1. General CUDAï
+
+In an upcoming CUDA release the NVIDIA Open GPU kernel module flavor will be the default and recommended installation option.
+End-users with Maxwell, Pascal, or Volta GPUs may need to take action to install the NVIDIA proprietary kernel modules.
+MPS (Multi-process service) is now supported on L4T and embedded-Linux Tegra platforms. More details can be found here.
+
+
+
+1.2.2. CUDA Compilerï
+
+For changes to PTX, refer to https://docs.nvidia.com/cuda/parallel-thread-execution/#ptx-isa-version-8-5.
+
+
+
+1.2.3. CUDA Developer Toolsï
+
+For changes to nvprof and Visual Profiler, see the changelog.
+For new features, improvements, and bug fixes in Nsight Systems, see the changelog.
+For new features, improvements, and bug fixes in Nsight Visual Studio Edition, see the changelog.
+For new features, improvements, and bug fixes in CUPTI, see the changelog.
+For new features, improvements, and bug fixes in Nsight Compute, see the changelog.
+For new features, improvements, and bug fixes in Compute Sanitizer, see the changelog.
+For new features, improvements, and bug fixes in CUDA-GDB, see the changelog.
+
+
+
+
+1.3. Resolved Issuesï
+
+1.3.1. CUDA Compilerï
+
+Resolved an issue found when trying sm89 ptx of FP8 gemm kernel compiled by 12.4 when run on an sm90 device.
+Resolved an issue in which nvcc failed to compile any CUDA code when specifying C++20 with CUDA 12.5 and Visual Studio 2022 17.10.0. Also added a new environment variable NVCC_REPORT_ALLERROR to emit error messages if the error is coming from a system header, instead of aborting the compiler.
+Resolved a compiler issue that caused different results when compiling with the -G flag than without the flag.
+Fixed the incorrect control flow transformation in the compiler caused by optimizations applied to multi-block loops.
+Resolved issues seen when compiling cuBLASDx device functions, in some conditions leading to âMisaligned shared or local addressâ.
+Fix to correct the calculation of write-after-read hazard latency.
+
+
+
+
+1.4. Known Issues and Limitationsï
+
+Runfile will not be supported for Amazon Linux 2023.
+Confidential Computing is not supported on CUDA 12.5. Please continue to use CUDA 12.4 and drivers r550.xx to use these features.
+Launching Cooperative Group kernels with MPS is not supported on Tegra platforms.
+
+
+
+1.5. Deprecated or Dropped Featuresï
+Features deprecated in the current release of the CUDA software still work in the current release, but their documentation may have been removed, and they will become officially unsupported in a future release. We recommend that developers employ alternative solutions to these features in their software.
+
+1.5.1. Deprecated or Dropped Architecturesï
+
+NVIDIA CUDA support for the PowerPC architecture is removed in CUDA 12.5.
+
+
+
+1.5.2. Deprecated Operating Systemsï
+
+NVIDIA CUDA support for Red Hat Enterprise Linux 7 and CentOS 7 is removed in CUDA 12.5.
+CUDA 12.5 is the last release to support Debian 10.
+Support for Microsoft Windows 10 21H2 and Microsoft Windows 10 21H2 (SV1) is deprecated.
+
+
+
+1.5.3. Deprecated Toolchainsï
+CUDA Toolkit 12.4 deprecated support for the following host compilers:
+
+
+Microsoft Visual C/C++ (MSVC) 2017
+All GCC versions prior to GCC 7.3
+
+
+
+
+1.5.4. CUDA Toolsï
+
+
+Support for the macOS host client of CUDA-GDB is deprecated. It will be dropped in an upcoming release.
+
+
+
+
+
+
+2. CUDA Librariesï
+This section covers CUDA Libraries release notes for 12.x releases.
+
+CUDA Math Libraries toolchain uses C++11 features, and a C++11-compatible standard library (libstdc++ >= 20150422) is required on the host.
+
+
+2.1. cuBLAS Libraryï
+
+2.1.1. cuBLAS: Release 12.5 Update 1ï
+
+New Features
+
+Performance improvement to matrix multiplication targeting large language models, specifically for small batch sizes on Hopper GPUs.
+
+
+Known Issues
+
+The bias epilogue (without ReLU or GeLU) may be not supported on Hopper GPUs for strided batch cases. A workaround is to implement batching manually. This will be fixed in a future release.
+cublasGemmGroupedBatchedEx and cublas<t>gemmGroupedBatched have large CPU overheads. This will be addressed in an upcoming release.
+
+
+Resolved Issues
+
+Under rare circumstances, executing SYMM/HEMM concurrently with GEMM on Hopper GPUs might have caused race conditions in the host code, which could lead to an Illegal Memory Access CUDA error.
+cublasLtMatmul could produce an Illegal Instruction CUDA error on Pascal GPUs under the following conditions: batch is greater than 1, and beta is not equal to 0, and the computations are out-of-place (C != D).
+
+
+
+
+
+2.1.2. cuBLAS: Release 12.5ï
+
+New Features
+
+cuBLAS adds an experimental API to support mixed precision grouped batched GEMMs.  This enables grouped batched GEMMs with FP16 or BF16 inputs/outputs with the FP32 compute type. Refer to cublasGemmGroupedBatchedEx for more details.
+
+
+Known Issues
+
+cublasLtMatmul ignores inputs to CUBLASLT_MATMUL_DESC_D_SCALE_POINTER and CUBLASLT_MATMUL_DESC_EPILOGUE_AUX_SCALE_POINTER if the elements of the respective matrix are not of FP8 types.
+
+
+Resolved Issues
+
+cublasLtMatmul ignored the mismatch between the provided scale type and the implied by the documentation, assuming the latter. For instance, an unsupported configuration of cublasLtMatmul with the scale type being FP32 and all other types being FP16 would run with the implicit assumption that the scale type is FP16 and produce incorrect results.
+cuBLAS SYMV failed for large n dimension: 131072 and above for ssymv, 92673 and above for csymv and dsymv, and 65536 and above for zsymv.
+
+
+
+
+
+2.1.3. cuBLAS: Release 12.4 Update 1ï
+
+Known Issues
+
+Setting a cuBLAS handle stream to cudaStreamPerThread and setting the workspace via cublasSetWorkspace will cause any subsequent cublasSetWorkspace calls to fail.  This will be fixed in an upcoming release.
+cublasLtMatmul ignores mismatches between the provided scale type and the scale type implied by the documentation and assumes the latter. For example, an unsupported configuration of cublasLtMatmul with the scale type being FP32 and all other types being FP16 would run with the implicit assumption that the scale type is FP16 which can produce incorrect results. This will be fixed in an upcoming release.
+
+
+Resolved Issues
+
+cublasLtMatmul ignored the CUBLASLT_MATMUL_DESC_AMAX_D_POINTER for unsupported configurations instead of returning an error. In particular, computing absolute maximum of D is currently supported only for FP8 Matmul when the output data type is also FP8 (CUDA_R_8F_E4M3 or CUDA_R_8F_E5M2).
+Reduced host-side overheads for some of the cuBLASLt APIs: cublasLtMatmul(), cublasLtMatmulAlgoCheck(), and cublasLtMatmulAlgoGetHeuristic(). The issue was introduced in CUDA Toolkit 12.4.
+cublasLtMatmul() and cublasLtMatmulAlgoGetHeuristic() could have resulted in floating point exceptions (FPE) on some Hopper-based GPUs, including Multi-Instance GPU (MIG). The issue was introduced in cuBLAS 11.8.
+
+
+
+
+
+2.1.4. cuBLAS: Release 12.4ï
+
+New Features
+
+cuBLAS adds experimental APIs to support grouped batched GEMM for single precision and double precision.  Single precision also supports the math mode, CUBLAS_TF32_TENSOR_OP_MATH.  Grouped batch mode allows you to concurrently solve GEMMs of different dimensions (m, n, k), leading dimensions (lda, ldb, ldc), transpositions (transa, transb), and scaling factors (alpha, beta).  Please see gemmGroupedBatched for more details.
+
+
+Known Issues
+
+When the current context has been created using cuGreenCtxCreate(), cuBLAS does not properly detect the number of SMs available. The user may provide the corrected SM count to cuBLAS using an API such as cublasSetSmCountTarget().
+BLAS level 2 and 3 functions might not treat alpha in a BLAS compliant manner when alpha is zero and the pointer mode is set to CUBLAS_POINTER_MODE_DEVICE. This is the same known issue documented in cuBLAS 12.3 Update 1.
+cublasLtMatmul with K equals 1 and epilogue CUBLASLT_EPILOGUE_D{RELU,GELU}_BGRAD could out-of-bound access the workspace. The issue exists since cuBLAS 11.3 Update 1.
+cublasLtMatmul with K equals 1 and epilogue CUBLASLT_EPILOGUE_D{RELU,GELU} could produce illegal memory access if no workspace is provided. The issue exists since cuBLAS 11.6.
+When captured in CUDA Graph stream capture, cuBLAS routines can create memory nodes through the use of stream-ordered allocation APIs, cudaMallocAsync and cudaFreeAsync. However, as there is currently no support for memory nodes in child graphs or graphs launched from the device, attempts to capture cuBLAS routines in such scenarios may fail. To avoid this issue, use the cublasSetWorkspace() function to provide user-owned workspace memory.
+
+
+
+
+
+2.1.5. cuBLAS: Release 12.3 Update 1ï
+
+New Features
+
+Improved performance of heuristics cache for workloads that have a high eviction rate.
+
+
+Known Issues
+
+BLAS level 2 and 3 functions might not treat alpha in a BLAS compliant manner when alpha is zero and the pointer mode is set to CUBLAS_POINTER_MODE_DEVICE. The expected behavior is that the corresponding computations would be skipped. You may encounter the following issues: (1) HER{,2,X,K,2K} may zero the imaginary part on the diagonal elements of the output matrix; and (2) HER{,2,X,K,2K}, SYR{,2,X,K,2K} and others may produce NaN resulting from performing computation on matrices A and B which would otherwise be skipped. If strict compliance with BLAS is required, the user may manually check for alpha value before invoking the functions or switch to CUBLAS_POINTER_MODE_HOST.
+
+
+Resolved Issues
+
+cuBLASLt matmul operations might have computed the output incorrectly under the following conditions: the data type of matrices A and B is FP8, the data type of matrices C and D is FP32, FP16, or BF16, the beta value is 1.0, the C and D matrices are the same, the epilogue contains GELU activation function.
+When an application compiled with cuBLASLt from CUDA Toolkit 12.2 update 1 or earlier runs with cuBLASLt from CUDA Toolkit 12.2 update 2 or CUDA Toolkit 12.3, matrix multiply descriptors initialized using cublasLtMatmulDescInit() sometimes did not respect attribute changes using cublasLtMatmulDescSetAttribute().
+Fixed creation of cuBLAS or cuBLASLt handles on Hopper GPUs under the Multi-Process Service (MPS).
+cublasLtMatmul with K equals 1 and epilogue CUBLASLT_EPILOGUE_BGRAD{A,B} might have returned incorrect results for the bias gradient.
+
+
+
+
+
+2.1.6. cuBLAS: Release 12.3ï
+
+New Features
+
+Improved performance on NVIDIA L40S Ada GPUs.
+
+
+Known Issues
+
+cuBLASLt matmul operations may compute the output incorrectly under the following conditions: the data type of matrices A and B is FP8, the data type of matrices C and D is FP32, FP16, or BF16, the beta value is 1.0, the C and D matrices are the same, the epilogue contains GELU activation function.
+When an application compiled with cuBLASLt from CUDA Toolkit 12.2 update 1 or earlier runs with cuBLASLt from CUDA Toolkit 12.2 update 2 or later, matrix multiply descriptors initialized using cublasLtMatmulDescInit() may not respect attribute changes using cublasLtMatmulDescSetAttribute(). To workaround this issue, create the matrix multiply descriptor using cublasLtMatmulDescCreate() instead of cublasLtMatmulDescInit(). This will be fixed in an upcoming release.
+
+
+
+
+
+2.1.7. cuBLAS: Release 12.2 Update 2ï
+
+New Features
+
+cuBLASLt will now attempt to decompose problems that cannot be run by a single gemm kernel.  It does this by partitioning the problem into smaller chunks and executing the gemm kernel multiple times.  This improves functional coverage for very large m, n, or batch size cases and makes the transition from the cuBLAS API to the cuBLASLt API more reliable.
+
+
+Known Issues
+
+cuBLASLt matmul operations may compute the output incorrectly under the following conditions: the data type of matrices A and B is FP8, the data type of matrices C and D is FP32, FP16, or BF16, the beta value is 1.0, the C and D matrices are the same, the epilogue contains GELU activation function.
+
+
+
+
+
+2.1.8. cuBLAS: Release 12.2ï
+
+Known Issues
+
+cuBLAS initialization fails on Hopper architecture GPUs when MPS is in use with CUDA_MPS_ACTIVE_THREAD_PERCENTAGE set to a value less than 100%. There is currently no workaround for this issue.
+Some Hopper kernels produce incorrect results for batched matmuls with CUBLASLT_EPILOGUE_RELU_BIAS or CUBLASLT_EPILOGUE_GELU_BIAS and a non-zero CUBLASLT_MATMUL_DESC_BIAS_BATCH_STRIDE.  The kernels apply the first batchâs bias vector to all batches. This will be fixed in a future release.
+
+
+
+
+
+2.1.9. cuBLAS: Release 12.1 Update 1ï
+
+New Features
+
+Support for FP8 on NVIDIA Ada GPUs.
+Improved performance on NVIDIA L4 Ada GPUs.
+Introduced an API that instructs the cuBLASLt library to not use some CPU instructions. This is useful in some rare cases where certain CPU instructions used by cuBLASLt heuristics negatively impact CPU performance. Refer to https://docs.nvidia.com/cuda/cublas/index.html#disabling-cpu-instructions.
+
+
+Known Issues
+
+When creating a matrix layout using the cublasLtMatrixLayoutCreate() function, the object pointed at by cublasLtMatrixLayout_t is smaller than cublasLtMatrixLayoutOpaque_t (but enough to hold the internal structure). As a result, the object should not be dereferenced or copied explicitly, as this might lead to out of bound accesses. If one needs to serialize the layout or copy it, it is recommended to manually allocate an object of size sizeof(cublasLtMatrixLayoutOpaque_t) bytes, and initialize it using cublasLtMatrixLayoutInit() function. The same applies to cublasLtMatmulDesc_t and cublasLtMatrixTransformDesc_t. The issue will be fixed in future releases by ensuring that cublasLtMatrixLayoutCreate() allocates at least sizeof(cublasLtMatrixLayoutOpaque_t) bytes.
+
+
+
+
+
+2.1.10. cuBLAS: Release 12.0 Update 1ï
+
+New Features
+
+Improved performance on NVIDIA H100 SXM and NVIDIA H100 PCIe GPUs.
+
+
+Known Issues
+
+For optimal performance on NVIDIA Hopper architecture, cuBLAS needs to allocate a bigger internal workspace (64 MiB) than on the previous architectures (8 MiB). In the current and previous releases, cuBLAS allocates 256 MiB. This will be addressed in a future release. A possible workaround is to set the CUBLAS_WORKSPACE_CONFIG environment variable to :32768:2 when running cuBLAS on NVIDIA Hopper architecture.
+
+
+Resolved Issues
+
+Reduced cuBLAS host-side overheads caused by not using the cublasLt heuristics cache.  This began in the CUDA Toolkit 12.0 release.
+Added forward compatible single precision complex GEMM that does not require workspace.
+
+
+
+
+
+2.1.11. cuBLAS: Release 12.0ï
+
+New Features
+
+cublasLtMatmul now supports FP8 with a non-zero beta.
+Added int64 APIs to enable larger problem sizes; refer to 64-bit integer interface.
+Added more Hopper-specific kernels for cublasLtMatmul with epilogues:
+
+CUBLASLT_EPILOGUE_BGRAD{A,B}
+CUBLASLT_EPILOGUE_{RELU,GELU}_AUX
+CUBLASLT_EPILOGUE_D{RELU,GELU}
+
+
+Improved Hopper performance on arm64-sbsa by adding Hopper kernels that were previously supported only on the x86_64 architecture for Windows and Linux.
+
+
+Known Issues
+
+There are no forward compatible kernels for single precision complex gemms that do not require workspace. Support will be added in a later release.
+
+
+Resolved Issues
+
+Fixed an issue on NVIDIA Ampere architecture and newer GPUs where cublasLtMatmul with epilogue CUBLASLT_EPILOGUE_BGRAD{A,B} and a nontrivial reduction scheme (that is, not CUBLASLT_REDUCTION_SCHEME_NONE) could return incorrect results for the bias gradient.
+cublasLtMatmul for gemv-like cases (that is, m or n equals 1) might ignore bias with the CUBLASLT_EPILOGUE_RELU_BIAS and CUBLASLT_EPILOGUE_BIAS epilogues.
+
+Deprecations
+
+Disallow including cublas.h and cublas_v2.h in the same translation unit.
+Removed:
+
+CUBLAS_MATMUL_STAGES_16x80 and CUBLAS_MATMUL_STAGES_64x80 from cublasLtMatmulStages_t. No kernels utilize these stages anymore.
+cublasLt3mMode_t, CUBLASLT_MATMUL_PREF_MATH_MODE_MASK, and CUBLASLT_MATMUL_PREF_GAUSSIAN_MODE_MASK from cublasLtMatmulPreferenceAttributes_t. Instead, use the corresponding flags from cublasLtNumericalImplFlags_t.
+CUBLASLT_MATMUL_PREF_POINTER_MODE_MASK, CUBLASLT_MATMUL_PREF_EPILOGUE_MASK, and CUBLASLT_MATMUL_PREF_SM_COUNT_TARGET from cublasLtMatmulPreferenceAttributes_t. The corresponding parameters are taken directly from cublasLtMatmulDesc_t.
+CUBLASLT_POINTER_MODE_MASK_NO_FILTERING from cublasLtPointerModeMask_t. This mask was only applicable to CUBLASLT_MATMUL_PREF_MATH_MODE_MASK which was removed.
+
+
+
+
+
+
+
+
+2.2. cuFFT Libraryï
+
+2.2.1. cuFFT: Release 12.5ï
+
+New Features
+
+Added Just-In-Time Link-Time Optimized (JIT LTO) kernels for improved performance in R2C and C2R FFTs for many sizes.
+
+We recommend testing your R2C / C2R use cases with and without JIT LTO kernels and comparing the resulting performance. You can enable JIT LTO kernels using the per-plan properties cuFFT API.
+
+
+
+
+
+
+
+2.2.2. cuFFT: Release 12.4 Update 1ï
+
+Resolved Issues
+
+A routine from the cuFFT LTO EA library was added by mistake to the cuFFT Advanced API header (cufftXt.h) in CUDA 12.4. This routine has now been removed from the header.
+
+
+
+
+
+2.2.3. cuFFT: Release 12.4ï
+
+New Features
+
+Added Just-In-Time Link-Time Optimized (JIT LTO) kernels for improved performance in FFTs with 64-bit indexing.
+Added per-plan properties to the cuFFT API. These new routines can be leveraged to give users more control over the behavior of cuFFT. Currently they can be used to enable JIT LTO kernels for 64-bit FFTs.
+Improved accuracy for certain single-precision (fp32) FFT cases, especially involving FFTs for larger sizes.
+
+
+Known Issues
+
+A routine from the cuFFT LTO EA library was added by mistake to the cuFFT Advanced API header (cufftXt.h). This routine is not supported by cuFFT, and will be removed from the header in a future release.
+
+
+Resolved Issues
+
+Fixed an issue that could cause overwriting of user data when performing out-of-place real-to-complex (R2C) transforms with user-specified output strides (i.e. using the ostride component of the Advanced Data Layout API).
+Fixed inconsistent behavior between libcufftw and FFTW when both inembed and onembed are nullptr / NULL. From now on, as in FFTW, passing nullptr / NULL as inembed/onembed parameter is equivalent to passing n, that is, the logical size for that dimension.
+
+
+
+
+
+2.2.4. cuFFT: Release 12.3 Update 1ï
+
+Known Issues
+
+Executing a real-to-complex (R2C) or complex-to-real (C2R) plan in a context different to the one used to create the plan could cause undefined behavior. This issue will be fixed in an upcoming release of cuFFT.
+
+
+Resolved Issues
+
+Complex-to-complex (C2C) execution functions (cufftExec and similar) now properly error-out in case of error during kernel launch, for example due to a missing CUDA context.
+
+
+
+
+
+2.2.5. cuFFT: Release 12.3ï
+
+New Features
+
+Callback kernels are more relaxed in terms of resource usage, and will use fewer registers.
+Improved accuracy for double precision prime and composite FFT sizes with factors larger than 127.
+Slightly improved planning times for some FFT sizes.
+
+
+
+
+
+2.2.6. cuFFT: Release 12.2ï
+
+New Features
+
+cufftSetStream can be used in multi-GPU plans with a stream from any GPU context, instead of from the primary context of the first GPU listed in cufftXtSetGPUs.
+Improved performance of 1000+ of FFTs of sizes ranging from 62 to 16380. The improved performance spans hundreds of single precision and double precision cases for FFTs with contiguous data layout, across multiple GPU architectures (from Maxwell to Hopper GPUs) via PTX JIT.
+Reduced the size of the static libraries when compared to cuFFT in the 12.1 release.
+
+
+Resolved Issues
+
+cuFFT no longer exhibits a race condition when threads simultaneously create and access plans with more than 1023 plans alive.
+cuFFT no longer exhibits a race condition when multiple threads call cufftXtSetGPUs concurrently.
+
+
+
+
+
+2.2.7. cuFFT: Release 12.1 Update 1ï
+
+Known Issues
+
+cuFFT exhibits a race condition when one thread calls cufftCreate (or cufftDestroy) and another thread calls any API (except cufftCreate or cufftDestroy), and when the total number of plans alive exceeds 1023.
+cuFFT exhibits a race condition when multiple threads call cufftXtSetGPUs concurrently on different plans.
+
+
+
+
+
+2.2.8. cuFFT: Release 12.1ï
+
+New Features
+
+Improved performance on Hopper GPUs for hundreds of FFTs of sizes ranging from 14 to 28800. The improved performance spans over 542 cases across single and double precision for FFTs with contiguous data layout.
+
+
+Known Issues
+
+Starting from CUDA 11.8, CUDA Graphs are no longer supported for callback routines that load data in out-of-place mode transforms. An upcoming release will update the cuFFT callback implementation, removing this limitation. cuFFT deprecated callback functionality based on separate compiled device code in cuFFT 11.4.
+
+
+Resolved Issues
+
+cuFFT no longer produces errors with compute-sanitizer at program exit if the CUDA context used at plan creation was destroyed prior to program exit.
+
+
+
+
+
+2.2.9. cuFFT: Release 12.0 Update 1ï
+
+Resolved Issues
+
+Scratch space requirements for multi-GPU, single-batch, 1D FFTs were reduced.
+
+
+
+
+
+2.2.10. cuFFT: Release 12.0ï
+
+New Features
+
+PTX JIT kernel compilation allowed the addition of many new accelerated cases for Maxwell, Pascal, Volta and Turing architectures.
+
+
+Known Issues
+
+cuFFT plan generation time increases due to PTX JIT compiling. Refer to Plan Initialization TIme.
+
+
+Resolved Issues
+
+cuFFT plans had an unintentional small memory overhead (of a few kB) per plan. This is resolved.
+
+
+
+
+
+
+2.3. cuSOLVER Libraryï
+
+2.3.1. cuSOLVER: Release 12.5 Update 1ï
+
+Resolved Issues
+
+The potential out-of-bound accesses on bufferOnDevice by calls of cusolverDnXlarft have been resolved.
+
+
+
+
+
+2.3.2. cuSOLVER: Release 12.5ï
+
+New Features
+
+Performance improvements of cusolverDnXgesvd and cusolverDn<t>gesvd if jobu != 'N' or jobvt != 'N'.
+Performance improvements of cusolverDnXgesvdp if jobz = CUSOLVER_EIG_MODE_NOVECTOR.
+Lower workspace requirement of cusolverDnXgesvdp for tall-and-skinny-matrices.
+
+
+Known Issues
+
+With CUDA Toolkit 12.4 Update 1, values ldt > k in calls of cusolverDnXlarft can result in out-of-bound memory accesses on bufferOnDevice. As a workaround it is possible to allocate a larger device workspace buffer of size workspaceInBytesOnDevice=ALIGN_32((ldt*k + n*k)*sizeofCudaDataType(dataTypeT)), with
+auto ALIGN_32=[](int64_t val) {
+   return ((val + 31)/32)*32;
+};
+
+
+and
+auto sizeofCudaDataType=[](cudaDataType dt) {
+   if (dt == CUDA_R_32F) return sizeof(float);
+   if (dt == CUDA_R_64F) return sizeof(double);
+   if (dt == CUDA_C_32F) return sizeof(cuComplex);
+   if (dt == CUDA_C_64F) return sizeof(cuDoubleComplex);
+};
+
+
+
+
+
+
+
+
+2.3.3. cuSOLVER: Release 12.4 Update 1ï
+
+New Features
+
+The performance of cusolverDnXlarft has been improved. For large matrices, the speedup might exceed 100x. The performance on H100 is now consistently better than on A100. The change in cusolverDnXlarft also results in a modest speedup in cusolverDn<t>ormqr, cusolverDn<t>ormtr, and cusolverDnXsyevd.
+The performance of cusolverDnXgesvd when singular vectors are sought has been improved. The job configuration that computes both left and right singular vectors is up to 1.5x faster.
+
+
+Resolved Issues
+
+cusolverDnXtrtri_bufferSize now returns the correct workspace size in bytes.
+
+
+Deprecations
+
+Using long-deprecated cusolverDnPotrf, cusolverDnPotrs, cusolverDnGeqrf, cusolverDnGetrf, cusolverDnGetrs, cusolverDnSyevd, cusolverDnSyevdx, cusolverDnGesvd,  and their accompanying bufferSize functions will result in a deprecation warning. The warning can be turned off by using the -DDISABLE_CUSOLVER_DEPRECATED flag while compiling; however, users should use cusolverDnXpotrf, cusolverDnXpotrs, cusolverDnXgeqrf, cusolverDnXgetrf, cusolverDnXgetrs, cusolverDnXsyevd, cusolverDnXsyevdx, cusolverDnXgesvd, and the corresponding bufferSize functions instead.
+
+
+
+
+
+2.3.4. cuSOLVER: Release 12.4ï
+
+New Features
+
+cusolverDnXlarft and cusolverDnXlarft_bufferSize APIs were introduced. cusolverDnXlarft forms the triangular factor of a real block reflector, while cusolverDnXlarft_bufferSize returns its required workspace sizes in bytes.
+
+
+Known Issues
+
+cusolverDnXtrtri_bufferSize` returns an incorrect required device workspace size. As a workaround the returned size can be multiplied by the size of the data type (for example, 8 bytes if matrix A is of type double) to obtain the correct workspace size.
+
+
+
+
+
+2.3.5. cuSOLVER: Release 12.2 Update 2ï
+
+Resolved Issues
+
+Fixed an issue with cusolverDn<t>gesvd(), cusolverDnGesvd(), and cusolverDnXgesvd(), which could cause wrong results for matrices larger than 18918 if jobu or jobvt was unequal to âNâ.
+
+
+
+
+
+2.3.6. cuSOLVER: Release 12.2ï
+
+New Features
+
+A new API to ensure deterministic results or allow non-deterministic results for improved performance. See cusolverDnSetDeterministicMode() and cusolverDnGetDeterministicMode(). Affected functions are: cusolverDn<t>geqrf(), cusolverDn<t>syevd(), cusolverDn<t>syevdx(), cusolverDn<t>gesvdj(), cusolverDnXgeqrf(), cusolverDnXsyevd(), cusolverDnXsyevdx(), cusolverDnXgesvdr(), and cusolverDnXgesvdp().
+
+
+Known Issues
+
+Concurrent executions of cusolverDn<t>getrf() or cusolverDnXgetrf() in different non-blocking CUDA streams on the same device might result in a deadlock.
+
+
+
+
+
+
+2.4. cuSPARSE Libraryï
+
+2.4.1. cuSPARSE: Release 12.5 Update 1ï
+
+New Features
+
+Added support for BSR format in cusparseSpMM.
+
+
+Resolved Issues
+
+cusparseSpMM() would sometimes get incorrect results when alpha=0, num_batches>1, batch_stride indicates that there is padding between batches.
+cusparseSpMM_bufferSize() would return the wrong size when the sparse matrix is Blocked Ellpack and the dense matrices have only a single column (n=1).
+cusparseSpMM returned the wrong result when k=0 (for example when A has zero columns). The correct behavior is doing C \*= beta. The bug behavior was not modifying C at all.
+cusparseCreateSlicedEll would return an error when the slice size is greater than the matrix number of rows.
+Sliced-ELLPACK cusparseSpSV produced wrong results for diagonal matrices.
+Sliced-ELLPACK cusparseSpSV_analysis() failed due to insufficient resources for some matrices and some slice sizes.
+
+
+
+
+
+2.4.2. cuSPARSE: Release 12.5ï
+
+New Features
+
+Added support for mixed input types in SpMV: single precision input matrix, double precision input vector, double precision output vector.
+
+
+Resolved Issues
+
+cusparseSpMV() introduces invalid memory accesses when the output vector is not aligned to 16 bytes.
+
+
+
+
+
+2.4.3. cuSPARSE: Release 12.4ï
+
+New Features
+
+Added the preprocessing step for sparse matrix-vector multiplication cusparseSpMV_preprocess().
+Added support for mixed real and complex types for cusparseSpMM().
+Added a new API cusparseSpSM_updateMatrix() to update the sparse matrix between the analysis and solving phase of cusparseSpSM().
+
+
+Known Issues
+
+cusparseSpMV() introduces invalid memory accesses when the output vector is not aligned to 16 bytes.
+
+
+Resolved Issues
+
+cusparseSpVV() provided incorrect results when the sparse vector has many non-zeros.
+
+
+
+
+
+2.4.4. cuSPARSE: Release 12.3 Update 1ï
+
+New Features
+
+Added support for block sizes of 64 and 128 in cusparseSDDMM().
+Added a preprocessing step cusparseSDDMM_preprocess() for BSR cusparseSDDMM() that helps improve performance of the main computing stage.
+
+
+
+
+
+2.4.5. cuSPARSE: Release 12.3ï
+
+New Features
+
+The cusparseSpSV_bufferSize() and cusparseSpSV_analysis() routines now accept NULL pointers for the dense vector.
+The cusparseSpSM_bufferSize() and cusparseSpSM_analysis() routines now accept dense matrix descriptors with NULL pointer for values.
+
+
+Known Issues
+
+The cusparseSpSV_analysis() and cusparseSpSM_analysis() routines are blocking calls/not asynchronous.
+Wrong results can occur for cusparseSpSV() using sliced ELLPACK format and transpose/transpose conjugate operation on matrix A.
+
+
+Resolved Issues
+
+cusparseSpSV() provided indeterministic results in some cases.
+Fixed an issue that caused cusparseSpSV_analysis() to hang sometimes in a multi-thread environment.
+Fixed an issue with cusparseSpSV() and cusparseSpSV() that sometimes yielded wrong output when the output vector/matrix or input matrix contained NaN.
+
+
+
+
+
+2.4.6. cuSPARSE: Release 12.2 Update 1ï
+
+New Features
+
+The library now provides the opportunity to dump sparse matrices to files during the creation of the descriptor for debugging purposes. See logging API https://docs.nvidia.com/cuda/cusparse/index.html#cusparse-logging-api.
+
+
+Resolved Issues
+
+Removed CUSPARSE_SPMM_CSR_ALG3 fallback to avoid confusion in the algorithm selection process.
+Clarified the supported operations for cusparseSDDMM().
+cusparseCreateConstSlicedEll() now uses const pointers.
+Fixed wrong results in rare edge cases of cusparseCsr2CscEx2() with base 1 indexing.
+cusparseSpSM_bufferSize() could ask slightly less memory than needed.
+cusparseSpMV() now checks the validity of the buffer pointer only when it is strictly needed.
+
+
+Deprecations
+
+Several legacy APIs have been officially deprecated. A compile-time warning has been added to all of them.
+
+
+
+
+
+2.4.7. cuSPARSE: Release 12.1 Update 1ï
+
+New Features
+
+Introduced Block Sparse Row (BSR) sparse matrix storage for the Generic APIs with support for SDDMM routine (cusparseSDDMM).
+Introduced Sliced Ellpack (SELL) sparse matrix storage format for the Generic APIs with support for sparse matrix-vector multiplication (cusparseSpMV) and triangular solver with a single right-hand side (cusparseSpSV).
+Added a new API call (cusparseSpSV_updateMatrix) to update matrix values and/or the matrix diagonal in the sparse triangular solver with a single right-hand side after the analysis step.
+
+
+
+
+
+2.4.8. cuSPARSE: Release 12.0 Update 1ï
+
+New Features
+
+cusparseSDDMM() now supports mixed precision computation.
+Improved cusparseSpMM() alg2 mixed-precision performance on some matrices on NVIDIA Ampere architecture GPUs.
+Improved cusparseSpMV() performance with a new load balancing algorithm.
+cusparseSpSV() and cusparseSpSM() now support in-place computation, namely the output and input vectors/matrices have the same memory address.
+
+
+Resolved Issues
+
+cusparseSpSM() could produce wrong results if the leading dimension (ld) of the RHS matrix is greater than the number of columns/rows.
+
+
+
+
+
+2.4.9. cuSPARSE: Release 12.0ï
+
+New Features
+
+JIT LTO functionalities (cusparseSpMMOp()) switched from driver to nvJitLto library. Starting from CUDA 12.0 the user needs to link to libnvJitLto.so, see cuSPARSE documentation. JIT LTO performance has also been improved for cusparseSpMMOpPlan().
+Introduced const descriptors for the Generic APIs, for example, cusparseConstSpVecGet(). Now the Generic APIs interface clearly declares when a descriptor and its data are modified by the cuSPARSE functions.
+Added two new algorithms to cusparseSpGEMM() with lower memory utilization. The first algorithm computes a strict bound on the number of intermediate product, while the second one allows partitioning the computation in chunks.
+Added int8_t support to cusparseGather(), cusparseScatter(), and cusparseCsr2cscEx2().
+Improved cusparseSpSV() performance for both the analysis and the solving phases.
+Improved cusparseSpSM() performance for both the analysis and the solving phases.
+Improved cusparseSDDMM() performance and added support for batch computation.
+Improved cusparseCsr2cscEx2() performance.
+
+
+Resolved Issues
+
+cusparseSpSV() and cusparseSpSM() could produce wrong results.
+cusparseDnMatGetStridedBatch() did not accept batchStride == 0.
+
+
+Deprecations
+
+Removed deprecated CUDA 11.x APIs, enumerators, and descriptors.
+
+
+
+
+
+
+2.5. Math Libraryï
+
+2.5.1. CUDA Math: Release 12.5ï
+
+Known Issues
+
+As a result of ongoing testing we updated the interval bounds in which double precision lgamma() function may experience greater than the documented 4 ulp accuracy loss. New interval shall read (-23.0001; -2.2637). This finding is applicable to CUDA 12.5 and all previous versions.
+
+
+
+
+
+2.5.2. CUDA Math: Release 12.4ï
+
+Resolved Issues
+
+Host-specific code in cuda_fp16/bf16 headers is now free from type-punning and shall work correctly in the presence of optimizations based on strict-aliasing rules.
+
+
+
+
+
+2.5.3. CUDA Math: Release 12.3ï
+
+New Features
+
+Performance of SIMD Integer CUDA Math APIs was improved.
+
+
+Resolved Issues
+
+The __hisinf() Math APIs from cuda_fp16.h and cuda_bf16.h headers were silently producing wrong results if compiled with the -std=c++20 compiler option because of an underlying nvcc compiler issue, resolved in version 12.3.
+
+
+Known Issues
+
+Users of cuda_fp16.h and cuda_bf16.h headers are advised to disable host compilers strict aliasing rules based optimizations (e.g. pass -fno-strict-aliasing to host GCC compiler) as these may interfere with the type-punning idioms used in the __half, __half2, __nv_bfloat16, __nv_bfloat162 types implementations and expose the user program to undefined behavior. Note, the headers suppress GCC diagnostics through: #pragma GCC diagnostic ignored -Wstrict-aliasing. This behavior may improve in future versions of the headers.
+
+
+
+
+
+2.5.4. CUDA Math: Release 12.2ï
+
+New Features
+
+CUDA Math APIs for __half and __nv_bfloat16 types received usability improvements, including host side <emulated> support for many of the arithmetic operations and conversions.
+__half and __nv_bfloat16 types have implicit conversions to/from integral types, which are now available with host compilers by default. These may cause build issues due to ambiguous overloads resolution. Users are advised to update their code to select proper overloads. To opt-out user may want to define the following macros (these macros will be removed in the future CUDA release):
+
+__CUDA_FP16_DISABLE_IMPLICIT_INTEGER_CONVERTS_FOR_HOST_COMPILERS__
+__CUDA_BF16_DISABLE_IMPLICIT_INTEGER_CONVERTS_FOR_HOST_COMPILERS__
+
+
+
+
+Resolved Issues
+
+During ongoing testing, NVIDIA identified that due to an algorithm error the results of 64-bit floating-point division in default round-to-nearest-even mode could produce spurious overflow to infinity. NVIDIA recommends that all developers requiring strict IEEE754 compliance update to CUDA Toolkit 12.2 or newer. The affected algorithm was present in both offline compilation as well as just-in-time (JIT) compilation. As JIT compilation is handled by the driver, NVIDIA recommends updating to driver version greater than or equal to R535 (R536 on Windows) when IEEE754 compliance is required and when using JIT. This is a software algorithm fix and is not tied to specific hardware.
+Updated the observed worst case error bounds for single precision intrinsic functions __expf(), __exp10f() and double precision functions asinh(), acosh().
+
+
+
+
+
+2.5.5. CUDA Math: Release 12.1ï
+
+New Features
+
+Performance and accuracy improvements in atanf, acosf, asinf, sinpif, cospif, powf, erff, and tgammaf.
+
+
+
+
+
+2.5.6. CUDA Math: Release 12.0ï
+
+New Features
+
+Introduced new integer/fp16/bf16 CUDA Math APIs to help expose performance benefits of new DPX instructions. Refer to https://docs.nvidia.com/cuda/cuda-math-api/index.html.
+
+
+Known Issues
+
+Double precision inputs that cause the double precision division algorithm in the default âround to nearest even modeâ produce spurious overflow: an infinite result is delivered where DBL_MAX 0x7FEF_FFFF_FFFF_FFFF is expected. Affected CUDA Math APIs: __ddiv_rn(). Affected CUDA language operation: double precision / operation in the device code.
+
+
+Deprecations
+
+All previously deprecated undocumented APIs are removed from CUDA 12.0.
+
+
+
+
+
+
+2.6. NVIDIA Performance Primitives (NPP)ï
+
+2.6.1. NPP: Release 12.4ï
+
+New Features
+
+Enhanced large file support with size_t.
+
+
+
+
+
+2.6.2. NPP: Release 12.0ï
+
+Deprecations
+
+Deprecating non-CTX API support from next release.
+
+
+Resolved Issues
+
+A performance issue with the NPP ResizeSqrPixel API is now fixed and shows improved performance.
+
+
+
+
+
+
+2.7. nvJPEG Libraryï
+
+2.7.1. nvJPEG: Release 12.4ï
+
+New Features
+
+IDCT performance optimizations for single image CUDA decode.
+Zero Copy behavior has been changed: Setting NVJPEG_FLAGS_REDUCED_MEMORY_DECODE_ZERO_COPY flag will no longer enable NVJPEG_FLAGS_REDUCED_MEMORY_DECODE.
+
+
+
+
+
+2.7.2. nvJPEG: Release 12.3 Update 1ï
+
+New Features
+
+New APIs: nvjpegBufferPinnedResize and nvjpegBufferDeviceResize which can be used to resize pinned and device buffers before using them.
+
+
+
+
+
+2.7.3. nvJPEG: Release 12.2ï
+
+New Features
+
+Added support for JPEG Lossless decode (process 14, FO prediction).
+nvJPEG is now supported on L4T.
+
+
+
+
+
+2.7.4. nvJPEG: Release 12.0ï
+
+New Features
+
+Immproved the GPU Memory optimisation for the nvJPEG codec.
+
+
+Resolved Issues
+
+An issue that causes runtime failures when nvJPEGDecMultipleInstances was tested with a large number of threads is resolved.
+An issue with CMYK four component color conversion is now resolved.
+
+
+Known Issues
+
+Backend NVJPEG_BACKEND_GPU_HYBRID - Unable to handle bistreams with extra scans lengths.
+
+
+Deprecations
+
+The reuse of Huffman table in Encoder (nvjpegEncoderParamsCopyHuffmanTables).
+
+
+
+
+1
+Only available on select Linux distros
+
+
+
+
+
+
+3. Noticesï
+
+3.1. Noticeï
+This document is provided for information purposes only and shall not be regarded as a warranty of a certain functionality, condition, or quality of a product. NVIDIA Corporation (âNVIDIAâ) makes no representations or warranties, expressed or implied, as to the accuracy or completeness of the information contained in this document and assumes no responsibility for any errors contained herein. NVIDIA shall have no liability for the consequences or use of such information or for any infringement of patents or other rights of third parties that may result from its use. This document is not a commitment to develop, release, or deliver any Material (defined below), code, or functionality.
+NVIDIA reserves the right to make corrections, modifications, enhancements, improvements, and any other changes to this document, at any time without notice.
+Customer should obtain the latest relevant information before placing orders and should verify that such information is current and complete.
+NVIDIA products are sold subject to the NVIDIA standard terms and conditions of sale supplied at the time of order acknowledgement, unless otherwise agreed in an individual sales agreement signed by authorized representatives of NVIDIA and customer (âTerms of Saleâ). NVIDIA hereby expressly objects to applying any customer general terms and conditions with regards to the purchase of the NVIDIA product referenced in this document. No contractual obligations are formed either directly or indirectly by this document.
+NVIDIA products are not designed, authorized, or warranted to be suitable for use in medical, military, aircraft, space, or life support equipment, nor in applications where failure or malfunction of the NVIDIA product can reasonably be expected to result in personal injury, death, or property or environmental damage. NVIDIA accepts no liability for inclusion and/or use of NVIDIA products in such equipment or applications and therefore such inclusion and/or use is at customerâs own risk.
+NVIDIA makes no representation or warranty that products based on this document will be suitable for any specified use. Testing of all parameters of each product is not necessarily performed by NVIDIA. It is customerâs sole responsibility to evaluate and determine the applicability of any information contained in this document, ensure the product is suitable and fit for the application planned by customer, and perform the necessary testing for the application in order to avoid a default of the application or the product. Weaknesses in customerâs product designs may affect the quality and reliability of the NVIDIA product and may result in additional or different conditions and/or requirements beyond those contained in this document. NVIDIA accepts no liability related to any default, damage, costs, or problem which may be based on or attributable to: (i) the use of the NVIDIA product in any manner that is contrary to this document or (ii) customer product designs.
+No license, either expressed or implied, is granted under any NVIDIA patent right, copyright, or other NVIDIA intellectual property right under this document. Information published by NVIDIA regarding third-party products or services does not constitute a license from NVIDIA to use such products or services or a warranty or endorsement thereof. Use of such information may require a license from a third party under the patents or other intellectual property rights of the third party, or a license from NVIDIA under the patents or other intellectual property rights of NVIDIA.
+Reproduction of information in this document is permissible only if approved in advance by NVIDIA in writing, reproduced without alteration and in full compliance with all applicable export laws and regulations, and accompanied by all associated conditions, limitations, and notices.
+THIS DOCUMENT AND ALL NVIDIA DESIGN SPECIFICATIONS, REFERENCE BOARDS, FILES, DRAWINGS, DIAGNOSTICS, LISTS, AND OTHER DOCUMENTS (TOGETHER AND SEPARATELY, âMATERIALSâ) ARE BEING PROVIDED âAS IS.â NVIDIA MAKES NO WARRANTIES, EXPRESSED, IMPLIED, STATUTORY, OR OTHERWISE WITH RESPECT TO THE MATERIALS, AND EXPRESSLY DISCLAIMS ALL IMPLIED WARRANTIES OF NONINFRINGEMENT, MERCHANTABILITY, AND FITNESS FOR A PARTICULAR PURPOSE. TO THE EXTENT NOT PROHIBITED BY LAW, IN NO EVENT WILL NVIDIA BE LIABLE FOR ANY DAMAGES, INCLUDING WITHOUT LIMITATION ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, PUNITIVE, OR CONSEQUENTIAL DAMAGES, HOWEVER CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF ANY USE OF THIS DOCUMENT, EVEN IF NVIDIA HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. Notwithstanding any damages that customer might incur for any reason whatsoever, NVIDIAâs aggregate and cumulative liability towards customer for the products described herein shall be limited in accordance with the Terms of Sale for the product.
+
+
+3.2. OpenCLï
+OpenCL is a trademark of Apple Inc. used under license to the Khronos Group Inc.
+
+
+3.3. Trademarksï
+NVIDIA and the NVIDIA logo are trademarks or registered trademarks of NVIDIA Corporation in the U.S. and other countries. Other company and product names may be trademarks of the respective companies with which they are associated.
+
+
+
+
+
+
+
+
+
+
+Privacy Policy
+|
+Manage My Privacy
+|
+Do Not Sell or Share My Data
+|
+Terms of Service
+|
+Accessibility
+|
+Corporate Policies
+|
+Product Security
+|
+Contact
+
+
+  Copyright © 2007-2024, NVIDIA Corporation & affiliates. All rights reserved.
+
+
+Last updated on Jul 1, 2024.
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CUDA Features Archive
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. CUDA 11.6 Features
+
+1.1. Compiler
+1.1.1. VS2022 Support
+1.1.2. New instructions in public PTX
+1.1.3. Unused Kernel Optimization
+1.1.4. New -arch=native option
+1.1.5. Generate PTX from nvlink:
+1.1.6. Bullseye support
+1.1.7. INT128 developer tool support
+
+
+
+
+
+2. Notices
+2.1. Notice
+2.2. OpenCL
+2.3. Trademarks
+
+
+
+
+
+
+
+
+CUDA Features Archive
+
+
+
+
+
+
+ Â»
+
+1. CUDA 11.6 Features
+
+
+
+v12.5 |
+PDF
+|
+Archive
+Â 
+
+
+
+
+
+
+NVIDIA CUDA Features Archive
+The list of CUDA features by release.
+
+
+1. CUDA 11.6 Featuresï
+
+
+
+1.1. Compilerï
+
+
+
+1.1.1. VS2022 Supportï
+
+CUDA 11.6 officially supports the latest VS2022 as host compiler. A separate Nsight Visual Studio installer 2022.1.1 must be downloaded from here. A future CUDA release will have the Nsight Visual Studio installer with VS2022 support integrated into it.
+
+
+
+1.1.2. New instructions in public PTXï
+
+New instructions for bit mask creationâBMSK, and sign extensionâSZEXT, are added to the public PTX ISA. You can find documentation for these instructions in the PTX ISA guide: BMSK and SZEXT.
+
+
+
+1.1.3. Unused Kernel Optimizationï
+
+In CUDA 11.5, unused kernel pruning was introduced with the potential benefits of reducing binary size and improving performance through more efficient optimizations. This was an opt-in feature but in 11.6, this feature is enabled by default. As mentioned in the 11.5 blog, there is an opt-out flag that can be used in case it becomes necessary for debug purposes or for other special situations.
+
+$ nvcc -rdc=true user.cu testlib.a -o user -Xnvlink -ignore-host-info
+
+
+
+
+
+1.1.4. New -arch=native optionï
+
+In addition to the -arch=all and -arch=all-major options added in CUDA 11.5, NVCC introduced -arch= native in CUDA 11.5 update 1. This -arch=native option is a convenient way for users to let NVCC determine the right target architecture to compile the CUDA device code to based on the GPU installed on the system. This can be particularly helpful for testing when applications are run on the same system they are compiled in.
+
+
+
+1.1.5. Generate PTX from nvlink:ï
+
+Using the following command line, device linker, nvlink will produce PTX as an output in addition to CUBIN:
+
+nvcc -dlto -dlink -ptx
+
+
+Device linking by nvlink is the final stage in the CUDA compilation process. Applications that have multiple source translation units have to be compiled in separate compilation mode. LTO (introduced in CUDA 11.4) allowed nvlink to perform optimizations at device link time instead of at compile time so that separately compiled applications with several translation units can be optimized to the same level as whole program compilations with a single translation unit. However, without the option to output PTX, applications that cared about forward compatibility of device code could not benefit from Link Time Optimization or had to constrain the device code to a single source file.
+With the option for nvlink that performs LTO to generate the output in PTX, customer applications that require forward compatibility across GPU architectures can span across multiple files and can also take advantage of Link Time Optimization.
+
+
+
+1.1.6. Bullseye supportï
+
+NVCC compiled source code now works with the code coverage tool Bullseye. The code coverage is only for the CPU or the host functions. Code coverage for device function is not supported through bullseye.
+
+
+
+1.1.7. INT128 developer tool supportï
+
+In 11.5, CUDA C++ support for 128 bit was added. In 11.6, developer tools support the datatype as well. With the latest version of libcu++, int 128 data datype is supported by math functions.
+
+
+
+
+
+2. Noticesï
+
+
+
+2.1. Noticeï
+
+This document is provided for information purposes only and shall not be regarded as a warranty of a certain functionality, condition, or quality of a product. NVIDIA Corporation (âNVIDIAâ) makes no representations or warranties, expressed or implied, as to the accuracy or completeness of the information contained in this document and assumes no responsibility for any errors contained herein. NVIDIA shall have no liability for the consequences or use of such information or for any infringement of patents or other rights of third parties that may result from its use. This document is not a commitment to develop, release, or deliver any Material (defined below), code, or functionality.
+NVIDIA reserves the right to make corrections, modifications, enhancements, improvements, and any other changes to this document, at any time without notice.
+Customer should obtain the latest relevant information before placing orders and should verify that such information is current and complete.
+NVIDIA products are sold subject to the NVIDIA standard terms and conditions of sale supplied at the time of order acknowledgement, unless otherwise agreed in an individual sales agreement signed by authorized representatives of NVIDIA and customer (âTerms of Saleâ). NVIDIA hereby expressly objects to applying any customer general terms and conditions with regards to the purchase of the NVIDIA product referenced in this document. No contractual obligations are formed either directly or indirectly by this document.
+NVIDIA products are not designed, authorized, or warranted to be suitable for use in medical, military, aircraft, space, or life support equipment, nor in applications where failure or malfunction of the NVIDIA product can reasonably be expected to result in personal injury, death, or property or environmental damage. NVIDIA accepts no liability for inclusion and/or use of NVIDIA products in such equipment or applications and therefore such inclusion and/or use is at customerâs own risk.
+NVIDIA makes no representation or warranty that products based on this document will be suitable for any specified use. Testing of all parameters of each product is not necessarily performed by NVIDIA. It is customerâs sole responsibility to evaluate and determine the applicability of any information contained in this document, ensure the product is suitable and fit for the application planned by customer, and perform the necessary testing for the application in order to avoid a default of the application or the product. Weaknesses in customerâs product designs may affect the quality and reliability of the NVIDIA product and may result in additional or different conditions and/or requirements beyond those contained in this document. NVIDIA accepts no liability related to any default, damage, costs, or problem which may be based on or attributable to: (i) the use of the NVIDIA product in any manner that is contrary to this document or (ii) customer product designs.
+No license, either expressed or implied, is granted under any NVIDIA patent right, copyright, or other NVIDIA intellectual property right under this document. Information published by NVIDIA regarding third-party products or services does not constitute a license from NVIDIA to use such products or services or a warranty or endorsement thereof. Use of such information may require a license from a third party under the patents or other intellectual property rights of the third party, or a license from NVIDIA under the patents or other intellectual property rights of NVIDIA.
+Reproduction of information in this document is permissible only if approved in advance by NVIDIA in writing, reproduced without alteration and in full compliance with all applicable export laws and regulations, and accompanied by all associated conditions, limitations, and notices.
+THIS DOCUMENT AND ALL NVIDIA DESIGN SPECIFICATIONS, REFERENCE BOARDS, FILES, DRAWINGS, DIAGNOSTICS, LISTS, AND OTHER DOCUMENTS (TOGETHER AND SEPARATELY, âMATERIALSâ) ARE BEING PROVIDED âAS IS.â NVIDIA MAKES NO WARRANTIES, EXPRESSED, IMPLIED, STATUTORY, OR OTHERWISE WITH RESPECT TO THE MATERIALS, AND EXPRESSLY DISCLAIMS ALL IMPLIED WARRANTIES OF NONINFRINGEMENT, MERCHANTABILITY, AND FITNESS FOR A PARTICULAR PURPOSE. TO THE EXTENT NOT PROHIBITED BY LAW, IN NO EVENT WILL NVIDIA BE LIABLE FOR ANY DAMAGES, INCLUDING WITHOUT LIMITATION ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, PUNITIVE, OR CONSEQUENTIAL DAMAGES, HOWEVER CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF ANY USE OF THIS DOCUMENT, EVEN IF NVIDIA HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. Notwithstanding any damages that customer might incur for any reason whatsoever, NVIDIAâs aggregate and cumulative liability towards customer for the products described herein shall be limited in accordance with the Terms of Sale for the product.
+
+
+
+2.2. OpenCLï
+
+OpenCL is a trademark of Apple Inc. used under license to the Khronos Group Inc.
+
+
+
+2.3. Trademarksï
+
+NVIDIA and the NVIDIA logo are trademarks or registered trademarks of NVIDIA Corporation in the U.S. and other countries. Other company and product names may be trademarks of the respective companies with which they are associated.
+
+
+
+
+
+
+
+
+
+
+Privacy Policy
+|
+Manage My Privacy
+|
+Do Not Sell or Share My Data
+|
+Terms of Service
+|
+Accessibility
+|
+Corporate Policies
+|
+Product Security
+|
+Contact
+
+
+  Copyright Â© 2007-2024, NVIDIA Corporation & affiliates. All rights reserved.
+
+
+Last updated on Jul 1, 2024.
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EULA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. License Agreement for NVIDIA Software Development Kits
+
+1.1. License
+1.1.1. License Grant
+1.1.2. Distribution Requirements
+1.1.3. Authorized Users
+1.1.4. Pre-Release SDK
+1.1.5. Updates
+1.1.6. Components Under Other Licenses
+1.1.7. Reservation of Rights
+
+
+1.2. Limitations
+1.3. Ownership
+1.4. No Warranties
+1.5. Limitation of Liability
+1.6. Termination
+1.7. General
+
+
+
+2. CUDA Toolkit Supplement to Software License Agreement for NVIDIA Software Development Kits
+2.1. License Scope
+2.2. Distribution
+2.3. Operating Systems
+2.4. Audio and Video Encoders and Decoders
+2.5. Licensing
+2.6. Attachment A
+2.7. Attachment B
+
+
+
+
+
+
+
+
+EULA
+
+
+
+
+
+
+ Â»
+
+1. License Agreement for NVIDIA Software Development Kits
+
+
+
+v12.5 |
+PDF
+|
+Archive
+Â 
+
+
+
+
+
+
+End User License Agreement
+NVIDIA Software License Agreement and CUDA Supplement to Software License Agreement. Last updated: October 8, 2021
+The CUDA Toolkit End User License Agreement applies to the NVIDIA CUDA Toolkit, the NVIDIA CUDA Samples, the NVIDIA Display Driver, NVIDIA Nsight tools (Visual Studio Edition), and the associated documentation on CUDA APIs, programming model and development tools. If you do not agree with the terms and conditions of the license agreement, then do not download or use the software.
+Last updated: October 8, 2021.
+Preface
+The Software License Agreement in ChapterÂ 1 and the Supplement in ChapterÂ 2 contain license terms and conditions that govern the use of NVIDIA CUDA toolkit. By accepting this agreement, you agree to comply with all the terms and conditions applicable to the product(s) included herein.
+NVIDIA Driver
+Description
+This package contains the operating system driver and fundamental system software components for NVIDIA GPUs.
+NVIDIA CUDA Toolkit
+Description
+The NVIDIA CUDA Toolkit provides command-line and graphical tools for building, debugging and optimizing the performance of applications accelerated by NVIDIA GPUs, runtime and math libraries, and documentation including programming guides, user manuals, and API references.
+Default Install Location of CUDA Toolkit
+Windows platform:
+
+%ProgramFiles%\NVIDIA GPU Computing Toolkit\CUDA\v#.#
+
+
+Linux platform:
+
+/usr/local/cuda-#.#
+
+
+Mac platform:
+
+/Developer/NVIDIA/CUDA-#.#
+
+
+NVIDIA CUDA Samples
+Description
+CUDA Samples are now located in https://github.com/nvidia/cuda-samples, which includes instructions for obtaining, building, and running the samples. They are no longer included in the CUDA toolkit.
+NVIDIA Nsight Visual Studio Edition (Windows only)
+Description
+NVIDIA Nsight Development Platform, Visual Studio Edition is a development environment integrated into Microsoft Visual Studio that provides tools for debugging, profiling, analyzing and optimizing your GPU computing and graphics applications.
+Default Install Location of Nsight Visual Studio Edition
+Windows platform:
+
+%ProgramFiles(x86)%\NVIDIA Corporation\Nsight Visual Studio Edition #.#
+
+
+
+
+1. License Agreement for NVIDIA Software Development Kitsï
+
+Important NoticeâRead before downloading, installing, copying or using the licensed software:
+This license agreement, including exhibits attached (âAgreementâ) is a legal agreement between you and NVIDIA Corporation (âNVIDIAâ) and governs your use of a NVIDIA software development kit (âSDKâ).
+Each SDK has its own set of software and materials, but here is a description of the types of items that may be included in a SDK: source code, header files, APIs, data sets and assets (examples include images, textures, models, scenes, videos, native API input/output files), binary software, sample code, libraries, utility programs, programming code and documentation.
+This Agreement can be accepted only by an adult of legal age of majority in the country in which the SDK is used.
+If you are entering into this Agreement on behalf of a company or other legal entity, you represent that you have the legal authority to bind the entity to this Agreement, in which case âyouâ will mean the entity you represent.
+If you donât have the required age or authority to accept this Agreement, or if you donât accept all the terms and conditions of this Agreement, do not download, install or use the SDK.
+You agree to use the SDK only for purposes that are permitted by (a) this Agreement, and (b) any applicable law, regulation or generally accepted practices or guidelines in the relevant jurisdictions.
+
+
+1.1. Licenseï
+
+
+
+1.1.1. License Grantï
+
+Subject to the terms of this Agreement, NVIDIA hereby grants you a non-exclusive, non-transferable license, without the right to sublicense (except as expressly provided in this Agreement) to:
+
+Install and use the SDK,
+Modify and create derivative works of sample source code delivered in the SDK, and
+Distribute those portions of the SDK that are identified in this Agreement as distributable, as incorporated in object code format into a software application that meets the distribution requirements indicated in this Agreement.
+
+
+
+
+1.1.2. Distribution Requirementsï
+
+These are the distribution requirements for you to exercise the distribution grant:
+
+Your application must have material additional functionality, beyond the included portions of the SDK.
+The distributable portions of the SDK shall only be accessed by your application.
+The following notice shall be included in modifications and derivative works of sample source code distributed: âThis software contains source code provided by NVIDIA Corporation.â
+Unless a developer tool is identified in this Agreement as distributable, it is delivered for your internal use only.
+The terms under which you distribute your application must be consistent with the terms of this Agreement, including (without limitation) terms relating to the license grant and license restrictions and protection of NVIDIAâs intellectual property rights. Additionally, you agree that you will protect the privacy, security and legal rights of your application users.
+You agree to notify NVIDIA in writing of any known or suspected distribution or use of the SDK not in compliance with the requirements of this Agreement, and to enforce the terms of your agreements with respect to distributed SDK.
+
+
+
+
+1.1.3. Authorized Usersï
+
+You may allow employees and contractors of your entity or of your subsidiary(ies) to access and use the SDK from your secure network to perform work on your behalf.
+If you are an academic institution you may allow users enrolled or employed by the academic institution to access and use the SDK from your secure network.
+You are responsible for the compliance with the terms of this Agreement by your authorized users. If you become aware that your authorized users didnât follow the terms of this Agreement, you agree to take reasonable steps to resolve the non-compliance and prevent new occurrences.
+
+
+
+1.1.4. Pre-Release SDKï
+
+The SDK versions identified as alpha, beta, preview or otherwise as pre-release, may not be fully functional, may contain errors or design flaws, and may have reduced or different security, privacy, accessibility, availability, and reliability standards relative to commercial versions of NVIDIA software and materials. Use of a pre-release SDK may result in unexpected results, loss of data, project delays or other unpredictable damage or loss.
+You may use a pre-release SDK at your own risk, understanding that pre-release SDKs are not intended for use in production or business-critical systems.
+NVIDIA may choose not to make available a commercial version of any pre-release SDK. NVIDIA may also choose to abandon development and terminate the availability of a pre-release SDK at any time without liability.
+
+
+
+1.1.5. Updatesï
+
+NVIDIA may, at its option, make available patches, workarounds or other updates to this SDK. Unless the updates are provided with their separate governing terms, they are deemed part of the SDK licensed to you as provided in this Agreement. You agree that the form and content of the SDK that NVIDIA provides may change without prior notice to you. While NVIDIA generally maintains compatibility between versions, NVIDIA may in some cases make changes that introduce incompatibilities in future versions of the SDK.
+
+
+
+1.1.6. Components Under Other Licensesï
+
+The SDK may come bundled with, or otherwise include or be distributed with, NVIDIA or third-party components with separate legal notices or terms as may be described in proprietary notices accompanying the SDK. If and to the extent there is a conflict between the terms in this Agreement and the license terms associated with the component, the license terms associated with the components control only to the extent necessary to resolve the conflict.
+Subject to the other terms of this Agreement, you may use the SDK to develop and test applications released under Open Source Initiative (OSI) approved open source software licenses.
+
+
+
+1.1.7. Reservation of Rightsï
+
+NVIDIA reserves all rights, title, and interest in and to the SDK, not expressly granted to you under this Agreement.
+
+
+
+
+1.2. Limitationsï
+
+The following license limitations apply to your use of the SDK:
+
+You may not reverse engineer, decompile or disassemble, or remove copyright or other proprietary notices from any portion of the SDK or copies of the SDK.
+Except as expressly provided in this Agreement, you may not copy, sell, rent, sublicense, transfer, distribute, modify, or create derivative works of any portion of the SDK. For clarity, you may not distribute or sublicense the SDK as a stand-alone product.
+Unless you have an agreement with NVIDIA for this purpose, you may not indicate that an application created with the SDK is sponsored or endorsed by NVIDIA.
+You may not bypass, disable, or circumvent any encryption, security, digital rights management or authentication mechanism in the SDK.
+
+You may not use the SDK in any manner that would cause it to become subject to an open source software license. As examples, licenses that require as a condition of use, modification, and/or distribution that the SDK be:
+
+Disclosed or distributed in source code form;
+Licensed for the purpose of making derivative works; or
+Redistributable at no charge.
+
+
+You acknowledge that the SDK as delivered is not tested or certified by NVIDIA for use in connection with the design, construction, maintenance, and/or operation of any system where the use or failure of such system could result in a situation that threatens the safety of human life or results in catastrophic damages (each, a âCritical Applicationâ). Examples of Critical Applications include use in avionics, navigation, autonomous vehicle applications, ai solutions for automotive products, military, medical, life support or other life critical applications. NVIDIA shall not be liable to you or any third party, in whole or in part, for any claims or damages arising from such uses. You are solely responsible for ensuring that any product or service developed with the SDK as a whole includes sufficient features to comply with all applicable legal and regulatory standards and requirements.
+You agree to defend, indemnify and hold harmless NVIDIA and its affiliates, and their respective employees, contractors, agents, officers and directors, from and against any and all claims, damages, obligations, losses, liabilities, costs or debt, fines, restitutions and expenses (including but not limited to attorneyâs fees and costs incident to establishing the right of indemnification) arising out of or related to products or services that use the SDK in or for Critical Applications, and for use of the SDK outside of the scope of this Agreement or not in compliance with its terms.
+You may not reverse engineer, decompile or disassemble any portion of the output generated using SDK elements for the purpose of translating such output artifacts to target a non-NVIDIA platform.
+
+
+
+
+1.3. Ownershipï
+
+
+NVIDIA or its licensors hold all rights, title and interest in and to the SDK and its modifications and derivative works, including their respective intellectual property rights, subject to your rights under Section 1.3.2. This SDK may include software and materials from NVIDIAâs licensors, and these licensors are intended third party beneficiaries that may enforce this Agreement with respect to their intellectual property rights.
+
+
+You hold all rights, title and interest in and to your applications and your derivative works of the sample source code delivered in the SDK, including their respective intellectual property rights, subject to NVIDIAâs rights under Section 1.3.1.
+You may, but donât have to, provide to NVIDIA suggestions, feature requests or other feedback regarding the SDK, including possible enhancements or modifications to the SDK. For any feedback that you voluntarily provide, you hereby grant NVIDIA and its affiliates a perpetual, non-exclusive, worldwide, irrevocable license to use, reproduce, modify, license, sublicense (through multiple tiers of sublicensees), and distribute (through multiple tiers of distributors) it without the payment of any royalties or fees to you. NVIDIA will use feedback at its choice. NVIDIA is constantly looking for ways to improve its products, so you may send feedback to NVIDIA through the developer portal at https://developer.nvidia.com.
+
+
+
+
+1.4. No Warrantiesï
+
+THE SDK IS PROVIDED BY NVIDIA âAS ISâ AND âWITH ALL FAULTS.â TO THE MAXIMUM EXTENT PERMITTED BY LAW, NVIDIA AND ITS AFFILIATES EXPRESSLY DISCLAIM ALL WARRANTIES OF ANY KIND OR NATURE, WHETHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT, OR THE ABSENCE OF ANY DEFECTS THEREIN, WHETHER LATENT OR PATENT. NO WARRANTY IS MADE ON THE BASIS OF TRADE USAGE, COURSE OF DEALING OR COURSE OF TRADE.
+
+
+
+1.5. Limitation of Liabilityï
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, NVIDIA AND ITS AFFILIATES SHALL NOT BE LIABLE FOR ANY (I) SPECIAL, INCIDENTAL, PUNITIVE OR CONSEQUENTIAL DAMAGES, OR (II) DAMAGES FOR (A) ANY LOST PROFITS, LOSS OF USE, LOSS OF DATA OR LOSS OF GOODWILL, OR (B) THE COSTS OF PROCURING SUBSTITUTE PRODUCTS, ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT OR THE USE OR PERFORMANCE OF THE SDK, WHETHER SUCH LIABILITY ARISES FROM ANY CLAIM BASED UPON BREACH OF CONTRACT, BREACH OF WARRANTY, TORT (INCLUDING NEGLIGENCE), PRODUCT LIABILITY OR ANY OTHER CAUSE OF ACTION OR THEORY OF LIABILITY. IN NO EVENT WILL NVIDIAâS AND ITS AFFILIATES TOTAL CUMULATIVE LIABILITY UNDER OR ARISING OUT OF THIS AGREEMENT EXCEED US$10.00. THE NATURE OF THE LIABILITY OR THE NUMBER OF CLAIMS OR SUITS SHALL NOT ENLARGE OR EXTEND THIS LIMIT.
+These exclusions and limitations of liability shall apply regardless if NVIDIA or its affiliates have been advised of the possibility of such damages, and regardless of whether a remedy fails its essential purpose. These exclusions and limitations of liability form an essential basis of the bargain between the parties, and, absent any of these exclusions or limitations of liability, the provisions of this Agreement, including, without limitation, the economic terms, would be substantially different.
+
+
+
+1.6. Terminationï
+
+
+This Agreement will continue to apply until terminated by either you or NVIDIA as described below.
+If you want to terminate this Agreement, you may do so by stopping to use the SDK.
+
+NVIDIA may, at any time, terminate this Agreement if:
+
+(i) you fail to comply with any term of this Agreement and the non-compliance is not fixed within thirty (30) days following notice from NVIDIA (or immediately if you violate NVIDIAâs intellectual property rights);
+(ii) you commence or participate in any legal proceeding against NVIDIA with respect to the SDK; or
+(iii) NVIDIA decides to no longer provide the SDK in a country or, in NVIDIAâs sole discretion, the continued use of it is no longer commercially viable.
+
+
+Upon any termination of this Agreement, you agree to promptly discontinue use of the SDK and destroy all copies in your possession or control. Your prior distributions in accordance with this Agreement are not affected by the termination of this Agreement. Upon written request, you will certify in writing that you have complied with your commitments under this section. Upon any termination of this Agreement all provisions survive except for the license grant provisions.
+
+
+
+
+1.7. Generalï
+
+If you wish to assign this Agreement or your rights and obligations, including by merger, consolidation, dissolution or operation of law, contact NVIDIA to ask for permission. Any attempted assignment not approved by NVIDIA in writing shall be void and of no effect. NVIDIA may assign, delegate or transfer this Agreement and its rights and obligations, and if to a non-affiliate you will be notified.
+You agree to cooperate with NVIDIA and provide reasonably requested information to verify your compliance with this Agreement.
+This Agreement will be governed in all respects by the laws of the United States and of the State of Delaware, without regard to the conflicts of laws principles. The United Nations Convention on Contracts for the International Sale of Goods is specifically disclaimed. You agree to all terms of this Agreement in the English language.
+The state or federal courts residing in Santa Clara County, California shall have exclusive jurisdiction over any dispute or claim arising out of this Agreement. Notwithstanding this, you agree that NVIDIA shall still be allowed to apply for injunctive remedies or an equivalent type of urgent legal relief in any jurisdiction.
+If any court of competent jurisdiction determines that any provision of this Agreement is illegal, invalid or unenforceable, such provision will be construed as limited to the extent necessary to be consistent with and fully enforceable under the law and the remaining provisions will remain in full force and effect. Unless otherwise specified, remedies are cumulative.
+Each party acknowledges and agrees that the other is an independent contractor in the performance of this Agreement.
+The SDK has been developed entirely at private expense and is âcommercial itemsâ consisting of âcommercial computer softwareâ and âcommercial computer software documentationâ provided with RESTRICTED RIGHTS. Use, duplication or disclosure by the U.S. Government or a U.S. Government subcontractor is subject to the restrictions in this Agreement pursuant to DFARS 227.7202-3(a) or as set forth in subparagraphs (c)(1) and (2) of the Commercial Computer Software - Restricted Rights clause at FAR 52.227-19, as applicable. Contractor/manufacturer is NVIDIA, 2788 San Tomas Expressway, Santa Clara, CA 95051.
+The SDK is subject to United States export laws and regulations. You agree that you will not ship, transfer or export the SDK into any country, or use the SDK in any manner, prohibited by the United States Bureau of Industry and Security or economic sanctions regulations administered by the U.S. Department of Treasuryâs Office of Foreign Assets Control (OFAC), or any applicable export laws, restrictions or regulations. These laws include restrictions on destinations, end users and end use. By accepting this Agreement, you confirm that you are not located in a country currently embargoed by the U.S. or otherwise prohibited from receiving the SDK under U.S. law.
+Any notice delivered by NVIDIA to you under this Agreement will be delivered via mail, email or fax. You agree that any notices that NVIDIA sends you electronically will satisfy any legal communication requirements. Please direct your legal notices or other correspondence to NVIDIA Corporation, 2788 San Tomas Expressway, Santa Clara, California 95051, United States of America, Attention: Legal Department.
+This Agreement and any exhibits incorporated into this Agreement constitute the entire agreement of the parties with respect to the subject matter of this Agreement and supersede all prior negotiations or documentation exchanged between the parties relating to this SDK license. Any additional and/or conflicting terms on documents issued by you are null, void, and invalid. Any amendment or waiver under this Agreement shall be in writing and signed by representatives of both parties.
+
+
+
+
+2. CUDA Toolkit Supplement to Software License Agreement for NVIDIA Software Development Kitsï
+
+The terms in this supplement govern your use of the NVIDIA CUDA Toolkit SDK under the terms of your license agreement (âAgreementâ) as modified by this supplement. Capitalized terms used but not defined below have the meaning assigned to them in the Agreement.
+This supplement is an exhibit to the Agreement and is incorporated as an integral part of the Agreement. In the event of conflict between the terms in this supplement and the terms in the Agreement, the terms in this supplement govern.
+
+
+2.1. License Scopeï
+
+The SDK is licensed for you to develop applications only for use in systems with NVIDIA GPUs.
+
+
+
+2.2. Distributionï
+
+The portions of the SDK that are distributable under the Agreement are listed in Attachment A.
+
+
+
+2.3. Operating Systemsï
+
+Those portions of the SDK designed exclusively for use on the Linux or FreeBSD operating systems, or other operating systems derived from the source code to these operating systems, may be copied and redistributed for use in accordance with this Agreement, provided that the object code files are not modified in any way (except for unzipping of compressed files).
+
+
+
+2.4. Audio and Video Encoders and Decodersï
+
+You acknowledge and agree that it is your sole responsibility to obtain any additional third-party licenses required to make, have made, use, have used, sell, import, and offer for sale your products or services that include or incorporate any third-party software and content relating to audio and/or video encoders and decoders from, including but not limited to, Microsoft, Thomson, Fraunhofer IIS, Sisvel S.p.A., MPEG-LA, and Coding Technologies. NVIDIA does not grant to you under this Agreement any necessary patent or other rights with respect to any audio and/or video encoders and decoders.
+
+
+
+2.5. Licensingï
+
+If the distribution terms in this Agreement are not suitable for your organization, or for any questions regarding this Agreement, please contact NVIDIA at nvidia-compute-license-questions@nvidia.com.
+
+
+
+2.6. Attachment Aï
+
+The following CUDA Toolkit files may be distributed with applications developed by you, including certain variations of these files that have version number or architecture specific information embedded in the file name - as an example only, for release version 9.0 of the 64-bit Windows software, the file cudart64_90.dll is redistributable.
+
+
+
+
+
+
+
+Component
+CUDA Runtime
+
+
+Windows
+cudart.dll, cudart_static.lib, cudadevrt.lib
+
+
+Mac OSX
+libcudart.dylib, libcudart_static.a, libcudadevrt.a
+
+
+Linux
+libcudart.so, libcudart_static.a, libcudadevrt.a
+
+
+Android
+libcudart.so, libcudart_static.a, libcudadevrt.a
+
+
+Component
+CUDA FFT Library
+
+
+Windows
+cufft.dll, cufftw.dll, cufft.lib, cufftw.lib
+
+
+Mac OSX
+libcufft.dylib, libcufft_static.a, libcufftw.dylib, libcufftw_static.a
+
+
+Linux
+libcufft.so, libcufft_static.a, libcufftw.so, libcufftw_static.a
+
+
+Android
+libcufft.so, libcufft_static.a, libcufftw.so, libcufftw_static.a
+
+
+Component
+CUDA BLAS Library
+
+
+Windows
+cublas.dll, cublasLt.dll
+
+
+Mac OSX
+libcublas.dylib, libcublasLt.dylib, libcublas_static.a, libcublasLt_static.a
+
+
+Linux
+libcublas.so, libcublasLt.so, libcublas_static.a, libcublasLt_static.a
+
+
+Android
+libcublas.so, libcublasLt.so, libcublas_static.a, libcublasLt_static.a
+
+
+Component
+NVIDIA âDrop-inâ BLAS Library
+
+
+Windows
+nvblas.dll
+
+
+Mac OSX
+libnvblas.dylib
+
+
+Linux
+libnvblas.so
+
+
+Component
+CUDA Sparse Matrix Library
+
+
+Windows
+cusparse.dll, cusparse.lib
+
+
+Mac OSX
+libcusparse.dylib, libcusparse_static.a
+
+
+Linux
+libcusparse.so, libcusparse_static.a
+
+
+Android
+libcusparse.so, libcusparse_static.a
+
+
+Component
+CUDA Linear Solver Library
+
+
+Windows
+cusolver.dll, cusolver.lib
+
+
+Mac OSX
+libcusolver.dylib, libcusolver_static.a
+
+
+Linux
+libcusolver.so, libcusolver_static.a
+
+
+Android
+libcusolver.so, libcusolver_static.a
+
+
+Component
+CUDA Random Number Generation Library
+
+
+Windows
+curand.dll, curand.lib
+
+
+Mac OSX
+libcurand.dylib, libcurand_static.a
+
+
+Linux
+libcurand.so, libcurand_static.a
+
+
+Android
+libcurand.so, libcurand_static.a
+
+
+Component
+NVIDIA Performance Primitives Library
+
+
+Windows
+nppc.dll, nppc.lib, nppial.dll, nppial.lib, nppicc.dll, nppicc.lib, nppicom.dll, nppicom.lib, nppidei.dll, nppidei.lib, nppif.dll, nppif.lib, nppig.dll, nppig.lib, nppim.dll, nppim.lib, nppist.dll, nppist.lib, nppisu.dll, nppisu.lib, nppitc.dll, nppitc.lib, npps.dll, npps.lib
+
+
+Mac OSX
+libnppc.dylib, libnppc_static.a, libnppial.dylib, libnppial_static.a, libnppicc.dylib, libnppicc_static.a, libnppicom.dylib, libnppicom_static.a, libnppidei.dylib, libnppidei_static.a, libnppif.dylib, libnppif_static.a, libnppig.dylib, libnppig_static.a, libnppim.dylib, libnppisu_static.a, libnppitc.dylib, libnppitc_static.a, libnpps.dylib, libnpps_static.a
+
+
+Linux
+libnppc.so, libnppc_static.a, libnppial.so, libnppial_static.a, libnppicc.so, libnppicc_static.a, libnppicom.so, libnppicom_static.a, libnppidei.so, libnppidei_static.a, libnppif.so, libnppif_static.a libnppig.so, libnppig_static.a, libnppim.so, libnppim_static.a, libnppist.so, libnppist_static.a, libnppisu.so, libnppisu_static.a, libnppitc.so libnppitc_static.a, libnpps.so, libnpps_static.a
+
+
+Android
+libnppc.so, libnppc_static.a, libnppial.so, libnppial_static.a, libnppicc.so, libnppicc_static.a, libnppicom.so, libnppicom_static.a, libnppidei.so, libnppidei_static.a, libnppif.so, libnppif_static.a libnppig.so, libnppig_static.a, libnppim.so, libnppim_static.a, libnppist.so, libnppist_static.a, libnppisu.so, libnppisu_static.a, libnppitc.so libnppitc_static.a, libnpps.so, libnpps_static.a
+
+
+Component
+NVIDIA JPEG Library
+
+
+Windows
+nvjpeg.lib, nvjpeg.dll
+
+
+Linux
+libnvjpeg.so, libnvjpeg_static.a
+
+
+Component
+Internal common library required for statically linking to cuBLAS, cuSPARSE, cuFFT, cuRAND, nvJPEG and NPP
+
+
+Mac OSX
+libculibos.a
+
+
+Linux
+libculibos.a
+
+
+Component
+NVIDIA Runtime Compilation Library and Header
+
+
+All
+nvrtc.h
+
+
+Windows
+nvrtc.dll, nvrtc-builtins.dll
+
+
+Mac OSX
+libnvrtc.dylib, libnvrtc-builtins.dylib
+
+
+Linux
+libnvrtc.so, libnvrtc-builtins.so, libnvrtc_static.a, libnvrtx-builtins_static.a
+
+
+Component
+NVIDIA Optimizing Compiler Library
+
+
+Windows
+nvvm.dll
+
+
+Mac OSX
+libnvvm.dylib
+
+
+Linux
+libnvvm.so
+
+
+Component
+NVIDIA JIT Linking Library
+
+
+Windows
+libnvJitLink.dll, libnvJitLink.lib
+
+
+Linux
+libnvJitLink.so, libnvJitLink_static.a
+
+
+Component
+NVIDIA Common Device Math Functions Library
+
+
+Windows
+libdevice.10.bc
+
+
+Mac OSX
+libdevice.10.bc
+
+
+Linux
+libdevice.10.bc
+
+
+Component
+CUDA Occupancy Calculation Header Library
+
+
+All
+cuda_occupancy.h
+
+
+Component
+CUDA Half Precision Headers
+
+
+All
+cuda_fp16.h, cuda_fp16.hpp
+
+
+Component
+CUDA Profiling Tools Interface (CUPTI) Library
+
+
+Windows
+cupti.dll
+
+
+Mac OSX
+libcupti.dylib
+
+
+Linux
+libcupti.so
+
+
+Component
+NVIDIA Tools Extension Library
+
+
+Windows
+nvToolsExt.dll, nvToolsExt.lib
+
+
+Mac OSX
+libnvToolsExt.dylib
+
+
+Linux
+libnvToolsExt.so
+
+
+Component
+NVIDIA CUDA Driver Libraries
+
+
+Linux
+libcuda.so, libnvidia-ptxjitcompiler.so, libnvptxcompiler_static.a
+
+
+Component
+NVIDIA CUDA File IO Libraries and Header
+
+
+All
+cufile.h
+
+
+Linux
+libcufile.so, libcufile_rdma.so, libcufile_static.a, libcufile_rdma_static.a
+
+
+
+In addition to the rights above, for parties that are developing software intended solely for use on Jetson development kits or Jetson modules, and running Linux for Tegra software, the following shall apply:
+
+The SDK may be distributed in its entirety, as provided by NVIDIA, and without separation of its components, for you and/or your licensees to create software development kits for use only on the Jetson platform and running Linux for Tegra software.
+
+
+
+
+2.7. Attachment Bï
+
+Additional Licensing Obligations
+The following third party components included in the SOFTWARE are licensed to Licensee pursuant to the following terms and conditions:
+
+
+Licenseeâs use of the GDB third party component is subject to the terms and conditions of GNU GPL v3:
+
+This product includes copyrighted third-party software licensed
+under the terms of the GNU General Public License v3 ("GPL v3").
+All third-party software packages are copyright by their respective
+authors. GPL v3 terms and conditions are hereby incorporated into
+the Agreement by this reference: http://www.gnu.org/licenses/gpl.txt
+
+
+Consistent with these licensing requirements, the software listed below is provided under the terms of the specified open source software licenses. To obtain source code for software provided under licenses that require redistribution of source code, including the GNU General Public License (GPL) and GNU Lesser General Public License (LGPL), contact oss-requests@nvidia.com. This offer is valid for a period of three (3) years from the date of the distribution of this product by NVIDIA CORPORATION.
+
+Component          License
+CUDA-GDB           GPL v3
+
+
+
+Licensee represents and warrants that any and all third party licensing and/or royalty payment obligations in connection with Licenseeâs use of the H.264 video codecs are solely the responsibility of Licensee.
+
+Licenseeâs use of the Thrust library is subject to the terms and conditions of the Apache License Version 2.0. All third-party software packages are copyright by their respective authors. Apache License Version 2.0 terms and conditions are hereby incorporated into the Agreement by this reference. http://www.apache.org/licenses/LICENSE-2.0.html
+In addition, Licensee acknowledges the following notice: Thrust includes source code from the Boost Iterator, Tuple, System, and Random Number libraries.
+
+Boost Software License - Version 1.0 - August 17th, 2003
+. . . .
+
+Permission is hereby granted, free of charge, to any person or
+organization obtaining a copy of the software and accompanying
+documentation covered by this license (the "Software") to use,
+reproduce, display, distribute, execute, and transmit the Software,
+and to prepare derivative works of the Software, and to permit
+third-parties to whom the Software is furnished to do so, all
+subject to the following:
+
+The copyright notices in the Software and this entire statement,
+including the above license grant, this restriction and the following
+disclaimer, must be included in all copies of the Software, in whole
+or in part, and all derivative works of the Software, unless such
+copies or derivative works are solely in the form of machine-executable
+object code generated by a source language processor.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND
+NON-INFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR
+ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE FOR ANY DAMAGES OR
+OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+
+
+
+Licenseeâs use of the LLVM third party component is subject to the following terms and conditions:
+
+======================================================
+LLVM Release License
+======================================================
+University of Illinois/NCSA
+Open Source License
+
+Copyright (c) 2003-2010 University of Illinois at Urbana-Champaign.
+All rights reserved.
+
+Developed by:
+
+    LLVM Team
+
+    University of Illinois at Urbana-Champaign
+
+    http://llvm.org
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to
+deal with the Software without restriction, including without limitation the
+rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+*  Redistributions of source code must retain the above copyright notice,
+   this list of conditions and the following disclaimers.
+
+*  Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimers in the
+   documentation and/or other materials provided with the distribution.
+
+*  Neither the names of the LLVM Team, University of Illinois at Urbana-
+   Champaign, nor the names of its contributors may be used to endorse or
+   promote products derived from this Software without specific prior
+   written permission.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
+THE CONTRIBUTORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS WITH THE SOFTWARE.
+
+
+
+
+Licenseeâs use of the PCRE third party component is subject to the following terms and conditions:
+
+------------
+PCRE LICENCE
+------------
+PCRE is a library of functions to support regular expressions whose syntax
+and semantics are as close as possible to those of the Perl 5 language.
+Release 8 of PCRE is distributed under the terms of the "BSD" licence, as
+specified below. The documentation for PCRE, supplied in the "doc"
+directory, is distributed under the same terms as the software itself. The
+basic library functions are written in C and are freestanding. Also
+included in the distribution is a set of C++ wrapper functions, and a just-
+in-time compiler that can be used to optimize pattern matching. These are
+both optional features that can be omitted when the library is built.
+
+THE BASIC LIBRARY FUNCTIONS
+---------------------------
+Written by:       Philip Hazel
+Email local part: ph10
+Email domain:     cam.ac.uk
+University of Cambridge Computing Service,
+Cambridge, England.
+Copyright (c) 1997-2012 University of Cambridge
+All rights reserved.
+
+PCRE JUST-IN-TIME COMPILATION SUPPORT
+-------------------------------------
+Written by:       Zoltan Herczeg
+Email local part: hzmester
+Emain domain:     freemail.hu
+Copyright(c) 2010-2012 Zoltan Herczeg
+All rights reserved.
+
+STACK-LESS JUST-IN-TIME COMPILER
+--------------------------------
+Written by:       Zoltan Herczeg
+Email local part: hzmester
+Emain domain:     freemail.hu
+Copyright(c) 2009-2012 Zoltan Herczeg
+All rights reserved.
+
+THE C++ WRAPPER FUNCTIONS
+-------------------------
+Contributed by:   Google Inc.
+Copyright (c) 2007-2012, Google Inc.
+All rights reserved.
+
+
+
+THE "BSD" LICENCE
+-----------------
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+  * Redistributions of source code must retain the above copyright notice,
+    this list of conditions and the following disclaimer.
+
+  * Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+
+  * Neither the name of the University of Cambridge nor the name of Google
+    Inc. nor the names of their contributors may be used to endorse or
+    promote products derived from this software without specific prior
+    written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+
+
+
+
+Some of the cuBLAS library routines were written by or derived from code written by Vasily Volkov and are subject to the Modified Berkeley Software Distribution License as follows:
+
+Copyright (c) 2007-2009, Regents of the University of California
+
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+    * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above
+      copyright notice, this list of conditions and the following
+      disclaimer in the documentation and/or other materials provided
+      with the distribution.
+    * Neither the name of the University of California, Berkeley nor
+      the names of its contributors may be used to endorse or promote
+      products derived from this software without specific prior
+      written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE AUTHOR "AS IS" AND ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT,
+INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+
+
+
+
+Some of the cuBLAS library routines were written by or derived from code written by Davide Barbieri and are subject to the Modified Berkeley Software Distribution License as follows:
+
+Copyright (c) 2008-2009 Davide Barbieri @ University of Rome Tor Vergata.
+
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+    * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above
+      copyright notice, this list of conditions and the following
+      disclaimer in the documentation and/or other materials provided
+      with the distribution.
+    * The name of the author may not be used to endorse or promote
+      products derived from this software without specific prior
+      written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE AUTHOR "AS IS" AND ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT,
+INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+
+
+
+
+Some of the cuBLAS library routines were derived from code developed by the University of Tennessee and are subject to the Modified Berkeley Software Distribution License as follows:
+
+Copyright (c) 2010 The University of Tennessee.
+
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+    * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above
+      copyright notice, this list of conditions and the following
+      disclaimer listed in this license in the documentation and/or
+      other materials provided with the distribution.
+    * Neither the name of the copyright holders nor the names of its
+      contributors may be used to endorse or promote products derived
+      from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+
+Some of the cuBLAS library routines were written by or derived from code written by Jonathan Hogg and are subject to the Modified Berkeley Software Distribution License as follows:
+
+Copyright (c) 2012, The Science and Technology Facilities Council (STFC).
+
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+    * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above
+      copyright notice, this list of conditions and the following
+      disclaimer in the documentation and/or other materials provided
+      with the distribution.
+    * Neither the name of the STFC nor the names of its contributors
+      may be used to endorse or promote products derived from this
+      software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE STFC BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+
+Some of the cuBLAS library routines were written by or derived from code written by Ahmad M. Abdelfattah, David Keyes, and Hatem Ltaief, and are subject to the Apache License, Version 2.0, as follows:
+
+-- (C) Copyright 2013 King Abdullah University of Science and Technology
+ Authors:
+ Ahmad Abdelfattah (ahmad.ahmad@kaust.edu.sa)
+ David Keyes (david.keyes@kaust.edu.sa)
+ Hatem Ltaief (hatem.ltaief@kaust.edu.sa)
+
+ Redistribution  and  use  in  source and binary forms, with or without
+ modification,  are  permitted  provided  that the following conditions
+ are met:
+
+ * Redistributions  of  source  code  must  retain  the above copyright
+   notice,  this  list  of  conditions  and  the  following  disclaimer.
+ * Redistributions  in  binary  form must reproduce the above copyright
+   notice,  this list of conditions and the following disclaimer in the
+   documentation  and/or other materials provided with the distribution.
+ * Neither  the  name of the King Abdullah University of Science and
+   Technology nor the names of its contributors may be used to endorse
+   or promote products derived from this software without specific prior
+   written permission.
+
+ THIS  SOFTWARE  IS  PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ ``AS IS''  AND  ANY  EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ LIMITED  TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ A  PARTICULAR  PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+ HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ SPECIAL,  EXEMPLARY,  OR  CONSEQUENTIAL  DAMAGES  (INCLUDING,  BUT NOT
+ LIMITED  TO,  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA,  OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ THEORY  OF  LIABILITY,  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ OF  THIS  SOFTWARE,  EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
+
+
+
+
+Some of the cuSPARSE library routines were written by or derived from code written by Li-Wen Chang and are subject to the NCSA Open Source License as follows:
+
+Copyright (c) 2012, University of Illinois.
+
+All rights reserved.
+
+Developed by: IMPACT Group, University of Illinois, http://impact.crhc.illinois.edu
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal with the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+    * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above
+      copyright notice, this list of conditions and the following
+      disclaimers in the documentation and/or other materials provided
+      with the distribution.
+    * Neither the names of IMPACT Group, University of Illinois, nor
+      the names of its contributors may be used to endorse or promote
+      products derived from this Software without specific prior
+      written permission.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE CONTRIBUTORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
+IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE
+SOFTWARE.
+
+
+
+
+Some of the cuRAND library routines were written by or derived from code written by Mutsuo Saito and Makoto Matsumoto and are subject to the following license:
+
+Copyright (c) 2009, 2010 Mutsuo Saito, Makoto Matsumoto and Hiroshima
+University. All rights reserved.
+
+Copyright (c) 2011 Mutsuo Saito, Makoto Matsumoto, Hiroshima
+University and University of Tokyo.  All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+    * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above
+      copyright notice, this list of conditions and the following
+      disclaimer in the documentation and/or other materials provided
+      with the distribution.
+    * Neither the name of the Hiroshima University nor the names of
+      its contributors may be used to endorse or promote products
+      derived from this software without specific prior written
+      permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+
+Some of the cuRAND library routines were derived from code developed by D. E. Shaw Research and are subject to the following license:
+
+Copyright 2010-2011, D. E. Shaw Research.
+
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+    * Redistributions of source code must retain the above copyright
+      notice, this list of conditions, and the following disclaimer.
+    * Redistributions in binary form must reproduce the above
+      copyright notice, this list of conditions, and the following
+      disclaimer in the documentation and/or other materials provided
+      with the distribution.
+    * Neither the name of D. E. Shaw Research nor the names of its
+      contributors may be used to endorse or promote products derived
+      from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+
+Some of the Math library routines were written by or derived from code developed by Norbert Juffa and are subject to the following license:
+
+Copyright (c) 2015-2017, Norbert Juffa
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+1. Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+
+Licenseeâs use of the lz4 third party component is subject to the following terms and conditions:
+
+Copyright (C) 2011-2013, Yann Collet.
+BSD 2-Clause License (http://www.opensource.org/licenses/bsd-license.php)
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+    * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+
+The NPP library uses code from the Boost Math Toolkit, and is subject to the following license:
+
+Boost Software License - Version 1.0 - August 17th, 2003
+. . . .
+
+Permission is hereby granted, free of charge, to any person or
+organization obtaining a copy of the software and accompanying
+documentation covered by this license (the "Software") to use,
+reproduce, display, distribute, execute, and transmit the Software,
+and to prepare derivative works of the Software, and to permit
+third-parties to whom the Software is furnished to do so, all
+subject to the following:
+
+The copyright notices in the Software and this entire statement,
+including the above license grant, this restriction and the following
+disclaimer, must be included in all copies of the Software, in whole
+or in part, and all derivative works of the Software, unless such
+copies or derivative works are solely in the form of machine-executable
+object code generated by a source language processor.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND
+NON-INFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR
+ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE FOR ANY DAMAGES OR
+OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+
+
+
+Portions of the Nsight Eclipse Edition is subject to the following license:
+
+The Eclipse Foundation makes available all content in this plug-in
+("Content"). Unless otherwise indicated below, the Content is provided
+to you under the terms and conditions of the Eclipse Public License
+Version 1.0 ("EPL"). A copy of the EPL is available at http://
+www.eclipse.org/legal/epl-v10.html. For purposes of the EPL, "Program"
+will mean the Content.
+
+If you did not receive this Content directly from the Eclipse
+Foundation, the Content is being redistributed by another party
+("Redistributor") and different terms and conditions may apply to your
+use of any object code in the Content. Check the Redistributor's
+license that was provided with the Content. If no such license exists,
+contact the Redistributor. Unless otherwise indicated below, the terms
+and conditions of the EPL still apply to any source code in the
+Content and such source code may be obtained at http://www.eclipse.org.
+
+
+
+
+Some of the cuBLAS library routines uses code from OpenAI, which is subject to the following license:
+
+License URL
+https://github.com/openai/openai-gemm/blob/master/LICENSE
+
+License Text
+The MIT License
+
+Copyright (c) 2016 OpenAI (http://openai.com), 2016 Google Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+
+
+Licenseeâs use of the Visual Studio Setup Configuration Samples is subject to the following license:
+
+The MIT License (MIT)
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge,
+publish, distribute, sublicense, and/or sell copies of the Software,
+and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included
+in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+
+Licenseeâs use of linmath.h header for CPU functions for GL vector/matrix operations from lunarG is subject to the Apache License Version 2.0.
+The DX12-CUDA sample uses the d3dx12.h header, which is subject to the MIT license .
+
+Components of the driver and compiler used for binary management, including nvFatBin, nvcc,
+and cuobjdump, use the Zstandard library which is subject to the following license:
+
+BSD License
+
+For Zstandard software
+
+Copyright (c) Meta Platforms, Inc. and affiliates. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted
+provided that the following conditions are met:
+
+    * Redistributions of source code must retain the above copyright notice, this
+      list of conditions and the following disclaimer.
+
+    * Redistributions in binary form must reproduce the above copyright notice,
+      this list of conditions and the following disclaimer in the documentation
+      and/or other materials provided with the distribution.
+
+    * Neither the name Facebook, nor Meta, nor the names of its contributors may
+      be used to endorse or promote products derived from this software without
+      specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY
+EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGE.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Privacy Policy
+|
+Manage My Privacy
+|
+Do Not Sell or Share My Data
+|
+Terms of Service
+|
+Accessibility
+|
+Corporate Policies
+|
+Product Security
+|
+Contact
+
+
+  Copyright Â© 2024, NVIDIA Corporation.
+
+
+Last updated on Jul 1, 2024.
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Introduction — Quick Start Guide 12.5 documentation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Introduction
+2. Windows
+2.1. Network Installer
+2.2. Local Installer
+2.3. Pip Wheels - Windows
+2.4. Conda
+
+
+3. Linux
+3.1. Linux x86_64
+3.1.1. Redhat / CentOS
+3.1.1.1. RPM Installer
+3.1.1.2. Runfile Installer
+
+
+3.1.2. Fedora
+3.1.2.1. RPM Installer
+3.1.2.2. Runfile Installer
+
+
+3.1.3. SUSE Linux Enterprise Server
+3.1.3.1. RPM Installer
+3.1.3.2. Runfile Installer
+
+
+3.1.4. OpenSUSE
+3.1.4.1. RPM Installer
+3.1.4.2. Runfile Installer
+
+
+3.1.5. Amazon Linux 2023
+3.1.5.1. Prepare Amazon Linux 2023
+3.1.5.2. Local Repo Installation for Amazon Linux
+3.1.5.3. Network Repo Installation for Amazon Linux
+3.1.5.4. Common Installation Instructions for Amazon Linux
+
+
+3.1.6. Pip Wheels - Linux
+3.1.7. Conda
+3.1.8. WSL
+3.1.9. Ubuntu
+3.1.9.1. Debian Installer
+3.1.9.2. Runfile Installer
+
+
+3.1.10. Debian
+3.1.10.1. Debian Installer
+3.1.10.2. Runfile Installer
+
+
+
+
+
+
+4. Notices
+4.1. Notice
+4.2. OpenCL
+4.3. Trademarks
+
+
+
+
+
+
+
+
+Quick Start Guide
+
+
+
+
+
+ »
+1. Introduction
+
+
+
+v12.5 |
+PDF
+|
+Archive
+ 
+
+
+
+
+
+
+CUDA Quick Start Guide
+Minimal first-steps instructions to get CUDA running on a standard system.
+
+1. Introductionï
+This guide covers the basic instructions needed to install CUDA and verify that a CUDA application can run on each supported platform.
+These instructions are intended to be used on a clean installation of a supported platform. For questions which are not answered in this document, please refer to the Windows Installation Guide and Linux Installation Guide.
+The CUDA installation packages can be found on the CUDA Downloads Page.
+
+
+2. Windowsï
+When installing CUDA on Windows, you can choose between the Network Installer and the Local Installer. The Network Installer allows you to download only the files you need. The Local Installer is a stand-alone installer with a large initial download. For more details, refer to the Windows Installation Guide.
+
+2.1. Network Installerï
+Perform the following steps to install CUDA and verify the installation.
+
+Launch the downloaded installer package.
+Read and accept the EULA.
+Select next to download and install all components.
+Once the download completes, the installation will begin automatically.
+Once the installation completes, click ânextâ to acknowledge the Nsight Visual Studio Edition installation summary.
+Click close to close the installer.
+Navigate to the Samplesâ nbody directory in https://github.com/NVIDIA/cuda-samples/tree/master/Samples/5_Domain_Specific/nbody.
+Open the nbody Visual Studio solution file for the version of Visual Studio you have installed, for example, nbody_vs2019.sln.
+
+
+Open the Build menu within Visual Studio and click Build Solution.
+
+
+Navigate to the CUDA Samples build directory and run the nbody sample.
+
+Note
+Run samples by navigating to the executableâs location, otherwise it will fail to locate dependent resources.
+
+
+
+
+
+2.2. Local Installerï
+Perform the following steps to install CUDA and verify the installation.
+
+Launch the downloaded installer package.
+Read and accept the EULA.
+Select next to install all components.
+Once the installation completes, click next to acknowledge the Nsight Visual Studio Edition installation summary.
+Click close to close the installer.
+Navigate to the Samplesâ nbody directory in https://github.com/NVIDIA/cuda-samples/tree/master/Samples/5_Domain_Specific/nbody.
+Open the nbody Visual Studio solution file for the version of Visual Studio you have installed.
+
+
+Open the Build menu within Visual Studio and click Build Solution.
+
+
+Navigate to the CUDA Samples build directory and run the nbody sample.
+
+Note
+Run samples by navigating to the executableâs location, otherwise it will fail to locate dependent resources.
+
+
+
+
+
+2.3. Pip Wheels - Windowsï
+NVIDIA provides Python Wheels for installing CUDA through pip, primarily for using CUDA with Python. These packages are intended for runtime use and do not currently include developer tools (these can be installed separately).
+Please note that with this installation method, CUDA installation environment is managed via pip and additional care must be taken to set up your host environment to use CUDA outside the pip environment.
+Prerequisites
+To install Wheels, you must first install the nvidia-pyindex package, which is required in order to set up your pip installation to fetch additional Python modules from the NVIDIA NGC PyPI repo. If your pip and setuptools Python modules are not up-to-date, then use the following command to upgrade these Python modules. If these Python modules are out-of-date then the commands which follow later in this section may fail.
+py -m pip install --upgrade setuptools pip wheel
+
+
+You should now be able to install the nvidia-pyindex module.
+py -m pip install nvidia-pyindex
+
+
+If your project is using a requirements.txt file, then you can add the following line to your requirements.txt file as an alternative to installing the nvidia-pyindex package:
+--extra-index-url https://pypi.ngc.nvidia.com
+
+
+Procedure
+Install the CUDA runtime package:
+py -m pip install nvidia-cuda-runtime-cu12
+
+
+Optionally, install additional packages as listed below using the following command:
+py -m pip install nvidia-<library>
+
+
+Metapackages
+The following metapackages will install the latest version of the named component on Windows for the indicated CUDA version. âcu12â should be read as âcuda12â.
+
+nvidia-cuda-runtime-cu12
+nvidia-cuda-cupti-cu12
+nvidia-cuda-nvcc-cu12
+nvidia-nvml-dev-cu12
+nvidia-cuda-nvrtc-cu12
+nvidia-nvtx-cu12
+nvidia-cuda-sanitizer-api-cu12
+nvidia-cublas-cu12
+nvidia-cufft-cu12
+nvidia-curand-cu12
+nvidia-cusolver-cu12
+nvidia-cusparse-cu12
+nvidia-npp-cu12
+nvidia-nvjpeg-cu12
+
+These metapackages install the following packages:
+
+nvidia-nvml-dev-cu125
+nvidia-cuda-nvcc-cu125
+nvidia-cuda-runtime-cu125
+nvidia-cuda-cupti-cu125
+nvidia-cublas-cu125
+nvidia-cuda-sanitizer-api-cu125
+nvidia-nvtx-cu125
+nvidia-cuda-nvrtc-cu125
+nvidia-npp-cu125
+nvidia-cusparse-cu125
+nvidia-cusolver-cu125
+nvidia-curand-cu125
+nvidia-cufft-cu125
+nvidia-nvjpeg-cu125
+
+
+
+2.4. Condaï
+The Conda packages are available at https://anaconda.org/nvidia.
+Installation
+To perform a basic install of all CUDA Toolkit components using Conda, run the following command:
+conda install cuda -c nvidia
+
+
+Uninstallation
+To uninstall the CUDA Toolkit using Conda, run the following command:
+conda remove cuda
+
+
+
+
+
+3. Linuxï
+CUDA on Linux can be installed using an RPM, Debian, Runfile, or Conda package, depending on the platform being installed on.
+
+3.1. Linux x86_64ï
+For development on the x86_64 architecture. In some cases, x86_64 systems may act as host platforms targeting other architectures. See the Linux Installation Guide for more details.
+
+3.1.1. Redhat / CentOSï
+When installing CUDA on Redhat or CentOS, you can choose between the Runfile Installer and the RPM Installer. The Runfile Installer is only available as a Local Installer. The RPM Installer is available as both a Local Installer and a Network Installer. The Network Installer allows you to download only the files you need. The Local Installer is a stand-alone installer with a large initial download. In the case of the RPM installers, the instructions for the Local and Network variants are the same. For more details, refer to the Linux Installation Guide.
+
+3.1.1.1. RPM Installerï
+Perform the following steps to install CUDA and verify the installation.
+
+Install EPEL to satisfy the DKMS dependency by following the instructions at EPELâs website.
+Enable optional repos:
+On RHEL 8 Linux only, execute the following steps to enable optional repositories.
+
+On x86_64 workstation:
+subscription-manager repos --enable=rhel-8-for-x86_64-appstream-rpms
+subscription-manager repos --enable=rhel-8-for-x86_64-baseos-rpms
+subscription-manager repos --enable=codeready-builder-for-rhel-8-x86_64-rpms
+
+
+
+
+
+Install the repository meta-data, clean the yum cache, and install CUDA:
+sudo rpm --install cuda-repo-<distro>-<version>.<architecture>.rpm
+sudo rpm --erase gpg-pubkey-7fa2af80*
+sudo yum clean expire-cache
+sudo yum install cuda
+
+
+
+Reboot the system to load the NVIDIA drivers:
+sudo reboot
+
+
+
+Set up the development environment by modifying the PATH and LD_LIBRARY_PATH variables:
+export PATH=/usr/local/cuda-12.5/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-12.5/lib64\
+                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+
+
+Install a writable copy of the samples from https://github.com/nvidia/cuda-samples, then build and run the nbody sample using the Linux instructions in https://github.com/NVIDIA/cuda-samples/tree/master/Samples/nbody.
+
+Note
+Run samples by navigating to the executableâs location, otherwise it will fail to locate dependent resources.
+
+
+
+
+
+3.1.1.2. Runfile Installerï
+Perform the following steps to install CUDA and verify the installation.
+
+Disable the Nouveau drivers:
+
+Create a file at /etc/modprobe.d/blacklist-nouveau.conf with the following contents:
+blacklist nouveau
+options nouveau modeset=0
+
+
+
+Regenerate the kernel initramfs:
+sudo dracut --force
+
+
+
+
+
+Reboot into runlevel 3 by temporarily adding the number â3â and the word ânomodesetâ to the end of the systemâs kernel boot parameters.
+Run the installer silently to install with the default selections (implies acceptance of the EULA):
+sudo sh cuda_<version>_linux.run --silent
+
+
+
+Create an xorg.conf file to use the NVIDIA GPU for display:
+sudo nvidia-xconfig
+
+
+
+Reboot the system to load the graphical interface:
+sudo reboot
+
+
+
+Set up the development environment by modifying the PATH and LD_LIBRARY_PATH variables:
+export PATH=/usr/local/cuda-12.5/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-12.5/lib64\
+                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+
+
+Install a writable copy of the samples from https://github.com/nvidia/cuda-samples, then build and run the nbody sample using the Linux instructions in https://github.com/NVIDIA/cuda-samples/tree/master/Samples/nbody.
+
+Note
+Run samples by navigating to the executableâs location, otherwise it will fail to locate dependent resources.
+
+
+
+
+
+
+3.1.2. Fedoraï
+When installing CUDA on Fedora, you can choose between the Runfile Installer and the RPM Installer. The Runfile Installer is only available as a Local Installer. The RPM Installer is available as both a Local Installer and a Network Installer. The Network Installer allows you to download only the files you need. The Local Installer is a stand-alone installer with a large initial download. In the case of the RPM installers, the instructions for the Local and Network variants are the same. For more details, refer to the Linux Installation Guide.
+
+3.1.2.1. RPM Installerï
+Perform the following steps to install CUDA and verify the installation.
+
+Install the RPMFusion free repository to satisfy the Akmods dependency:
+su -c 'dnf install --nogpgcheck http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm'
+
+
+
+Install the repository meta-data, clean the dnf cache, and install CUDA:
+sudo rpm --install cuda-repo-<distro>-<version>.<architecture>.rpm
+sudo rpm --erase gpg-pubkey-7fa2af80*
+sudo dnf clean expire-cache
+sudo dnf install cuda
+
+
+
+Reboot the system to load the NVIDIA drivers:
+sudo reboot
+
+
+
+Set up the development environment by modifying the PATH and LD_LIBRARY_PATH variables:
+export PATH=/usr/local/cuda-12.5/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-12.5/lib64\
+                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+
+
+Install a writable copy of the samples from https://github.com/nvidia/cuda-samples, then build and run the nbody sample using the Linux instructions in https://github.com/NVIDIA/cuda-samples/tree/master/Samples/nbody.
+
+Note
+Run samples by navigating to the executableâs location, otherwise it will fail to locate dependent resources.
+
+
+
+
+
+3.1.2.2. Runfile Installerï
+Perform the following steps to install CUDA and verify the installation.
+
+Disable the Nouveau drivers:
+
+Create a file at /usr/lib/modprobe.d/blacklist-nouveau.conf with the following contents:
+blacklist nouveau
+options nouveau modeset=0
+
+
+
+Regenerate the kernel initramfs:
+sudo dracut --force
+
+
+
+Run the below command:
+sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+
+
+
+Reboot the system:
+sudo reboot
+
+
+
+
+
+Reboot into runlevel 3 by temporarily adding the number â3â and the word ânomodesetâ to the end of the systemâs kernel boot parameters.
+Run the installer silently to install with the default selections (implies acceptance of the EULA):
+sudo sh cuda_<version>_linux.run --silent
+
+
+
+Create an xorg.conf file to use the NVIDIA GPU for display:
+sudo nvidia-xconfig
+
+
+
+Reboot the system to load the graphical interface.
+Set up the development environment by modifying the PATH and LD_LIBRARY_PATH variables:
+export PATH=/usr/local/cuda-12.5/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-12.5/lib64\
+                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+
+
+Install a writable copy of the samples from https://github.com/nvidia/cuda-samples, then build and run the nbody sample using the Linux instructions in https://github.com/NVIDIA/cuda-samples/tree/master/Samples/nbody.
+
+Note
+Run samples by navigating to the executableâs location, otherwise it will fail to locate dependent resources.
+
+
+
+
+
+
+3.1.3. SUSE Linux Enterprise Serverï
+When installing CUDA on SUSE Linux Enterprise Server, you can choose between the Runfile Installer and the RPM Installer. The Runfile Installer is only available as a Local Installer. The RPM Installer is available as both a Local Installer and a Network Installer. The Network Installer allows you to download only the files you need. The Local Installer is a stand-alone installer with a large initial download. In the case of the RPM installers, the instructions for the Local and Network variants are the same. For more details, refer to the Linux Installation Guide.
+
+3.1.3.1. RPM Installerï
+Perform the following steps to install CUDA and verify the installation.
+
+Install the repository meta-data, refresh the Zypper cache, update the GPG key, and install CUDA:
+sudo rpm --install cuda-repo-<distro>-<version>.<architecture>.rpm
+sudo SUSEConnect --product PackageHub/15/x86_64
+sudo zypper refresh
+sudo rpm --erase gpg-pubkey-7fa2af80*
+sudo dnf config-manager --add-repo https://developer.download.nvidia.com/compute/cuda/repos/$distro/$arch/cuda-$distro.repo
+sudo zypper install cuda
+
+
+
+Add the user to the video group:
+sudo usermod -a -G video <username>
+
+
+
+Reboot the system to load the NVIDIA drivers:
+sudo reboot
+
+
+
+Set up the development environment by modifying the PATH and LD_LIBRARY_PATH variables:
+export PATH=/usr/local/cuda-12.5/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-12.5/lib64\
+                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+
+
+Install a writable copy of the samples from https://github.com/nvidia/cuda-samples, then build and run the vectorAdd sample using the Linux instructions in https://github.com/NVIDIA/cuda-samples/tree/master/Samples/vectorAdd.
+
+Note
+Run samples by navigating to the executableâs location, otherwise it will fail to locate dependent resources.
+
+
+
+
+
+3.1.3.2. Runfile Installerï
+Perform the following steps to install CUDA and verify the installation.
+
+Reboot into runlevel 3 by temporarily adding the number â3â and the word ânomodesetâ to the end of the systemâs kernel boot parameters.
+Run the installer silently to install with the default selections (implies acceptance of the EULA):
+sudo sh cuda_<version>_linux.run --silent
+
+
+
+Create an xorg.conf file to use the NVIDIA GPU for display:
+sudo nvidia-xconfig
+
+
+
+Reboot the system to load the graphical interface:
+sudo reboot
+
+
+
+Set up the development environment by modifying the PATH and LD_LIBRARY_PATH variables:
+export PATH=/usr/local/cuda-12.5/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-12.5/lib64\
+                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+
+
+Install a writable copy of the samples from https://github.com/nvidia/cuda-samples, then build and run the vectorAdd sample using the Linux instructions in https://github.com/NVIDIA/cuda-samples/tree/master/Samples/vectorAdd.
+
+Note
+Run samples by navigating to the executableâs location, otherwise it will fail to locate dependent resources.
+
+
+
+
+
+
+3.1.4. OpenSUSEï
+When installing CUDA on OpenSUSE, you can choose between the Runfile Installer and the RPM Installer. The Runfile Installer is only available as a Local Installer. The RPM Installer is available as both a Local Installer and a Network Installer. The Network Installer allows you to download only the files you need. The Local Installer is a stand-alone installer with a large initial download. In the case of the RPM installers, the instructions for the Local and Network variants are the same. For more details, refer to the Linux Installation Guide.
+
+3.1.4.1. RPM Installerï
+Perform the following steps to install CUDA and verify the installation.
+
+Install the repository meta-data, refresh the Zypper cache, and install CUDA:
+sudo rpm --install cuda-repo-<distro>-<version>.<architecture>.rpm
+sudo rpm --erase gpg-pubkey-7fa2af80*
+sudo zypper refresh
+sudo zypper install cuda
+
+
+
+Add the user to the video group:
+sudo usermod -a -G video <username>
+
+
+
+Reboot the system to load the NVIDIA drivers:
+sudo reboot
+
+
+
+Set up the development environment by modifying the PATH and LD_LIBRARY_PATH variables:
+export PATH=/usr/local/cuda-12.5/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-12.5/lib64\
+                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+
+
+Install a writable copy of the samples from https://github.com/nvidia/cuda-samples, then build and run the nbody sample using the Linux instructions in https://github.com/NVIDIA/cuda-samples/tree/master/Samples/nbody.
+
+Note
+Run samples by navigating to the executableâs location, otherwise it will fail to locate dependent resources.
+
+
+
+
+
+3.1.4.2. Runfile Installerï
+Perform the following steps to install CUDA and verify the installation.
+
+Disable the Nouveau drivers:
+
+Create a file at /etc/modprobe.d/blacklist-nouveau.conf with the following contents:
+blacklist nouveau
+options nouveau modeset=0
+
+
+
+Regenerate the kernel initrd:
+sudo /sbin/mkinitrd
+
+
+
+
+
+Reboot into runlevel 3 by temporarily adding the number â3â and the word ânomodesetâ to the end of the systemâs kernel boot parameters.
+Run the installer silently to install with the default selections (implies acceptance of the EULA):
+sudo sh cuda_<version>_linux.run --silent
+
+
+
+Create an xorg.conf file to use the NVIDIA GPU for display:
+sudo nvidia-xconfig
+
+
+
+Reboot the system to load the graphical interface:
+sudo reboot
+
+
+
+Set up the development environment by modifying the PATH and LD_LIBRARY_PATH variables:
+export PATH=/usr/local/cuda-12.5/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-12.5/lib64\
+                    ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+
+
+Install a writable copy of the samples from https://github.com/nvidia/cuda-samples, then build and run the nbody sample using the Linux instructions in https://github.com/NVIDIA/cuda-samples/tree/master/Samples/nbody.
+
+Note
+Run samples by navigating to the executableâs location, otherwise it will fail to locate dependent resources.
+
+
+
+
+
+
+3.1.5. Amazon Linux 2023ï
+
+3.1.5.1. Prepare Amazon Linux 2023ï
+
+Perform the pre-installation actions.
+The kernel headers and development packages for the currently running kernel can be installed with:
+sudo dnf install kernel-devel-$(uname -r) kernel-headers-$(uname -r) kernel-modules-extra-$(uname -r)
+
+
+
+Choose an installation method: local repo or network repo.
+
+
+
+3.1.5.2. Local Repo Installation for Amazon Linuxï
+
+Install local repository on file system:
+sudo rpm --install cuda-repo-amzn2023-X-Y-local-<version>*.x86_64.rpm
+
+
+
+
+
+
+3.1.5.3. Network Repo Installation for Amazon Linuxï
+
+Enable the network repository and clean the DN cache:
+sudo dnf config-manager --add-repo https://developer.download.nvidia.com/compute/cuda/repos/amzn2023/x86_64/cuda-amzn2023.repo
+sudo dnf clean expire-cache
+
+
+
+
+
+
+3.1.5.4. Common Installation Instructions for Amazon Linuxï
+These instructions apply to both local and network installation for Amazon Linux.
+
+Install CUDA SDK:
+sudo dnf module install nvidia-driver:latest-dkms
+sudo dnf install cuda-toolkit
+
+
+
+Install GPUDirect Filesystem:
+sudo dnf install nvidia-gds
+
+
+
+Add libcuda.so symbolic link, if necessary:
+The libcuda.so library is installed in the /usr/lib{,64}/nvidia directory. For pre-existing projects which use libcuda.so, it may be useful to add a symbolic link from libcuda.so in the /usr/lib{,64} directory.
+
+Reboot the system:
+sudo reboot
+
+
+
+Perform the post-installation actions.
+
+
+
+
+3.1.6. Pip Wheels - Linuxï
+NVIDIA provides Python Wheels for installing CUDA through pip, primarily for using CUDA with Python. These packages are intended for runtime use and do not currently include developer tools (these can be installed separately).
+Please note that with this installation method, CUDA installation environment is managed via pip and additional care must be taken to set up your host environment to use CUDA outside the pip environment.
+Prerequisites
+To install Wheels, you must first install the nvidia-pyindex package, which is required in order to set up your pip installation to fetch additional Python modules from the NVIDIA NGC PyPI repo. If your pip and setuptools Python modules are not up-to-date, then use the following command to upgrade these Python modules. If these Python modules are out-of-date then the commands which follow later in this section may fail.
+python3 -m pip install --upgrade setuptools pip wheel
+
+
+You should now be able to install the nvidia-pyindex module.
+python3 -m pip install nvidia-pyindex
+
+
+If your project is using a requirements.txt file, then you can add the following line to your requirements.txt file as an alternative to installing the nvidia-pyindex package:
+--extra-index-url https://pypi.ngc.nvidia.com
+
+
+Procedure
+Install the CUDA runtime package:
+python3 -m pip install nvidia-cuda-runtime-cu12
+
+
+Optionally, install additional packages as listed below using the following command:
+python3 -m pip install nvidia-<library>
+
+
+Metapackages
+The following metapackages will install the latest version of the named component on Linux for the indicated CUDA version. âcu12â should be read as âcuda12â.
+
+nvidia-cuda-runtime-cu12
+nvidia-cuda-cupti-cu12
+nvidia-cuda-nvcc-cu12
+nvidia-nvml-dev-cu12
+nvidia-cuda-nvrtc-cu12
+nvidia-nvtx-cu12
+nvidia-cuda-sanitizer-api-cu12
+nvidia-cublas-cu12
+nvidia-cufft-cu12
+nvidia-curand-cu12
+nvidia-cusolver-cu12
+nvidia-cusparse-cu12
+nvidia-npp-cu12
+nvidia-nvjpeg-cu12
+nvidia-opencl-cu12
+nvidia-nvjitlink-cu12
+
+These metapackages install the following packages:
+
+nvidia-nvml-dev-cu125
+nvidia-cuda-nvcc-cu125
+nvidia-cuda-runtime-cu125
+nvidia-cuda-cupti-cu125
+nvidia-cublas-cu125
+nvidia-cuda-sanitizer-api-cu125
+nvidia-nvtx-cu125
+nvidia-cuda-nvrtc-cu125
+nvidia-npp-cu125
+nvidia-cusparse-cu125
+nvidia-cusolver-cu125
+nvidia-curand-cu125
+nvidia-cufft-cu125
+nvidia-nvjpeg-cu125
+nvidia-opencl-cu125
+nvidia-nvjitlink-cu125
+
+
+
+3.1.7. Condaï
+The Conda packages are available at https://anaconda.org/nvidia.
+Installation
+To perform a basic install of all CUDA Toolkit components using Conda, run the following command:
+conda install cuda -c nvidia
+
+
+Uninstallation
+To uninstall the CUDA Toolkit using Conda, run the following command:
+conda remove cuda
+
+
+
+
+3.1.8. WSLï
+These instructions must be used if you are installing in a WSL environment. Do not use the Ubuntu instructions in this case.
+
+Install repository meta-data
+
+sudo dpkg -i cuda-repo-<distro>_<version>_<architecture>.deb
+
+
+
+Update the CUDA public GPG key
+sudo apt-key del 7fa2af80
+
+
+When installing using the local repo:
+sudo cp /var/cuda-repo-ubuntu2004-12-0-local/cuda-*-keyring.gpg /usr/share/keyrings/
+
+
+When installing using the network repo:
+wget https://developer.download.nvidia.com/compute/cuda/repos/<distro>/<arch>/cuda-keyring_1.1-1_all.deb
+sudo dpkg -i cuda-keyring_1.1-1_all.deb
+
+
+Pin file to prioritize CUDA repository:
+wget https://developer.download.nvidia.com/compute/cuda/repos/<distro>/<architecture>/cuda-<distro>.pin
+sudo mv cuda-<distro>.pin /etc/apt/preferences.d/cuda-repository-pin-600
+
+
+
+Update the Apt repository cache and install CUDA
+sudo apt-get update
+sudo apt-get install cuda
+
+
+
+
+
+
+3.1.9. Ubuntuï
+When installing CUDA on Ubuntu, you can choose between the Runfile Installer and the Debian Installer. The Runfile Installer is only available as a Local Installer. The Debian Installer is available as both a Local Installer and a Network Installer. The Network Installer allows you to download only the files you need. The Local Installer is a stand-alone installer with a large initial download. In the case of the Debian installers, the instructions for the Local and Network variants are the same. For more details, refer to the Linux Installation Guide.
+
+3.1.9.1. Debian Installerï
+Perform the following steps to install CUDA and verify the installation.
+
+Install the repository meta-data, update the GPG key, update the apt-get cache, and install CUDA:
+sudo dpkg --install cuda-repo-<distro>-<version>.<architecture>.deb
+sudo apt-key del 7fa2af80
+wget https://developer.download.nvidia.com/compute/cuda/repos/<distro>/<arch>/cuda-keyring_1.1-1_all.deb
+sudo dpkg -i cuda-keyring_1.1-1_all.deb
+sudo add-apt-repository contrib
+sudo apt-get update
+sudo apt-get -y install cuda
+
+
+
+Reboot the system to load the NVIDIA drivers:
+sudo reboot
+
+
+
+Set up the development environment by modifying the PATH and LD_LIBRARY_PATH variables:
+export PATH=/usr/local/cuda-12.5/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-12.5/lib64\
+                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+
+
+Install a writable copy of the samples from https://github.com/nvidia/cuda-samples, then build and run the nbody sample using the Linux instructions in https://github.com/NVIDIA/cuda-samples/tree/master/Samples/nbody.
+
+Note
+Run samples by navigating to the executableâs location, otherwise it will fail to locate dependent resources.
+
+
+
+
+
+3.1.9.2. Runfile Installerï
+Perform the following steps to install CUDA and verify the installation.
+
+Disable the Nouveau drivers:
+
+Create a file at /etc/modprobe.d/blacklist-nouveau.conf with the following contents:
+blacklist nouveau
+options nouveau modeset=0
+
+
+
+Regenerate the kernel initramfs:
+sudo update-initramfs -u
+
+
+
+
+
+Reboot into runlevel 3 by temporarily adding the number â3â and the word ânomodesetâ to the end of the systemâs kernel boot parameters.
+Run the installer silently to install with the default selections (implies acceptance of the EULA):
+sudo sh cuda_<version>_linux.run --silent
+
+
+
+Create an xorg.conf file to use the NVIDIA GPU for display:
+sudo nvidia-xconfig
+
+
+
+Reboot the system to load the graphical interface:
+sudo reboot
+
+
+
+Set up the development environment by modifying the PATH and LD_LIBRARY_PATH variables:
+export PATH=/usr/local/cuda-12.5/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-12.5/lib64\
+                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+
+
+Install a writable copy of the samples from https://github.com/nvidia/cuda-samples, then build and run the nbody sample using the Linux instructions in https://github.com/NVIDIA/cuda-samples/tree/master/Samples/nbody.
+
+Note
+Run samples by navigating to the executableâs location, otherwise it will fail to locate dependent resources.
+
+
+
+
+
+
+3.1.10. Debianï
+When installing CUDA on Debian 10, you can choose between the Runfile Installer and the Debian Installer. The Runfile Installer is only available as a Local Installer. The Debian Installer is available as both a Local Installer and a Network Installer. The Network Installer allows you to download only the files you need. The Local Installer is a stand-alone installer with a large initial download. For more details, refer to the Linux Installation Guide.
+
+3.1.10.1. Debian Installerï
+Perform the following steps to install CUDA and verify the installation.
+
+Install the repository meta-data, remove old GPG key, install GPG key, update the apt-get cache, and install CUDA:
+sudo dpkg -i cuda-repo-<distro>_<version>_<architecture>.deb
+sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/debian10/x86_64/7fa2af80.pub
+sudo apt-key del 7fa2af80
+wget https://developer.download.nvidia.com/compute/cuda/repos/<distro>/<arch>/cuda-keyring_1.1-1_all.deb
+sudo dpkg -i cuda-keyring_1.1-1_all.deb
+sudo add-apt-repository contrib
+sudo apt-get update
+sudo apt-get -y install cuda
+
+
+
+Reboot the system to load the NVIDIA drivers:
+sudo reboot
+
+
+
+Set up the development environment by modifying the PATH and LD_LIBRARY_PATH variables:
+export PATH=/usr/local/cuda-12.5/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-12.5/lib64\
+                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+
+
+Install a writable copy of the samples from https://github.com/nvidia/cuda-samples, then build and run the nbody sample using the Linux instructions in https://github.com/NVIDIA/cuda-samples/tree/master/Samples/nbody.
+
+Note
+Run samples by navigating to the executableâs location, otherwise it will fail to locate dependent resources.
+
+
+
+
+
+3.1.10.2. Runfile Installerï
+Perform the following steps to install CUDA and verify the installation.
+
+Disable the Nouveau drivers:
+
+Create a file at /etc/modprobe.d/blacklist-nouveau.conf with the following contents:
+blacklist nouveau
+options nouveau modeset=0
+
+
+
+Regenerate the kernel initramfs:
+sudo update-initramfs -u
+
+
+
+
+
+Reboot into runlevel 3 by temporarily adding the number â3â and the word ânomodesetâ to the end of the systemâs kernel boot parameters.
+Run the installer silently to install with the default selections (implies acceptance of the EULA):
+sudo sh cuda_<version>_linux.run --silent
+
+
+
+Create an xorg.conf file to use the NVIDIA GPU for display:
+sudo nvidia-xconfig
+
+
+
+Reboot the system to load the graphical interface:
+sudo reboot
+
+
+
+Set up the development environment by modifying the PATH and LD_LIBRARY_PATH variables:
+export PATH=/usr/local/cuda-12.5/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-12.5/lib64\
+                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+
+
+Install a writable copy of the samples from https://github.com/nvidia/cuda-samples, then build and run the nbody sample using the Linux instructions in https://github.com/NVIDIA/cuda-samples/tree/master/Samples/nbody.
+
+Note
+Run samples by navigating to the executableâs location, otherwise it will fail to locate dependent resources.
+
+
+
+
+
+
+
+
+4. Noticesï
+
+4.1. Noticeï
+This document is provided for information purposes only and shall not be regarded as a warranty of a certain functionality, condition, or quality of a product. NVIDIA Corporation (âNVIDIAâ) makes no representations or warranties, expressed or implied, as to the accuracy or completeness of the information contained in this document and assumes no responsibility for any errors contained herein. NVIDIA shall have no liability for the consequences or use of such information or for any infringement of patents or other rights of third parties that may result from its use. This document is not a commitment to develop, release, or deliver any Material (defined below), code, or functionality.
+NVIDIA reserves the right to make corrections, modifications, enhancements, improvements, and any other changes to this document, at any time without notice.
+Customer should obtain the latest relevant information before placing orders and should verify that such information is current and complete.
+NVIDIA products are sold subject to the NVIDIA standard terms and conditions of sale supplied at the time of order acknowledgement, unless otherwise agreed in an individual sales agreement signed by authorized representatives of NVIDIA and customer (âTerms of Saleâ). NVIDIA hereby expressly objects to applying any customer general terms and conditions with regards to the purchase of the NVIDIA product referenced in this document. No contractual obligations are formed either directly or indirectly by this document.
+NVIDIA products are not designed, authorized, or warranted to be suitable for use in medical, military, aircraft, space, or life support equipment, nor in applications where failure or malfunction of the NVIDIA product can reasonably be expected to result in personal injury, death, or property or environmental damage. NVIDIA accepts no liability for inclusion and/or use of NVIDIA products in such equipment or applications and therefore such inclusion and/or use is at customerâs own risk.
+NVIDIA makes no representation or warranty that products based on this document will be suitable for any specified use. Testing of all parameters of each product is not necessarily performed by NVIDIA. It is customerâs sole responsibility to evaluate and determine the applicability of any information contained in this document, ensure the product is suitable and fit for the application planned by customer, and perform the necessary testing for the application in order to avoid a default of the application or the product. Weaknesses in customerâs product designs may affect the quality and reliability of the NVIDIA product and may result in additional or different conditions and/or requirements beyond those contained in this document. NVIDIA accepts no liability related to any default, damage, costs, or problem which may be based on or attributable to: (i) the use of the NVIDIA product in any manner that is contrary to this document or (ii) customer product designs.
+No license, either expressed or implied, is granted under any NVIDIA patent right, copyright, or other NVIDIA intellectual property right under this document. Information published by NVIDIA regarding third-party products or services does not constitute a license from NVIDIA to use such products or services or a warranty or endorsement thereof. Use of such information may require a license from a third party under the patents or other intellectual property rights of the third party, or a license from NVIDIA under the patents or other intellectual property rights of NVIDIA.
+Reproduction of information in this document is permissible only if approved in advance by NVIDIA in writing, reproduced without alteration and in full compliance with all applicable export laws and regulations, and accompanied by all associated conditions, limitations, and notices.
+THIS DOCUMENT AND ALL NVIDIA DESIGN SPECIFICATIONS, REFERENCE BOARDS, FILES, DRAWINGS, DIAGNOSTICS, LISTS, AND OTHER DOCUMENTS (TOGETHER AND SEPARATELY, âMATERIALSâ) ARE BEING PROVIDED âAS IS.â NVIDIA MAKES NO WARRANTIES, EXPRESSED, IMPLIED, STATUTORY, OR OTHERWISE WITH RESPECT TO THE MATERIALS, AND EXPRESSLY DISCLAIMS ALL IMPLIED WARRANTIES OF NONINFRINGEMENT, MERCHANTABILITY, AND FITNESS FOR A PARTICULAR PURPOSE. TO THE EXTENT NOT PROHIBITED BY LAW, IN NO EVENT WILL NVIDIA BE LIABLE FOR ANY DAMAGES, INCLUDING WITHOUT LIMITATION ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, PUNITIVE, OR CONSEQUENTIAL DAMAGES, HOWEVER CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF ANY USE OF THIS DOCUMENT, EVEN IF NVIDIA HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. Notwithstanding any damages that customer might incur for any reason whatsoever, NVIDIAâs aggregate and cumulative liability towards customer for the products described herein shall be limited in accordance with the Terms of Sale for the product.
+
+
+4.2. OpenCLï
+OpenCL is a trademark of Apple Inc. used under license to the Khronos Group Inc.
+
+
+4.3. Trademarksï
+NVIDIA and the NVIDIA logo are trademarks or registered trademarks of NVIDIA Corporation in the U.S. and other countries. Other company and product names may be trademarks of the respective companies with which they are associated.
+
+
+
+
+
+
+
+
+
+
+Privacy Policy
+|
+Manage My Privacy
+|
+Do Not Sell or Share My Data
+|
+Terms of Service
+|
+Accessibility
+|
+Corporate Policies
+|
+Product Security
+|
+Contact
+
+
+  Copyright © 2015-2024, NVIDIA Corporation & affiliates. All rights reserved.
+
+
+Last updated on Jun 25, 2024.
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CUDA Installation Guide for Microsoft Windows
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Introduction
+1.1. System Requirements
+1.2. About This Document
+
+
+
+2. Installing CUDA Development Tools
+2.1. Verify You Have a CUDA-Capable GPU
+2.2. Download the NVIDIA CUDA Toolkit
+
+2.3. Install the CUDA Software
+2.3.1. Uninstalling the CUDA Software
+
+
+
+2.4. Using Conda to Install the CUDA Software
+2.4.1. Conda Overview
+2.4.2. Installation
+2.4.3. Uninstallation
+2.4.4. Installing Previous CUDA Releases
+
+
+2.5. Use a Suitable Driver Model
+
+2.6. Verify the Installation
+2.6.1. Running the Compiled Examples
+
+
+
+
+3. Pip Wheels
+
+4. Compiling CUDA Programs
+4.1. Compiling Sample Projects
+4.2. Sample Projects
+4.3. Build Customizations for New Projects
+4.4. Build Customizations for Existing Projects
+
+
+5. Additional Considerations
+
+6. Notices
+6.1. Notice
+6.2. OpenCL
+6.3. Trademarks
+
+
+
+
+
+
+
+
+Installation Guide Windows
+
+
+
+
+
+
+ Â»
+
+1. Introduction
+
+
+
+v12.5 |
+PDF
+|
+Archive
+Â 
+
+
+
+
+
+
+CUDA Installation Guide for Microsoft Windows
+The installation instructions for the CUDA Toolkit on Microsoft Windows systems.
+
+
+1. Introductionï
+
+CUDAÂ® is a parallel computing platform and programming model invented by NVIDIA. It enables dramatic increases in computing performance by harnessing the power of the graphics processing unit (GPU).
+CUDA was developed with several design goals in mind:
+
+Provide a small set of extensions to standard programming languages, like C, that enable a straightforward implementation of parallel algorithms. With CUDA C/C++, programmers can focus on the task of parallelization of the algorithms rather than spending time on their implementation.
+Support heterogeneous computation where applications use both the CPU and GPU. Serial portions of applications are run on the CPU, and parallel portions are offloaded to the GPU. As such, CUDA can be incrementally applied to existing applications. The CPU and GPU are treated as separate devices that have their own memory spaces. This configuration also allows simultaneous computation on the CPU and GPU without contention for memory resources.
+
+CUDA-capable GPUs have hundreds of cores that can collectively run thousands of computing threads. These cores have shared resources including a register file and a shared memory. The on-chip shared memory allows parallel tasks running on these cores to share data without sending it over the system memory bus.
+This guide will show you how to install and check the correct operation of the CUDA development tools.
+
+
+1.1. System Requirementsï
+
+To use CUDA on your system, you will need the following installed:
+
+A CUDA-capable GPU
+A supported version of Linux with a gcc compiler and toolchain
+NVIDIA CUDA Toolkit (available at https://developer.nvidia.com/cuda-downloads)
+
+Supported Microsoft WindowsÂ® operating systems:
+
+Microsoft Windows 11 21H2
+Microsoft Windows 11 22H2-SV2
+Microsoft Windows 11 23H2
+Microsoft Windows 10 21H2
+Microsoft Windows 10 22H2
+Microsoft Windows Server 2022
+
+
+
+Table 1 Windows Compiler Support in CUDA 12.5ï
+
+
+
+
+
+
+
+
+
+
+Compiler*
+IDE
+Native x86_64
+Cross-compilation (32-bit on 64-bit)
+C++ Dialect
+
+
+
+
+MSVC Version 193x
+Visual Studio 2022 17.x
+YES
+Not supported
+C++14 (default), C++17, C++20
+
+
+MSVC Version 192x
+Visual Studio 2019 16.x
+YES
+C++14 (default), C++17
+
+
+MSVC Version 191x
+Visual Studio 2017 15.x (RTW and all updates)
+YES
+C++14 (default), C++17
+
+
+
+* Support for Visual Studio 2015 is deprecated in release 11.1; support for Visual Studio 2017 is deprecated in release 12.5.
+32-bit compilation native and cross-compilation is removed from CUDA 12.0 and later Toolkit. Use the CUDA Toolkit from earlier releases for 32-bit compilation. CUDA Driver will continue to support running 32-bit application binaries  on  GeForce GPUs until Ada. Ada will be the last architecture with driver support for 32-bit applications. Hopper does not support 32-bit applications.
+Support for running x86 32-bit applications on x86_64 Windows is limited to use with:
+
+CUDA Driver
+CUDA Runtime (cudart)
+CUDA Math Library (math.h)
+
+
+
+
+1.2. About This Documentï
+
+This document is intended for readers familiar with Microsoft Windows operating systems and the Microsoft Visual Studio environment. You do not need previous experience with CUDA or experience with parallel computation.
+
+
+
+
+2. Installing CUDA Development Toolsï
+
+Basic instructions can be found in the Quick Start Guide. Read on for more detailed instructions.
+The setup of CUDA development tools on a system running the appropriate version of Windows consists of a few simple steps:
+
+Verify the system has a CUDA-capable GPU.
+Download the NVIDIA CUDA Toolkit.
+Install the NVIDIA CUDA Toolkit.
+Test that the installed software runs correctly and communicates with the hardware.
+
+
+
+2.1. Verify You Have a CUDA-Capable GPUï
+
+You can verify that you have a CUDA-capable GPU through the Display Adapters section in the Windows Device Manager. Here you will find the vendor name and model of your graphics card(s). If you have an NVIDIA card that is listed in https://developer.nvidia.com/cuda-gpus, that GPU is CUDA-capable. The Release Notes for the CUDA Toolkit also contain a list of supported products.
+The Windows Device Manager can be opened via the following steps:
+
+Open a run window from the Start Menu
+
+Run:
+
+control /name Microsoft.DeviceManager
+
+
+
+
+
+
+
+2.2. Download the NVIDIA CUDA Toolkitï
+
+The NVIDIA CUDA Toolkit is available at https://developer.nvidia.com/cuda-downloads. Choose the platform you are using and one of the following installer formats:
+
+Network Installer: A minimal installer which later downloads packages required for installation. Only the packages selected during the selection phase of the installer are downloaded. This installer is useful for users who want to minimize download time.
+Full Installer: An installer which contains all the components of the CUDA Toolkit and does not require any further download. This installer is useful for systems which lack network access and for enterprise deployment.
+
+The CUDA Toolkit installs the CUDA driver and tools needed to create, build and run a CUDA application as well as libraries, header files, and other resources.
+Download Verification
+The download can be verified by comparing the MD5 checksum posted at https://developer.download.nvidia.com/compute/cuda/12.5.1/docs/sidebar/md5sum.txt with that of the downloaded file. If either of the checksums differ, the downloaded file is corrupt and needs to be downloaded again.
+
+
+
+2.3. Install the CUDA Softwareï
+
+Before installing the toolkit, you should read the Release Notes, as they provide details on installation and software functionality.
+
+Note
+The driver and toolkit must be installed for CUDA to function. If you have not installed a stand-alone driver, install the driver from the NVIDIA CUDA Toolkit.
+
+
+Note
+The installation may fail if Windows Update starts after the installation has begun. Wait until Windows Update is complete and then try the installation again.
+
+Graphical Installation
+Install the CUDA Software by executing the CUDA installer and following the on-screen prompts.
+Silent Installation
+The installer can be executed in silent mode by executing the package with the -s flag. Additional parameters can be passed which will install specific subpackages instead of all packages. See the table below for a list of all the subpackage names.
+
+
+Table 2 Possible Subpackage Namesï
+
+
+
+
+
+
+
+Subpackage Name
+Subpackage Description
+
+
+
+
+Toolkit Subpackages (defaults to C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5)
+
+
+cuda_profiler_api_12.5
+CUDA Profiler API.
+
+
+cudart_12.5
+CUDA Runtime libraries.
+
+
+cuobjdump_12.5
+Extracts information from cubin files.
+
+
+cupti_12.5
+The CUDA Profiling Tools Interface for creating profiling and tracing tools that target CUDA applications.
+
+
+cuxxfilt_12.5
+The CUDA cu++ filt demangler tool.
+
+
+demo_suite_12.5
+Prebuilt demo applications using CUDA.
+
+
+documentation_12.5
+CUDA HTML and PDF documentation files including the CUDA C++ Programming Guide, CUDA C++ Best Practices Guide, CUDA library documentation, etc.
+
+
+nvcc_12.5
+CUDA compiler.
+
+
+nvdisasm_12.5
+Extracts information from standalone cubin files.
+
+
+nvfatbin_12.5
+Library for creating fatbinaries at runtime.
+
+
+nvjitlink_12.5
+nvJitLink library.
+
+
+nvml_dev_12.5
+NVML development libraries and headers.
+
+
+nvprof_12.5
+Tool for collecting and viewing CUDA application profiling data from the command-line.
+
+
+nvprune_12.5
+Prunes host object files and libraries to only contain device code for the specified targets.
+
+
+
+nvrtc_12.5
+nvrtc_dev_12.5
+
+NVRTC runtime libraries.
+
+
+
+nvtx_12.5
+NVTX on Windows.
+
+
+opencl_12.5
+OpenCL library.
+
+
+visual_profiler_12.5
+Visual Profiler.
+
+
+sanitizer_12.5
+Compute Sanitizer API.
+
+
+thrust_12.5
+CUDA Thrust.
+
+
+
+cublas_12.5
+cublas_dev_12.5
+
+cuBLAS runtime libraries.
+
+
+
+
+cufft_12.5
+cufft_dev_12.5
+
+cuFFT runtime libraries.
+
+
+
+
+curand_12.5
+curand_dev_12.5
+
+cuRAND runtime libraries.
+
+
+
+
+cusolver_12.5
+cusolver_dev_12.5
+
+cuSOLVER runtime libraries.
+
+
+
+
+cusparse_12.5
+cusparse_dev_12.5
+
+cuSPARSE runtime libraries.
+
+
+
+
+npp_12.5
+npp_dev_12.5
+
+NPP runtime libraries.
+
+
+
+
+nvjpeg_12.5
+nvjpeg_dev_12.5
+
+nvJPEG libraries.
+
+
+
+nsight_compute_12.5
+Nsight Compute.
+
+
+nsight_systems_12.5
+Nsight Systems.
+
+
+nsight_vse_12.5
+Installs the Nsight Visual Studio Edition plugin in all VS.
+
+
+occupancy_calculator_12.5
+Installs the CUDA_Occupancy_Calculator.xls tool.
+
+
+visual_studio_integration_12.5
+Installs CUDA project wizard and builds customization files in VS.
+
+
+Driver Subpackages
+
+
+Display.Driver
+The NVIDIA Display Driver. Required to run CUDA applications.
+
+
+
+For example, to install only the compiler and driver components:
+
+<PackageName>.exe -s nvcc_12.1 Display.Driver
+
+
+Use the -n option if you do not want to reboot automatically after install or uninstall, even if reboot is required.
+Extracting and Inspecting the Files Manually
+Sometimes it may be desirable to extract or inspect the installable files directly, such as in enterprise deployment, or to browse the files before installation. The full installation package can be extracted using a decompression tool which supports the LZMA compression method, such as 7-zip or WinZip.
+Once extracted, the CUDA Toolkit files will be in the CUDAToolkit folder, and similarily for CUDA Visual Studio Integration. Within each directory is a .dll and .nvi file that can be ignored as they are not part of the installable files.
+
+Note
+Accessing the files in this manner does not set up any environment settings, such as variables or Visual Studio integration. This is intended for enterprise-level deployment.
+
+
+
+2.3.1. Uninstalling the CUDA Softwareï
+
+All subpackages can be uninstalled through the Windows Control Panel by using the Programs and Features widget.
+
+
+
+
+2.4. Using Conda to Install the CUDA Softwareï
+
+This section describes the installation and configuration of CUDA when using the Conda installer. The Conda packages are available at https://anaconda.org/nvidia.
+
+
+2.4.1. Conda Overviewï
+
+The Conda installation installs the CUDA Toolkit. The installation steps are listed below.
+
+
+
+2.4.2. Installationï
+
+To perform a basic install of all CUDA Toolkit components using Conda, run the following command:
+
+conda install cuda -c nvidia
+
+
+
+
+
+2.4.3. Uninstallationï
+
+To uninstall the CUDA Toolkit using Conda, run the following command:
+
+conda remove cuda
+
+
+
+
+
+2.4.4. Installing Previous CUDA Releasesï
+
+All Conda packages released under a specific CUDA version are labeled with that release version. To install a previous version, include that label in the install command such as:
+
+conda install cuda -c nvidia/label/cuda-11.3.0
+
+
+
+Note
+Some CUDA releases do not move to new versions of all installable components. When this is the case these components will be moved to the new label, and you may need to modify the install command to include both labels such as:
+
+conda install cuda -c nvidia/label/cuda-11.3.0 -c nvidia/label/cuda-11.3.1
+
+
+This example will install all packages released as part of CUDA 11.3.1.
+
+
+
+
+
+2.5. Use a Suitable Driver Modelï
+
+On Windows 10 and later, the operating system provides two driver models under which the NVIDIA Driver may operate:
+
+The WDDM driver model is used for display devices.
+The Tesla Compute Cluster (TCC) mode of the NVIDIA Driver is available for non-display devices such as NVIDIA Tesla GPUs and the GeForce GTX Titan GPUs; it uses the Windows WDM driver model.
+
+TCC is enabled by default on most recent NVIDIA Tesla GPUs. To check which driver mode is in use and/or to switch driver modes, use the nvidia-smi tool that is included with the NVIDIA Driver installation (see nvidia-smi -h for details).
+
+Note
+Keep in mind that when TCC mode is enabled for a particular GPU, that GPU cannot be used as a display device.
+
+
+Note
+NVIDIA GeForce GPUs (excluding GeForce GTX Titan GPUs) do not support TCC mode.
+
+
+
+
+2.6. Verify the Installationï
+
+Before continuing, it is important to verify that the CUDA toolkit can find and communicate correctly with the CUDA-capable hardware. To do this, you need to compile and run some of the included sample programs.
+
+
+2.6.1. Running the Compiled Examplesï
+
+The version of the CUDA Toolkit can be checked by running nvcc -V in a Command Prompt window. You can display a Command Prompt window by going to:
+Start > All Programs > Accessories > Command Prompt
+CUDA Samples are located in https://github.com/nvidia/cuda-samples. To use the samples, clone the project, build the samples, and run them using the instructions on the Github page.
+To verify a correct configuration of the hardware and software, it is highly recommended that you build and run the deviceQuery sample program. The sample can be built using the provided VS solution files in the deviceQuery folder.
+This assumes that you used the default installation directory structure. If CUDA is installed and configured correctly, the output should look similar to Figure 1.
+
+
+
+Figure 1 Valid Results from deviceQuery CUDA Sampleï
+
+
+The exact appearance and the output lines might be different on your system. The important outcomes are that a device was found, that the device(s) match what is installed in your system, and that the test passed.
+If a CUDA-capable device and the CUDA Driver are installed but deviceQuery reports that no CUDA-capable devices are present, ensure the deivce and driver are properly installed.
+Running the bandwidthTest program, located in the same directory as deviceQuery above, ensures that the system and the CUDA-capable device are able to communicate correctly. The output should resemble Figure 2.
+
+
+
+Figure 2 Valid Results from bandwidthTest CUDA Sampleï
+
+
+The device name (second line) and the bandwidth numbers vary from system to system. The important items are the second line, which confirms a CUDA device was found, and the second-to-last line, which confirms that all necessary tests passed.
+If the tests do not pass, make sure you do have a CUDA-capable NVIDIA GPU on your system and make sure it is properly installed.
+To see a graphical representation of what CUDA can do, run the particles sample at
+
+https://github.com/NVIDIA/cuda-samples/tree/master/Samples/particles
+
+
+
+
+
+
+
+3. Pip Wheelsï
+
+NVIDIA provides Python Wheels for installing CUDA through pip, primarily for using CUDA with Python. These packages are intended for runtime use and do not currently include developer tools (these can be installed separately).
+Please note that with this installation method, CUDA installation environment is managed via pip and additional care must be taken to set up your host environment to use CUDA outside the pip environment.
+Prerequisites
+To install Wheels, you must first install the nvidia-pyindex package, which is required in order to set up your pip installation to fetch additional Python modules from the NVIDIA NGC PyPI repo. If your pip and setuptools Python modules are not up-to-date, then use the following command to upgrade these Python modules. If these Python modules are out-of-date then the commands which follow later in this section may fail.
+
+py -m pip install --upgrade setuptools pip wheel
+
+
+You should now be able to install the nvidia-pyindex module.
+
+py -m pip install nvidia-pyindex
+
+
+If your project is using a requirements.txt file, then you can add the following line to your requirements.txt file as an alternative to installing the nvidia-pyindex package:
+
+--extra-index-url https://pypi.ngc.nvidia.com
+
+
+Procedure
+Install the CUDA runtime package:
+
+py -m pip install nvidia-cuda-runtime-cu12
+
+
+Optionally, install additional packages as listed below using the following command:
+
+py -m pip install nvidia-<library>
+
+
+Metapackages
+The following metapackages will install the latest version of the named component on Windows for the indicated CUDA version. âcu12â should be read as âcuda12â.
+
+nvidia-cublas-cu12
+nvidia-cuda-runtime-cu12
+nvidia-cuda-cupti-cu12
+nvidia-cuda-nvcc-cu12
+nvidia-cuda-nvrtc-cu12
+nvidia-cuda-sanitizer-api-cu12
+nvidia-cufft-cu12
+nvidia-curand-cu12
+nvidia-cusolver-cu12
+nvidia-cusparse-cu12
+nvidia-npp-cu12
+nvidia-nvfatbin-cu12
+nvidia-nvjitlink-cu12
+nvidia-nvjpeg-cu12
+nvidia-nvml-dev-cu12
+nvidia-nvtx-cu12
+nvidia-opencl-cu12
+
+These metapackages install the following packages:
+
+nvidia-cublas-cu125
+nvidia-cuda-runtime-cu125
+nvidia-cuda-cupti-cu125
+nvidia-cuda-nvcc-cu125
+nvidia-cuda-nvrtc-cu125
+nvidia-cuda-sanitizer-api-cu125
+nvidia-cufft-cu125
+nvidia-curand-cu125
+nvidia-cusolver-cu125
+nvidia-cusparse-cu125
+nvidia-npp-cu125
+nvidia-nvfatbin-cu125
+nvidia-nvjitlink-cu125
+nvidia-nvjpeg-cu125
+nvidia-nvml-dev-cu125
+nvidia-nvtx-cu125
+nvidia-opencl-cu125
+
+
+
+
+4. Compiling CUDA Programsï
+
+The project files in the CUDA Samples have been designed to provide simple, one-click builds of the programs that include all source code. To build the Windows projects (for release or debug mode), use the provided *.sln solution files for Microsoft Visual Studio 2015 (deprecated in CUDA 11.1), 2017, 2019, or 2022. You can use either the solution files located in each of the examples directories in https://github.com/nvidia/cuda-samples
+
+
+4.1. Compiling Sample Projectsï
+
+The bandwidthTest project is a good sample project to build and run. It is located in https://github.com/NVIDIA/cuda-samples/tree/master/Samples/1_Utilities/bandwidthTest.
+If you elected to use the default installation location, the output is placed in CUDA Samples\v12.5\bin\win64\Release. Build the program using the appropriate solution file and run the executable. If all works correctly, the output should be similar to Figure 2.
+
+
+
+4.2. Sample Projectsï
+
+The sample projects come in two configurations: debug and release (where release contains no debugging information) and different Visual Studio projects.
+A few of the example projects require some additional setup.
+These sample projects also make use of the $CUDA_PATH environment variable to locate where the CUDA Toolkit and the associated .props files are.
+The environment variable is set automatically using the Build Customization CUDA 12.5.props file, and is installed automatically as part of the CUDA Toolkit installation process.
+
+
+Table 3 CUDA Visual Studio .props locationsï
+
+
+
+
+
+
+
+Visual Studio
+CUDA 12.5 .props file Install Directory
+
+
+
+
+Visual Studio 2015 (deprecated)
+C:Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\BuildCustomizations
+
+
+Visual Studio 2017
+<Visual Studio Install Dir>\Common7\IDE\VC\VCTargets\BuildCustomizations
+
+
+Visual Studio 2019
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Microsoft\VC\v160\BuildCustomizations
+
+
+Visual Studio 2022
+C:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Microsoft\VC\v170\BuildCustomizations
+
+
+
+You can reference this CUDA 12.5.props file when building your own CUDA applications.
+
+
+
+4.3. Build Customizations for New Projectsï
+
+When creating a new CUDA application, the Visual Studio project file must be configured to include CUDA build customizations. To accomplish this, click File-> New | Projectâ¦ NVIDIA-> CUDA->, then select a template for your CUDA Toolkit version. For example, selecting the âCUDA 12.5 Runtimeâ template will configure your project for use with the CUDA 12.5 Toolkit. The new project is technically a C++ project (.vcxproj) that is preconfigured to use NVIDIAâs Build Customizations. All standard capabilities of Visual Studio C++ projects will be available.
+To specify a custom CUDA Toolkit location, under CUDA C/C++, select Common, and set the CUDA Toolkit Custom Dir field as desired. Note that the selected toolkit must match the version of the Build Customizations.
+
+Note
+A supported version of MSVC must be installed to use this feature.
+
+
+
+
+4.4. Build Customizations for Existing Projectsï
+
+When adding CUDA acceleration to existing applications, the relevant Visual Studio project files must be updated to include CUDA build customizations. This can be done using one of the following two methods:
+
+Open the Visual Studio project, right click on the project name, and select Build Dependencies > Build Customizationsâ¦, then select the CUDA Toolkit version you would like to target.
+Alternatively, you can configure your project always to build with the most recently installed version of the CUDA Toolkit. First add a CUDA build customization to your project as above. Then, right click on the project name and select Properties. Under CUDA C/C++, select Common, and set the CUDA Toolkit Custom Dir field to $(CUDA_PATH) . Note that the $(CUDA_PATH) environment variable is set by the installer.
+
+While Option 2 will allow your project to automatically use any new CUDA Toolkit version you may install in the future, selecting the toolkit version explicitly as in Option 1 is often better in practice, because if there are new CUDA configuration options added to the build customization rules accompanying the newer toolkit, you would not see those new options using Option 2.
+If you use the $(CUDA_PATH) environment variable to target a version of the CUDA Toolkit for building, and you perform an installation or uninstallation of any version of the CUDA Toolkit, you should validate that the $(CUDA_PATH) environment variable points to the correct installation directory of the CUDA Toolkit for your purposes. You can access the value of the $(CUDA_PATH) environment variable via the following steps:
+
+Open a run window from the Start Menu.
+
+Run:
+
+control sysdm.cpl
+
+
+
+Select the Advanced tab at the top of the window.
+Click Environment Variables at the bottom of the window.
+
+Files which contain CUDA code must be marked as a CUDA C/C++ file. This can done when adding the file by right clicking the project you wish to add the file to, selecting Add New Item, selecting NVIDIA CUDA 12.5\CodeCUDA C/C++ File, and then selecting the file you wish to add.
+For advanced users, if you wish to try building your project against a newer CUDA Toolkit without making changes to any of your project files, go to the Visual Studio command prompt, change the current directory to the location of your project, and execute a command such as the following:
+
+msbuild <projectname.extension> /t:Rebuild /p:CudaToolkitDir="drive:/path/to/new/toolkit/"
+
+
+
+
+
+
+5. Additional Considerationsï
+
+Now that you have CUDA-capable hardware and the NVIDIA CUDA Toolkit installed, you can examine and enjoy the numerous included programs. To begin using CUDA to accelerate the performance of your own applications, consult the CUDAÂ C Programming Guide, located in the CUDA Toolkit documentation directory.
+A number of helpful development tools are included in the CUDA Toolkit or are available for download from the NVIDIA Developer Zone to assist you as you develop your CUDA programs, such as NVIDIAÂ® Nsightâ¢ Visual Studio Edition, and NVIDIA Visual Profiler.
+For technical support on programming questions, consult and participate in the developer forums at https://developer.nvidia.com/cuda/.
+
+
+
+6. Noticesï
+
+
+
+6.1. Noticeï
+
+This document is provided for information purposes only and shall not be regarded as a warranty of a certain functionality, condition, or quality of a product. NVIDIA Corporation (âNVIDIAâ) makes no representations or warranties, expressed or implied, as to the accuracy or completeness of the information contained in this document and assumes no responsibility for any errors contained herein. NVIDIA shall have no liability for the consequences or use of such information or for any infringement of patents or other rights of third parties that may result from its use. This document is not a commitment to develop, release, or deliver any Material (defined below), code, or functionality.
+NVIDIA reserves the right to make corrections, modifications, enhancements, improvements, and any other changes to this document, at any time without notice.
+Customer should obtain the latest relevant information before placing orders and should verify that such information is current and complete.
+NVIDIA products are sold subject to the NVIDIA standard terms and conditions of sale supplied at the time of order acknowledgement, unless otherwise agreed in an individual sales agreement signed by authorized representatives of NVIDIA and customer (âTerms of Saleâ). NVIDIA hereby expressly objects to applying any customer general terms and conditions with regards to the purchase of the NVIDIA product referenced in this document. No contractual obligations are formed either directly or indirectly by this document.
+NVIDIA products are not designed, authorized, or warranted to be suitable for use in medical, military, aircraft, space, or life support equipment, nor in applications where failure or malfunction of the NVIDIA product can reasonably be expected to result in personal injury, death, or property or environmental damage. NVIDIA accepts no liability for inclusion and/or use of NVIDIA products in such equipment or applications and therefore such inclusion and/or use is at customerâs own risk.
+NVIDIA makes no representation or warranty that products based on this document will be suitable for any specified use. Testing of all parameters of each product is not necessarily performed by NVIDIA. It is customerâs sole responsibility to evaluate and determine the applicability of any information contained in this document, ensure the product is suitable and fit for the application planned by customer, and perform the necessary testing for the application in order to avoid a default of the application or the product. Weaknesses in customerâs product designs may affect the quality and reliability of the NVIDIA product and may result in additional or different conditions and/or requirements beyond those contained in this document. NVIDIA accepts no liability related to any default, damage, costs, or problem which may be based on or attributable to: (i) the use of the NVIDIA product in any manner that is contrary to this document or (ii) customer product designs.
+No license, either expressed or implied, is granted under any NVIDIA patent right, copyright, or other NVIDIA intellectual property right under this document. Information published by NVIDIA regarding third-party products or services does not constitute a license from NVIDIA to use such products or services or a warranty or endorsement thereof. Use of such information may require a license from a third party under the patents or other intellectual property rights of the third party, or a license from NVIDIA under the patents or other intellectual property rights of NVIDIA.
+Reproduction of information in this document is permissible only if approved in advance by NVIDIA in writing, reproduced without alteration and in full compliance with all applicable export laws and regulations, and accompanied by all associated conditions, limitations, and notices.
+THIS DOCUMENT AND ALL NVIDIA DESIGN SPECIFICATIONS, REFERENCE BOARDS, FILES, DRAWINGS, DIAGNOSTICS, LISTS, AND OTHER DOCUMENTS (TOGETHER AND SEPARATELY, âMATERIALSâ) ARE BEING PROVIDED âAS IS.â NVIDIA MAKES NO WARRANTIES, EXPRESSED, IMPLIED, STATUTORY, OR OTHERWISE WITH RESPECT TO THE MATERIALS, AND EXPRESSLY DISCLAIMS ALL IMPLIED WARRANTIES OF NONINFRINGEMENT, MERCHANTABILITY, AND FITNESS FOR A PARTICULAR PURPOSE. TO THE EXTENT NOT PROHIBITED BY LAW, IN NO EVENT WILL NVIDIA BE LIABLE FOR ANY DAMAGES, INCLUDING WITHOUT LIMITATION ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, PUNITIVE, OR CONSEQUENTIAL DAMAGES, HOWEVER CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF ANY USE OF THIS DOCUMENT, EVEN IF NVIDIA HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. Notwithstanding any damages that customer might incur for any reason whatsoever, NVIDIAâs aggregate and cumulative liability towards customer for the products described herein shall be limited in accordance with the Terms of Sale for the product.
+
+
+
+6.2. OpenCLï
+
+OpenCL is a trademark of Apple Inc. used under license to the Khronos Group Inc.
+
+
+
+6.3. Trademarksï
+
+NVIDIA and the NVIDIA logo are trademarks or registered trademarks of NVIDIA Corporation in the U.S. and other countries. Other company and product names may be trademarks of the respective companies with which they are associated.
+
+
+
+
+
+
+
+
+
+
+Privacy Policy
+|
+Manage My Privacy
+|
+Do Not Sell or Share My Data
+|
+Terms of Service
+|
+Accessibility
+|
+Corporate Policies
+|
+Product Security
+|
+Contact
+
+
+  Copyright Â© 2009-2024, NVIDIA Corporation & affiliates. All rights reserved.
+
+
+Last updated on Jul 1, 2024.
+      
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,778 @@
+Crawling: https://docs.nvidia.com/cuda/ at depth: 0
+Crawling: https://docs.nvidia.com/cuda/ada-compatibility-guide/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/incomplete-lu-cholesky/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/debugger-api/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cupti/index.html at depth: 1
+Crawling: https://docs.nvidia.com/nsight-systems/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/#ptx-compiler-api-references at depth: 1
+Crawling: https://docs.nvidia.com/cuda/#cuda-toolkit-documentation-v12-4 at depth: 1
+Crawling: https://docs.nvidia.com/cuda/inline-ptx-assembly/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/pascal-compatibility-guide/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/ada-tuning-guide/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/ampere-compatibility-guide/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/#installation-guides at depth: 1
+Crawling: https://docs.nvidia.com/cuda/ptx-writers-guide-to-interoperability/index.html at depth: 1
+Crawling: https://docs.nvidia.com/deploy/cuda-compatibility/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/nvjitlink/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/#compiler-sdk at depth: 1
+Crawling: https://docs.nvidia.com/cuda/nvvm-ir-spec/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/#tools at depth: 1
+Crawling: https://docs.nvidia.com/cuda/gpudirect-rdma/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/turing-tuning-guide/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/cuda-quick-start-guide/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/parallel-thread-execution/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/demo-suite/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/nvjpeg/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/volta-compatibility-guide/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/maxwell-tuning-guide/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/hopper-compatibility-guide/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/ampere-tuning-guide/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/#miscellaneous at depth: 1
+Crawling: https://docs.nvidia.com/gpudirect-storage/api-reference-guide/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/volta-tuning-guide/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/#programming-guides at depth: 1
+Crawling: https://docs.nvidia.com/cuda/hopper-tuning-guide/index.html at depth: 1
+Crawling: https://docs.nvidia.com/gpudirect-storage/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/cudla-api/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/cuda-binary-utilities/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/cuda-features-archive/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/ptx-compiler-api/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/#application-notes at depth: 1
+Crawling: https://docs.nvidia.com/cuda/vGPU/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/cublas/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html at depth: 1
+Crawling: https://docs.nvidia.com/datacenter/tesla/mig-user-guide/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/cuda-driver-api/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/turing-compatibility-guide/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/nvfatbin/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/#cuda-api-references at depth: 1
+Crawling: https://docs.nvidia.com/cuda/eula/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/libdevice-users-guide/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/cusolver/index.html at depth: 1
+Crawling: https://docs.nvidia.com/compute-sanitizer/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/cusparse/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/maxwell-compatibility-guide/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/eflow-users-guide/index.html at depth: 1
+Crawling: https://docs.nvidia.com/nsight-compute/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/cuda-for-tegra-appnote/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/nvblas/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/cuda-gdb/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/cufft/index.html at depth: 1
+Crawling: https://docs.nvidia.com/nsight-visual-studio-edition/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/pascal-tuning-guide/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/npp/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/floating-point/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/#white-papers at depth: 1
+Crawling: https://docs.nvidia.com/cuda/libnvvm-api/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/wsl-user-guide/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/nsight-eclipse-plugins-guide/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/curand/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/cuda-runtime-api/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/profiler-users-guide/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/cuda-math-api/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/nsightee-plugins-install-guide/index.html at depth: 1
+Crawling: https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#compute-capability-7-x at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#compilation-with-nvcc at depth: 2
+Crawling: https://docs.nvidia.com/cuda/ada-compatibility-guide/index.html#building-applications-using-cuda-toolkit-10-x-or-earlier at depth: 2
+Crawling: https://docs.nvidia.com/cuda/ada-compatibility-guide/index.html#fn1 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/ada-compatibility-guide/index.html#trademarks at depth: 2
+Crawling: https://docs.nvidia.com/cuda/ada-compatibility-guide/index.html#notices at depth: 2
+Crawling: https://docs.nvidia.com/cuda/ada-compatibility-guide/index.html#applications-built-using-cuda-toolkit-11-8 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/ada-compatibility-guide/index.html#application-compatibility-on-the-nvidia-ada-gpu-architecture at depth: 2
+Crawling: https://docs.nvidia.com/cuda/ada-compatibility-guide/index.html#verifying-ada-compatibility-for-existing-applications at depth: 2
+Crawling: https://docs.nvidia.com/cuda/ada-compatibility-guide/index.html#compatibility-between-ampere-and-ada at depth: 2
+Crawling: https://docs.nvidia.com/cuda/pdf/Ada_Compatibility_Guide.pdf at depth: 2
+Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+Crawling: https://docs.nvidia.com/cuda/ada-compatibility-guide/index.html#building-applications-using-cuda-toolkit-11-0-through-11-7 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/ada-compatibility-guide/index.html#nvidia-ada-gpu-architecture-compatibility at depth: 2
+Crawling: https://docs.nvidia.com/cuda/ada-compatibility-guide/index.html#fn2 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/ada-compatibility-guide/index.html#id1 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/ada-compatibility-guide/index.html#building-applications-with-the-nvidia-ada-gpu-architecture-support at depth: 2
+Crawling: https://docs.nvidia.com/cuda/ada-compatibility-guide/index.html#independent-thread-scheduling-compatibility at depth: 2
+Crawling: https://docs.nvidia.com/cuda/ada-compatibility-guide/index.html#notice at depth: 2
+Crawling: https://docs.nvidia.com/cuda/ada-compatibility-guide/index.html#revision-history at depth: 2
+Crawling: https://docs.nvidia.com/cuda/ada-compatibility-guide/contents.html at depth: 2
+Crawling: https://docs.nvidia.com/cuda/ada-compatibility-guide/index.html#about-this-document at depth: 2
+Crawling: https://docs.nvidia.com/cuda/index.html at depth: 2
+Crawling: https://docs.nvidia.com/cuda/ada-compatibility-guide/index.html#opencl at depth: 2
+Crawling: https://docs.nvidia.com/cuda/ada-compatibility-guide/index.html#building-applications-using-cuda-toolkit-11-8 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/ada-compatibility-guide/index.html#applications-built-using-cuda-toolkit-10-2-or-earlier at depth: 2
+Crawling: https://docs.nvidia.com/cuda/ada-compatibility-guide/index.html#applications-built-using-cuda-toolkit-11-0-through-11-7 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/ada-compatibility-guide/index.html#id2 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/incomplete-lu-cholesky/index.html#id1 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/incomplete-lu-cholesky/index.html#introduction-speedup-of-incomplete-lu-cholesky-with-0-fill-in at depth: 2
+Crawling: https://docs.nvidia.com/cuda/incomplete-lu-cholesky/index.html#numerical-experiments at depth: 2
+Crawling: https://docs.nvidia.com/cuda/incomplete-lu-cholesky/index.html#numerical-experiments-csrilut-20-10-preconditioned-cg-and-bicgstab-methods at depth: 2
+Crawling: https://docs.nvidia.com/cuda/incomplete-lu-cholesky/index.html#algorithm-1-conjugate-gradient-cg at depth: 2
+Crawling: https://docs.nvidia.com/cuda/incomplete-lu-cholesky/contents.html at depth: 2
+Crawling: https://docs.nvidia.com/cuda/incomplete-lu-cholesky/index.html#numerical-experiments-csrilu0-preconditioned-cg-and-bicgstab-methods at depth: 2
+Crawling: https://docs.nvidia.com/cuda/incomplete-lu-cholesky/index.html#numerical-experiments-performance-of-bicgstab-and-cg-with-incomplete-lu-cholesky at depth: 2
+Crawling: https://docs.nvidia.com/cuda/incomplete-lu-cholesky/index.html#opencl at depth: 2
+Crawling: https://docs.nvidia.com/cuda/incomplete-lu-cholesky/index.html#trademarks at depth: 2
+Crawling: https://docs.nvidia.com/cuda/incomplete-lu-cholesky/index.html#introduction at depth: 2
+Crawling: https://docs.nvidia.com/cuda/incomplete-lu-cholesky/index.html#numerical-experiments-average-speedup-of-bicgstab-and-cg-on-gpu-with-csrilu0-and-cpu-with-all at depth: 2
+Crawling: https://docs.nvidia.com/cuda/incomplete-lu-cholesky/index.html#id2 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/incomplete-lu-cholesky/index.html#algorithm-2-bi-conjugate-gradient-stabilized-bicgstab at depth: 2
+Crawling: https://docs.nvidia.com/cuda/incomplete-lu-cholesky/index.html#notices at depth: 2
+Crawling: https://docs.nvidia.com/cuda/incomplete-lu-cholesky/index.html#conclusion at depth: 2
+Crawling: https://docs.nvidia.com/cuda/incomplete-lu-cholesky/index.html#preconditioned-iterative-methods__algorithm-2-bi-conjugate-gradient-stabilized-bicgstab at depth: 2
+Crawling: https://docs.nvidia.com/cuda/incomplete-lu-cholesky/index.html#preconditioned-iterative-methods-eq-1 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/incomplete-lu-cholesky/index.html#numerical-experiments-symmetric-positive-definite-spd-and-nonsymmetric-test-matrices at depth: 2
+Crawling: https://docs.nvidia.com/cuda/incomplete-lu-cholesky/index.html#references at depth: 2
+Crawling: https://docs.nvidia.com/cuda/incomplete-lu-cholesky/index.html#acknowledgements at depth: 2
+Crawling: https://docs.nvidia.com/cuda/incomplete-lu-cholesky/index.html#preconditioned-iterative-methods-algorithm-1-conjugate-gradient-cg at depth: 2
+Crawling: https://docs.nvidia.com/cuda/incomplete-lu-cholesky/index.html#preconditioned-iterative-methods-splitting-of-total-time-taken-on-gpu-by-preconditioned-iterative-method at depth: 2
+Crawling: https://docs.nvidia.com/cuda/incomplete-lu-cholesky/index.html#preconditioned-iterative-methods at depth: 2
+Crawling: https://docs.nvidia.com/cuda/incomplete-lu-cholesky/index.html#notice at depth: 2
+Crawling: https://docs.nvidia.com/cuda/pdf/Incomplete_LU_Cholesky.pdf at depth: 2
+Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+Crawling: https://docs.nvidia.com/cuda/incomplete-lu-cholesky/index.html#numerical-experiments-speedup-of-prec-bicgstab-and-cg-on-gpu-with-csrilu0-vs-cpu-with-all at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/r_main.html#r_attach at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/annotated.html#annotated at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/release-notes.html at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/group__DEV.html#group__DEV at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/group__INIT.html#group__INIT at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/group__DWARF.html#group__DWARF at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/release-notes.html#release-notes-12-3 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/structCUDBGEvent_1_1cases__st_1_1contextPop__st.html#structCUDBGEvent_1_1cases__st_1_1contextPop__st at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/release-notes.html#release-notes-7-0 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/pdf/CUDA_Debugger_API.pdf at depth: 2
+Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+Crawling: https://docs.nvidia.com/cuda/debugger-api/structCUDBGEvent_1_1cases__st_1_1contextCreate__st.html#structCUDBGEvent_1_1cases__st_1_1contextCreate__st at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/unionCUDBGEvent_1_1cases__st.html#unionCUDBGEvent_1_1cases__st at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/r_main.html#r_api at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/r_main.html#r_elf at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/release-notes.html#release-notes-11-8 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/modules.html#modules at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/structCUDBGEvent.html#structCUDBGEvent at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/functions.html#functions at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/structCUDBGEvent_1_1cases__st_1_1contextPush__st.html#structCUDBGEvent_1_1cases__st_1_1contextPush__st at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/structCUDBGEvent_1_1cases__st_1_1kernelFinished__st.html#structCUDBGEvent_1_1cases__st_1_1kernelFinished__st at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/r_main.html#r_abi31 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/r_main.html#r_main at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/r_main.html#r_exceptions31 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/structCUDBGEventCallbackData.html#structCUDBGEventCallbackData at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/group__GRID.html#group__GRID at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/structCUDBGEvent_1_1cases__st_1_1internalError__st.html#structCUDBGEvent_1_1cases__st_1_1internalError__st at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/group__WRITE.html#group__WRITE at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/release-notes.html#release-notes-6-5 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/group__BP.html#group__BP at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/structCUDBGAPI__st.html at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/structCUDBGGridInfo.html#structCUDBGGridInfo at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/group__GENERAL.html#group__GENERAL at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/group__EVENT.html#group__EVENT at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/structCUDBGEvent_1_1cases__st_1_1contextDestroy__st.html#structCUDBGEvent_1_1cases__st_1_1contextDestroy__st at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/deprecated.html#deprecated at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/structCUDBGEvent_1_1cases__st_1_1kernelReady__st.html#structCUDBGEvent_1_1cases__st_1_1kernelReady__st at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/structCUDBGEventCallbackData40.html#structCUDBGEventCallbackData40 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/group__EXEC.html at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/release-notes.html#release-notes at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/group__READ.html#group__READ at depth: 2
+Crawling: https://docs.nvidia.com/cuda/debugger-api/structCUDBGEvent_1_1cases__st_1_1elfImageLoaded__st.html#structCUDBGEvent_1_1cases__st_1_1elfImageLoaded__st at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-12-2-update-1 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#older-versions at depth: 2
+Crawling: https://docs.nvidia.com/cupti/api/modules.html at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-10-1 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#cupti-event-api at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#restrictions at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#reproducibility at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#profiling at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-12-1 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-11-0 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#activity-pc-sampling at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#limitations at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#profiling-and-perfworks-metric-api at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#id5 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#dynamic-attach-and-detach at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#fixed-clock-rate at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#support at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#sample-code at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#cupti-overhead at depth: 2
+Crawling: https://docs.nvidia.com/cupti/copyright-and-licenses/index.html#third-party-licenses at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#openacc at depth: 2
+Crawling: https://docs.nvidia.com/cupti/special-configurations/special-configurations.html#nvidia-virtual-gpu-vgpu at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#cupti-callback-api at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#data-flushing at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#auto-range at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#raw-metrics at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#cuda-graphs at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-12-2 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#pc-sampling-api-source-correlation at depth: 2
+Crawling: https://docs.nvidia.com/cupti/library-support/library-support.html#optix at depth: 2
+Crawling: https://docs.nvidia.com/cupti/api/data-structures.html at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#memory-overhead at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-12-3-update-1 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-12-0 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/notices-header/notices-header.html#trademarks at depth: 2
+Crawling: https://docs.nvidia.com/cupti/api/namespaces.html at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#serialization at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#cupti-profiling-api at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-10-0 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#metrics-for-capability-7-0 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#nvlink at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#platform-support at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#sass-metrics-usage at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-7-0 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#multi-pass-collection at depth: 2
+Crawling: https://docs.nvidia.com/cupti/library-support/library-support.html at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-12-5-update-1 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#tracing-overhead at depth: 2
+Crawling: https://docs.nvidia.com/cupti/index.html#cupti at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-5-5 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-11-6-update-1 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/copyright-and-licenses/index.html#nvidia-software-license-agreement at depth: 2
+Crawling: https://docs.nvidia.com/cupti/copyright-and-licenses/index.html#font-roboto at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-10-2 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#user-range at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-11-3 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#cupti-pc-sampling-api at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#resource-callbacks at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#metrics-reference at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-10-1-update-2 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#range-profiling at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#execution-overhead at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#known-issues at depth: 2
+Crawling: https://docs.nvidia.com/cupti/special-configurations/special-configurations.html#multi-instance-gpu-mig at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-11-6 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#sampling-events at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#metrics-for-capability-5-x at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-12-5 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#id1 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/copyright-and-licenses/index.html at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#other-issues at depth: 2
+Crawling: https://docs.nvidia.com/cupti/special-configurations/special-configurations.html at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#cupti-sass-metric-api at depth: 2
+Crawling: https://docs.nvidia.com/cupti/notices-header/notices-header.html#notice at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-11-4-update-1 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-11-4 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#gpu-support at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-11-7-update-1 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-9-1 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#perfworks-metric-api at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-10-1-update-1 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#synchronization-callbacks at depth: 2
+Crawling: https://docs.nvidia.com/cupti/overview/overview.html at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-6-0 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#cupti-compatibility-and-requirements at depth: 2
+Crawling: https://docs.nvidia.com/cupti/copyright-and-licenses/index.html#microsoft-detours at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-7-5 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#cupti-checkpoint-api at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-12-4 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#examples at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#cupti-initialization at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#configuration-attributes at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#cupti-metric-api at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-11-1 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#events-mapping-table at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#external-correlation at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-12-2-update-2 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#event-and-metric-api at depth: 2
+Crawling: https://docs.nvidia.com/cupti/copyright-and-licenses/index.html#boost at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-11-5-update-1 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-6-5 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-12-3 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-11-2 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#collecting-kernel-execution-events at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#profiling-overhead at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#sass-source-correlation at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#stall-reasons-mapping-table at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#driver-and-runtime-api-callbacks at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#derived-metrics at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-12-0-update-1 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#metrics-for-capability-6-x at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-11-7 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/index.html#table-of-contents at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#api-usage at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-9-0 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#metrics-mapping-table at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#data-structure-mapping-table at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-9-2 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/copyright-and-licenses/index.html#flatbuffers at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#state-callbacks at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#cupti-profiler-definitions at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-11-8 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#differences-from-event-and-metric-apis at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#migration-to-the-profiling-api at depth: 2
+Crawling: https://docs.nvidia.com/cupti/copyright-and-licenses/index.html#font-open-sans at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-8-0 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/copyright-and-licenses/index.html#font-cascadia-mono at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#nvidia-tools-extension-callbacks at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-11-5 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-12-1-update-1 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/special-configurations/special-configurations.html#windows-subsystem-for-linux-wsl at depth: 2
+Crawling: https://docs.nvidia.com/cupti/release-notes/release-notes.html#updates-in-cuda-12-4-update-1 at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#samples at depth: 2
+Crawling: https://docs.nvidia.com/cupti/notices-header/notices-header.html at depth: 2
+Crawling: https://docs.nvidia.com/cupti/main/main.html#cupti-activity-api at depth: 2
+Crawling: https://docs.nvidia.com/nsight-systems/InstallationGuide/index.html at depth: 2
+Crawling: https://docs.nvidia.com/nsight-systems/ReleaseNotes/index.html at depth: 2
+Crawling: https://docs.nvidia.com/nsight-systems/index.html#developer-interfaces at depth: 2
+Crawling: https://docs.nvidia.com/nsight-systems/Archives/index.html at depth: 2
+Crawling: https://docs.nvidia.com/nsight-systems/UserGuide/index.html at depth: 2
+Crawling: https://docs.nvidia.com/nsight-systems/CopyrightAndLicenses/index.html at depth: 2
+Crawling: https://docs.nvidia.com/nsight-systems/index.html#nsight-systems at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#group__compilation_1gac9a66bbbd47c256f4a8955517b3965da at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv412nvrtcGetNVVM12nvrtcProgramPc at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv4N11nvrtcResult26NVRTC_ERROR_INTERNAL_ERRORE at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#predefined-macros at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv411nvrtcResult at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#host-type-name-build-instructions at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#basic-usage__cuda-source-string-for-saxpy at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#group__compilation_1ga398a540d5b4eb38492af9d0468b0145b at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-driver-api/group__CUDA__MODULE.html#group__CUDA__MODULE_1g9e8047e9dbf725f0cd7cafd18bfd4d12 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#code-offline-cu at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#nvrtc-static-library at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv4N11nvrtcResult49NVRTC_ERROR_NO_NAME_EXPRESSIONS_AFTER_COMPILATIONE at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv4N11nvrtcResult37NVRTC_ERROR_NAME_EXPRESSION_NOT_VALIDE at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#code-host-type-name-cpp at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#id3 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#language at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#accessing-lowered-names at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#introduction at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#versioning-scheme at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv412nvrtcProgram at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv412nvrtcVersionPiPi at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#group__error_1ga31e41ef222c0ea75b4c48f715b3cd9f0 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv4N11nvrtcResult34NVRTC_ERROR_TIME_FILE_WRITE_FAILEDE at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#group__compilation_1gaea4745f354b8768f3e9777490d87adf0 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv418nvrtcCreateProgramP12nvrtcProgramPKcPKciPPCKcPPCKc at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#thread-safety at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#code-lowered-name-cpp at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#compilation at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#example-using-nvrtcgettypename at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#notes at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#group__compilation_1gaa64ec636c8e3e1e8ea10028866c4594b at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#id7 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#default-c-dialect at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv419nvrtcGetLoweredName12nvrtcProgramPCKcPPKc at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#getting-started at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv415nvrtcGetOptiXIR12nvrtcProgramPc at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#group__hosthelper_1ga6e22e29ebd768ef8cb001af6866f07e7 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv4I0E16nvrtcGetTypeName11nvrtcResultPNSt6stringE at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#example-dynamic-parallelism at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv422nvrtcGetSupportedArchsPi at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#error-handling at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#example at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#group__compilation_1ga0b07e4173b28a10682f21edc7140844e at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#miscellaneous-notes at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#supported-compile-options at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#group__query_1gad02fe42a81d969c0efbeb8e4ec78450d at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv417nvrtcGetCUBINSize12nvrtcProgramP6size_t at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#dynamic-parallelism-build-instructions at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#id4 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#notices at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#id8 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#group__compilation_1gaf177b85a16bd879ba5d814e7afd5e2a0 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#predefined-types at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#dynamic-parallelism at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#nvrtc-builtins-library at depth: 2
+Crawling: https://docs.nvidia.com/cuda/pdf/NVRTC_User_Guide.pdf at depth: 2
+Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#separate-compilation at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#installation at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-driver-api/group__CUDA__MODULE.html#group__CUDA__MODULE_1g3ebcd2ccb772ba9c120937a2d2831b77 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#group__compilation_1gaaa237c59615b7d4f48d5b308b5c9b140 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#group__error_1gace77107f185310fb006e7f9a722009e6 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv422nvrtcAddNameExpression12nvrtcProgramPCKc at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#group__compilation_1ga9ae65f68911d1cf0adda2af4ad8cb458 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv419nvrtcCompileProgram12nvrtcProgramiPPCKc at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv4N11nvrtcResult26NVRTC_ERROR_INVALID_OPTIONE at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#group__query_1ga04c729958964c5e7b889a644f086ad4a at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#enumerations at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv415nvrtcGetPTXSize12nvrtcProgramP6size_t at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#example-saxpy at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#id2 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#group__compilation_1gac2343fbb195dec6a0c10de30e35f2371 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/contents.html at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#dynamic-code-generation at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv4N11nvrtcResult13NVRTC_SUCCESSE at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-driver-api/group__CUDA__MODULE.html#group__CUDA__MODULE_1g04ce266ce03720f479eab76136b90c0b at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#group__compilation_1ga1f3136029db1413e362154b567297e8b at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#general-information-query at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv422nvrtcGetProgramLogSize12nvrtcProgramP6size_t at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv416nvrtcGetTypeNameRKNSt9type_infoEPNSt6stringE at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv418nvrtcGetProgramLog12nvrtcProgramPc at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#group__hosthelper_1ga793010cbd3f789a26ca956fd463d73cb at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#code-online-cpp at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#template-host-code-example at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#notice at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#group__compilation_1ga4ecc086d17712082178a241941efcd41 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#group__compilation_1ga97df8ee486fb49370c34e3a831eafcfb at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#device-lto-build-instructions at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#group__query_1ga7492ae22a599fc3a7cd654915b91d790 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv4N11nvrtcResult37NVRTC_ERROR_BUILTIN_OPERATION_FAILUREE at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv4N11nvrtcResult27NVRTC_ERROR_INVALID_PROGRAME at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#basic-usage at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv425nvrtcGetNumSupportedArchsPi at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#group__options at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#id1 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#group__compilation_1gac622d6ffb6fff71e209407da19612c1a at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv419nvrtcGetOptiXIRSize12nvrtcProgramP6size_t at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv416nvrtcGetNVVMSize12nvrtcProgramP6size_t at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv419nvrtcGetErrorString11nvrtcResult at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#stack-size at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#lowered-name-build-instructions at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#nvrtcgettypename-build-instructions at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#code-saxpy-cpp at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#interfacing-with-template-host-code at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#id9 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv417nvrtcGetLTOIRSize12nvrtcProgramP6size_t at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#example-using-lowered-name at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#execution-space at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#include-syntax at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#group__compilation_1ga475c7f5a59f9c69a03541e496942ed19 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#group__compilation_1ga59944bb118095ab53eec8994d056a18d at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv411nvrtcGetPTX12nvrtcProgramPc at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#user-interface at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#id6 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv4N11nvrtcResult23NVRTC_ERROR_COMPILATIONE at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#group__compilation_1ga4b9ff77cc01b3ec20e73606fa9d8dd1e at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#group__compilation_1ga2543158bd0e25649254a9d86a81e4f50 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#trademarks at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#group__compilation_1ga74c550e5cab81efbd59e4f72579edbd1 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#nvrtc-shared-library-versioning at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv4N11nvrtcResult47NVRTC_ERROR_NO_LOWERED_NAMES_BEFORE_COMPILATIONE at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#typedefs at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#builtin-functions at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#functions at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#opencl at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv419nvrtcDestroyProgramP12nvrtcProgram at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv4N11nvrtcResult25NVRTC_ERROR_INVALID_INPUTE at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#host-helper at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#example-device-lto-link-time-optimization at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#integer-size at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#system-requirements at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv4N11nvrtcResult25NVRTC_ERROR_OUT_OF_MEMORYE at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv4N11nvrtcResult36NVRTC_ERROR_PROGRAM_CREATION_FAILUREE at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv413nvrtcGetLTOIR12nvrtcProgramPc at depth: 2
+Crawling: https://docs.nvidia.com/cuda/nvrtc/index.html#_CPPv413nvrtcGetCUBIN12nvrtcProgramPc at depth: 2
+Crawling: https://docs.nvidia.com/cuda/inline-ptx-assembly/index.html#pitfalls at depth: 2
+Crawling: https://docs.nvidia.com/cuda/parallel-thread-execution/index.html#restricted-use-of-sub-word-sizes at depth: 2
+Crawling: https://docs.nvidia.com/cuda/pdf/Inline_PTX_Assembly.pdf at depth: 2
+Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+Crawling: https://docs.nvidia.com/cuda/inline-ptx-assembly/index.html#constraints at depth: 2
+Crawling: https://docs.nvidia.com/cuda/inline-ptx-assembly/index.html#incorrect-ptx at depth: 2
+Crawling: https://docs.nvidia.com/cuda/inline-ptx-assembly/index.html#parameters at depth: 2
+Crawling: https://docs.nvidia.com/cuda/inline-ptx-assembly/index.html#opencl at depth: 2
+Crawling: https://docs.nvidia.com/cuda/inline-ptx-assembly/index.html#trademarks at depth: 2
+Crawling: https://docs.nvidia.com/cuda/inline-ptx-assembly/index.html#notices at depth: 2
+Crawling: https://docs.nvidia.com/cuda/inline-ptx-assembly/index.html#incorrect-optimization at depth: 2
+Crawling: https://docs.nvidia.com/cuda/inline-ptx-assembly/contents.html at depth: 2
+Crawling: https://docs.nvidia.com/cuda/inline-ptx-assembly/index.html#assembler-asm-statements at depth: 2
+Crawling: https://docs.nvidia.com/cuda/inline-ptx-assembly/index.html#using-inline-ptx-assembly-in-cuda at depth: 2
+Crawling: https://docs.nvidia.com/cuda/inline-ptx-assembly/index.html#error-checking at depth: 2
+Crawling: https://docs.nvidia.com/cuda/inline-ptx-assembly/index.html#namespace-conflicts at depth: 2
+Crawling: https://docs.nvidia.com/cuda/inline-ptx-assembly/index.html#notice at depth: 2
+Crawling: https://docs.nvidia.com/cuda/inline-ptx-assembly/index.html#memory-space-conflicts at depth: 2
+Crawling: https://docs.nvidia.com/cuda/pascal-compatibility-guide/index.html#id2 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/pascal-compatibility-guide/index.html#about-this-document at depth: 2
+Crawling: https://docs.nvidia.com/cuda/pascal-compatibility-guide/index.html#notice at depth: 2
+Crawling: https://docs.nvidia.com/cuda/pdf/Pascal_Compatibility_Guide.pdf at depth: 2
+Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+Crawling: https://docs.nvidia.com/cuda/pascal-compatibility-guide/index.html#pascal-compatibility at depth: 2
+Crawling: https://docs.nvidia.com/cuda/pascal-compatibility-guide/index.html#verifying-pascal-compatibility-using-cuda-7-5 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/pascal-compatibility-guide/index.html#id1 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/pascal-compatibility-guide/index.html#building-applications-with-pascal-support at depth: 2
+Crawling: https://docs.nvidia.com/cuda/pascal-compatibility-guide/index.html#opencl at depth: 2
+Crawling: https://docs.nvidia.com/cuda/pascal-compatibility-guide/index.html#revision-history at depth: 2
+Crawling: https://docs.nvidia.com/cuda/pascal-compatibility-guide/index.html#application-compatibility-on-pascal at depth: 2
+Crawling: https://docs.nvidia.com/cuda/pascal-compatibility-guide/index.html#notices at depth: 2
+Crawling: https://docs.nvidia.com/cuda/pascal-compatibility-guide/contents.html at depth: 2
+Crawling: https://docs.nvidia.com/cuda/pascal-compatibility-guide/index.html#trademarks at depth: 2
+Crawling: https://docs.nvidia.com/cuda/pascal-compatibility-guide/index.html#applications-using-cuda-toolkit-8-0 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/pascal-compatibility-guide/index.html#verifying-pascal-compatibility-for-existing-applications at depth: 2
+Crawling: https://docs.nvidia.com/cuda/pascal-compatibility-guide/index.html#applications-using-cuda-toolkit-7-5-or-earlier at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#installing-previous-cuda-releases at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#notices at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#uninstalling-the-cuda-software at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#verify-the-installation at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#download-the-nvidia-cuda-toolkit at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/_images/valid-results-from-sample-cuda-devicequery-program.png at depth: 2
+Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#uninstallation at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#use-a-suitable-driver-model at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#id3 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#sample-projects at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/_images/valid-results-from-sample-cuda-bandwidthtest-program.png at depth: 2
+Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#additional-considerations at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#compiling-examples__valid-results-from-sample-cuda-devicequery-program at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#compiling-cuda-programs at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#compiling-examples-valid-results-from-sample-cuda-bandwidthtest-program at depth: 2
+Crawling: https://docs.nvidia.com/cuda/pdf/CUDA_Installation_Guide_Windows.pdf at depth: 2
+Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#notice at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#installation at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#id4 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#installing-cuda-development-tools at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#system-requirements at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#build-customizations-for-existing-projects at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/contents.html at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-quick-start-guide/index.html#windows at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#compiling-sample-projects at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#using-conda-to-install-the-cuda-software at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#conda-overview at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#verify-you-have-a-cuda-capable-gpu at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#compiling-examples__valid-results-from-sample-cuda-bandwidthtest-program at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#install-the-cuda-software at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#about-this-document at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#opencl at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#pip-wheels at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#introduction at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#id2 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#compiling-examples-valid-results-from-sample-cuda-devicequery-program at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#running-the-compiled-examples at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#trademarks at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#build-customizations-for-new-projects at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#objdir-as-tempdir-objtemp at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#relocatable-device-code-true-false-rdc at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#command-option-description at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#command-option-description: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000026E83C43550>, 'Connection to docs.nvidia.com timed out. (connect timeout=None)'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#device-debug-g at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#device-debug-g: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000026E83C42AD0>, 'Connection to docs.nvidia.com timed out. (connect timeout=None)'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#prec-sqrt-true-false-prec-sqrt at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#prec-sqrt-true-false-prec-sqrt: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 
+0x0000026E8BEB9350>, 'Connection to docs.nvidia.com timed out. (connect timeout=None)'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#run-args-arguments-run-args at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#run-args-arguments-run-args: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000026E8BEB8590>, 'Connection to docs.nvidia.com timed out. (connect timeout=None)'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#opt-level-n-o at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#opt-level-n-o: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000026E8C3C1550>, 'Connection to docs.nvidia.com timed out. (connect timeout=None)'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#dump-callgraph-dump-callgraph at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#dump-callgraph-dump-callgraph: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000026E8C3C1510>, 'Connection to docs.nvidia.com timed out. (connect timeout=None)'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#list-gpu-arch-arch-ls at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#list-gpu-arch-arch-ls: HTTPSConnectionPool(host='docs.nvidia.com', port=443): 
+Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000026E8BEBA190>, 'Connection to docs.nvidia.com timed out. (connect timeout=None)'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#dump-callgraph-no-demangle-dump-callgraph-no-demangle at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#dump-callgraph-no-demangle-dump-callgraph-no-demangle: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000026E8BEB8410>, 'Connection to docs.nvidia.com timed out. (connect timeout=None)'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#link-link at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#link-link: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries 
+exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000026E87D40150>, 
+'Connection to docs.nvidia.com timed out. (connect timeout=None)'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#run-run at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#run-run: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E83C40290>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#profile-pg at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#profile-pg: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E83C41950>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#extra-device-vectorization-extra-device-vectorization at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#extra-device-vectorization-extra-device-vectorization: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E83C43010>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#cuda-compilation-trajectory__cuda-compilation-from-cu-to-executable at depth: 2     
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#cuda-compilation-trajectory__cuda-compilation-from-cu-to-executable: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E83C42210>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#ftemplate-depth-limit-ftemplate-depth at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#ftemplate-depth-limit-ftemplate-depth: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E83C435D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#library-path-path-l at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#library-path-path-l: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E83C41610>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#cuda-sources at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#cuda-sources: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E83C402D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#keep-system-libraries-keep-system-libraries at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#keep-system-libraries-keep-system-libraries: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E83C42110>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#system-include-path-isystem at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#system-include-path-isystem: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E83C42750>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#verbose-v at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#verbose-v: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries 
+exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E83C40610>: 
+Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#machine-64-m at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#machine-64-m: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E83C43A90>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#default-stream-legacy-null-per-thread-default-stream at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#default-stream-legacy-null-per-thread-default-stream: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E83C41090>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#source-in-ptx-src-in-ptx at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#source-in-ptx-src-in-ptx: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E83C40790>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#target-directory-string-target-dir at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#target-directory-string-target-dir: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E83C437D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#override-directive-values-override-directive-values at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#override-directive-values-override-directive-values: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E83C42AD0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#implicit-cuda-host-code at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#implicit-cuda-host-code: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E83C40610>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#std-c-03-c-11-c-14-c-17-c-20-std at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#std-c-03-c-11-c-14-c-17-c-20-std: HTTPSConnectionPool(host='docs.nvidia.com', 
+port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E83C43D50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#nvlink-options-preserve-relocs at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#nvlink-options-preserve-relocs: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 
+0x0000026E83C41610>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#suppress-debug-info-suppress-debug-info at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#suppress-debug-info-suppress-debug-info: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E83C429D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#libdevice-directory-directory-ldir at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#libdevice-directory-directory-ldir: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E83C40F10>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#device-link-dlink at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#device-link-dlink: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max 
+retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E83C43A90>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#extensible-whole-program-ewp at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#extensible-whole-program-ewp: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E83C42650>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#wno-deprecated-declarations-wno-deprecated-declarations at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#wno-deprecated-declarations-wno-deprecated-declarations: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E83C43290>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#force-load-cache-flcm at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#force-load-cache-flcm: HTTPSConnectionPool(host='docs.nvidia.com', port=443): 
+Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E83C40190>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#expt-relaxed-constexpr-expt-relaxed-constexpr at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#expt-relaxed-constexpr-expt-relaxed-constexpr: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E83C40F10>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#ptxas-options-help at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#ptxas-options-help: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E83C415D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#nvlink-options-disable-warnings at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#nvlink-options-disable-warnings: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E83C43B10>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#compiler-options-options-xcompiler at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#compiler-options-options-xcompiler: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E83C42FD0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#generic-tool-options at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#generic-tool-options: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E83C41C10>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#nvlink-options-verbose at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#nvlink-options-verbose: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E83C43610>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#virtual-architectures at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#virtual-architectures: HTTPSConnectionPool(host='docs.nvidia.com', port=443): 
+Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E8C32D110>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#virtual-architecture-macros at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#virtual-architecture-macros: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E83C434D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#output-directory-directory-odir at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#output-directory-directory-odir: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E8C32CE90>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#supported-input-file-suffixes at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#supported-input-file-suffixes: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E83C41890>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#cuda-programming-model at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#cuda-programming-model: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E8C32F850>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#host-relocatable-link-r at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#host-relocatable-link-r: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E83C43610>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#compile-as-tools-patch-astoolspatch at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#compile-as-tools-patch-astoolspatch: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E8C32D890>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#kernels-used-kernels-used at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#kernels-used-kernels-used: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E87D41F90>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#options-for-specifying-the-compilation-phase at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#options-for-specifying-the-compilation-phase: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E8C32F390>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#printing-code-generation-statistics at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#printing-code-generation-statistics: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E83C40E50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#entries-entry-e at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#entries-entry-e: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E8C3C2B50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#include-path-path-i at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#include-path-path-i: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E8C3C3190>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#def-load-cache-dlcm at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#def-load-cache-dlcm: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E8C3C3650>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#xptxas-xptxas at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#xptxas-xptxas: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E8C3C2850>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#notice at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#notice: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E8C3C3290>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#options-for-steering-cuda-compilation at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#options-for-steering-cuda-compilation: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E8C3C2FD0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#cudart-none-shared-static-cudart at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#cudart-none-shared-static-cudart: HTTPSConnectionPool(host='docs.nvidia.com', 
+port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E8C3C1B90>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#generate-nonsystem-dependencies-with-compile-mmd at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#generate-nonsystem-dependencies-with-compile-mmd: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E8C3C1D50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#gpu-generations at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#gpu-generations: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E8C3C2F50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#virtual-architectures-virtual-architectures at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#virtual-architectures-virtual-architectures: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E8C3C2290>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#define-macro-def-d at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#define-macro-def-d: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E8C3C1FD0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#prec-div-true-false-prec-div at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#prec-div-true-false-prec-div: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E8C3C2F50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#jump-table-density-percentage-jtd at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#jump-table-density-percentage-jtd: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object 
+at 0x0000026E8C3C1110>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#potential-separate-compilation-issues at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#potential-separate-compilation-issues: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E8521DB50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#wno-deprecated-gpu-targets-wno-deprecated-gpu-targets at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#wno-deprecated-gpu-targets-wno-deprecated-gpu-targets: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E8C32F710>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#wdefault-stream-launch-wdefault-stream-launch at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#wdefault-stream-launch-wdefault-stream-launch: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E8389EA50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#ptxas-options-device-debug at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#ptxas-options-device-debug: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E8C32FE10>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#extended-notation at depth: 2
+Failed to fetch https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#extended-notation: HTTPSConnectionPool(host='docs.nvidia.com', port=443): Max 
+retries exceeded with url: /cuda/cuda-compiler-driver-nvcc/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000026E8C32CF90>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#just-in-time-compilation-just-in-time-compilation at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#diag-suppress-errnum-diag-suppress at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#ptxas-options-version at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#further-mechanisms at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#gen-host-linker-script-ghls at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#shorthand at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#suppress-arch-warning-suppress-arch-warning at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#nvcc-options-for-separate-compilation at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#dependency-target-name-target-mt at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#dryrun-dryrun at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#threads-number-t at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#shorthand-2 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#supported-host-compilers at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#x-c-c-cu-x at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#allow-expensive-optimizations-allow-expensive-optimizations at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#nvcc-environment-variables at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#nvlink-options-warning-as-error at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#generate-nonsystem-dependencies-mm at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#wext-lambda-captures-this-wext-lambda-captures-this at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#ftemplate-backtrace-limit-limit-ftemplate-backtrace-limit at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#optimization-of-separate-compilation at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#no-device-link-nodlink at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#disable-warnings-w at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#cuda-cuda at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#using-separate-compilation-in-cuda at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#supported-phases at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#nvcc-examples at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#fatbinaries at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#nvcc-identification-macro at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#code-changes-for-separate-compilation at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#ignore-host-info-ignore-host-info at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#position-independent-code-pic at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#shorthand-1 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#nvcc-options-for-separate-compilation-nvcc-options-for-separate-compilation at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#minnctapersm-minnctapersm at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#drive-prefix-prefix-dp at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#fmad-true-false-fmad at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#gpu-name-gpuname-arch at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#device-w-dw at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#dont-use-profile-noprof at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#ptxas-options-options-file at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#dlink-time-opt-dlto at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#optix-ir-optix-ir at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#library-library-l at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#cubin-cubin at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#nvlink-options-options-xnvlink at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#lib-lib at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#ptxas-options-verbose at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#keep-keep at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#input-drive-prefix-prefix-idp at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#gpu-compilation at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#preprocess-e at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#use-local-env-use-local-env at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#options-file-file-optf at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#no-host-device-initializer-list-nohdinitlist at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#notices at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#gpu-feature-list at depth: 2
+Crawling: https://docs.nvidia.com/cuda/pdf/CUDA_Compiler_Driver_NVCC.pdf at depth: 2
+Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#libraries at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#dopt-kind-dopt at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#time-filename-time at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#ptxas-options-maxrregcount at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#pre-include-file-include at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#options-for-specifying-behavior-of-compiler-linker at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#command-option-types-and-notation at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#extended-lambda-extended-lambda at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#the-cuda-compilation-trajectory at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#options-for-passing-specific-phase-options at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#optimization-info-kind-opt-info at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#purpose-of-nvcc at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#warn-on-local-memory-usage-warn-lmem-usage at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#options-for-altering-compiler-linker-behavior at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#generic-tool-options-list-gpu-code at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#wmissing-launch-bounds-wmissing-launch-bounds at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#restrict-restrict at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#forward-unknown-to-host-linker-forward-unknown-to-host-linker at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#dependency-output-file-mf at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#generate-dependencies-with-compile-md at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#cuda-compilation-trajectory-cuda-compilation-from-cu-to-executable at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#overview at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#shorthand-3 at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#gpu-code-code-code at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#options-for-guiding-the-compiler-driver at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#ptxas-options-options-xptxas at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#ptxas-options-generate-line-info at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#object-compatibility at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#options-for-steering-gpu-code-generation-keep-device-functions at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#ftz-true-false-ftz at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#cuda-compilation-trajectory at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#keep-device-functions-keep-device-functions at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#help-h at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#suppress-async-bulk-multicast-advisory-warning-suppress-async-bulk-multicast-advisory-warning at depth: 2
+Crawling: https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#compile-c at depth: 2

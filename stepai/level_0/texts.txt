@@ -1,0 +1,438 @@
+
+
+
+
+
+CUDA Toolkit Documentation 12.5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Release Notes
+CUDA Features Archive
+EULA
+
+Installation Guides
+
+Quick Start Guide
+Installation Guide Windows
+Installation Guide Linux
+
+Programming Guides
+
+Programming Guide
+Best Practices Guide
+Maxwell Compatibility Guide
+Pascal Compatibility Guide
+Volta Compatibility Guide
+Turing Compatibility Guide
+NVIDIA Ampere GPU Architecture Compatibility Guide
+Hopper Compatibility Guide
+Ada Compatibility Guide
+Maxwell Tuning Guide
+Pascal Tuning Guide
+Volta Tuning Guide
+Turing Tuning Guide
+NVIDIA Ampere GPU Architecture Tuning Guide
+Hopper Tuning Guide
+Ada Tuning Guide
+PTX ISA
+Video Decoder
+PTX Interoperability
+Inline PTX Assembly
+
+CUDA API References
+
+CUDA Runtime API
+CUDA Driver API
+CUDA Math API
+cuBLAS
+cuDLA API
+NVBLAS
+nvJPEG
+cuFFT
+CUB
+CUDA C++ Standard Library
+cuFile API Reference Guide
+cuRAND
+cuSPARSE
+NPP
+nvJitLink
+nvFatbin
+NVRTC (Runtime Compilation)
+Thrust
+cuSOLVER
+
+PTX Compiler API References
+
+PTX Compiler APIs
+
+Miscellaneous
+
+CUDA Demo Suite
+CUDA on WSL
+CUDA on EFLOW
+Multi-Instance GPU (MIG)
+CUDA Compatibility
+CUPTI
+Debugger API
+GPUDirect RDMA
+GPUDirect Storage
+vGPU
+
+Tools
+
+NVCC
+CUDA-GDB
+Compute Sanitizer
+Nsight Eclipse Plugins Installation Guide
+Nsight Eclipse Plugins Edition
+Nsight Systems
+Nsight Compute
+Nsight Visual Studio Edition
+Profiler
+CUDA Binary Utilities
+
+White Papers
+
+Floating Point and IEEE 754
+Incomplete-LU and Cholesky Preconditioned Iterative Methods
+
+Application Notes
+
+CUDA for Tegra
+
+Compiler SDK
+
+libNVVM API
+libdevice Userâs Guide
+NVVM IR
+
+
+
+
+
+
+landing
+
+
+
+
+
+ »
+CUDA Toolkit Documentation 12.5 Update 1
+
+
+
+CUDA Toolkit Archive
+                  -
+                 
+                  Send Feedback
+
+
+
+ 
+
+
+
+
+
+
+
+CUDA Toolkit Documentation 12.5 Update 1ï
+Develop, Optimize and Deploy GPU-Accelerated Apps
+The NVIDIAÂ® CUDAÂ® Toolkit provides a development environment for creating high performance GPU-accelerated
+applications. With the CUDA Toolkit, you can develop, optimize, and deploy your applications on GPU-accelerated
+embedded systems, desktop workstations, enterprise data centers, cloud-based platforms and HPC supercomputers.
+The toolkit includes GPU-accelerated libraries, debugging and optimization tools, a C/C++ compiler, and a runtime
+library to deploy your application.
+Using built-in capabilities for distributing computations across multi-GPU configurations, scientists and researchers
+can develop applications that scale from single GPU workstations to cloud installations with thousands of GPUs.
+
+
+Release NotesThe Release Notes for the CUDA Toolkit.
+
+CUDA Features ArchiveThe list of CUDA features by release.
+
+EULAThe CUDA Toolkit End User License Agreement applies to the NVIDIA CUDA Toolkit, the NVIDIA CUDA Samples, the NVIDIA Display Driver, NVIDIA Nsight tools (Visual Studio Edition), and the associated documentation on CUDA APIs, programming model and development tools. If you do not agree with the terms and conditions of the license agreement, then do not download or use the software.
+
+
+
+
+Installation Guidesï
+
+Quick Start GuideThis guide provides the minimal first-steps instructions for installation and verifying CUDA on a standard system.
+
+Installation Guide WindowsThis guide discusses how to install and check for correct operation of the CUDA Development Tools on Microsoft Windows systems.
+
+Installation Guide LinuxThis guide discusses how to install and check for correct operation of the CUDA Development Tools on GNU/Linux systems.
+
+
+
+
+
+Programming Guidesï
+
+Programming GuideThis guide provides a detailed discussion of the CUDA programming model and programming interface. It then describes the hardware implementation, and provides guidance on how to achieve maximum performance. The appendices include a list of all CUDA-enabled devices, detailed description of all extensions to the C++ language, listings of supported mathematical functions, C++ features supported in host and device code, details on texture fetching, technical specifications of various devices, and concludes by introducing the low-level driver API.
+
+Best Practices GuideThis guide presents established parallelization and optimization techniques and explains coding metaphors and idioms that can greatly simplify programming for CUDA-capable GPU architectures. The intent is to provide guidelines for obtaining the best performance from NVIDIA GPUs using the CUDA Toolkit.
+
+Maxwell Compatibility GuideThis application note is intended to help developers ensure that their NVIDIA CUDA applications will run properly on GPUs based on the NVIDIA Maxwell Architecture. This document provides guidance to ensure that your software applications are compatible with Maxwell.
+
+Pascal Compatibility GuideThis application note is intended to help developers ensure that their NVIDIA CUDA applications will run properly on GPUs based on the NVIDIA Pascal Architecture. This document provides guidance to ensure that your software applications are compatible with Pascal.
+
+Volta Compatibility GuideThis application note is intended to help developers ensure that their NVIDIA CUDA applications will run properly on GPUs based on the NVIDIA Volta Architecture. This document provides guidance to ensure that your software applications are compatible with Volta.
+
+Turing Compatibility GuideThis application note is intended to help developers ensure that their NVIDIA CUDA applications will run properly on GPUs based on the NVIDIA Turing Architecture. This document provides guidance to ensure that your software applications are compatible with Turing.
+
+NVIDIA Ampere GPU Architecture Compatibility GuideThis application note is intended to help developers ensure that their NVIDIA CUDA applications will run properly on GPUs based on the NVIDIA Ampere GPU Architecture. This document provides guidance to ensure that your software applications are compatible with NVIDIA Ampere GPU architecture.
+
+Hopper Compatibility GuideThis application note is intended to help developers ensure that their NVIDIA CUDA applications will run properly on the Hopper GPUs. This document provides guidance to ensure that your software applications are compatible with Hopper architecture.
+
+Ada Compatibility GuideThis application note is intended to help developers ensure that their NVIDIA CUDA applications will run properly on the Ada GPUs. This document provides guidance to ensure that your software applications are compatible with Ada architecture.
+
+Maxwell Tuning GuideMaxwell is NVIDIAâs 4th-generation architecture for CUDA compute applications. Applications that follow the best practices for the Kepler architecture should typically see speedups on the Maxwell architecture without any code changes. This guide summarizes the ways that applications can be fine-tuned to gain additional speedups by leveraging Maxwell architectural features.
+
+Pascal Tuning GuidePascal is NVIDIAâs 5th-generation architecture for CUDA compute applications. Applications that follow the best practices for the Maxwell architecture should typically see speedups on the Pascal architecture without any code changes. This guide summarizes the ways that applications can be fine-tuned to gain additional speedups by leveraging Pascal architectural features.
+
+Volta Tuning GuideVolta is NVIDIAâs 6th-generation architecture for CUDA compute applications. Applications that follow the best practices for the Pascal architecture should typically see speedups on the Volta architecture without any code changes. This guide summarizes the ways that applications can be fine-tuned to gain additional speedups by leveraging Volta architectural features.
+
+Turing Tuning GuideTuring is NVIDIAâs 7th-generation architecture for CUDA compute applications. Applications that follow the best practices for the Pascal architecture should typically see speedups on the Turing architecture without any code changes. This guide summarizes the ways that applications can be fine-tuned to gain additional speedups by leveraging Turing architectural features.
+
+NVIDIA Ampere GPU Architecture Tuning GuideNVIDIA Ampere GPU Architecture is NVIDIAâs 8th-generation architecture for CUDA compute applications. Applications that follow the best practices for the NVIDIA Volta architecture should typically see speedups on the NVIDIA Ampere GPU Architecture without any code changes. This guide summarizes the ways that applications can be fine-tuned to gain additional speedups by leveraging NVIDIA Ampere GPU Architectureâs features.
+
+Hopper Tuning GuideHopper GPU Architecture is NVIDIAâs 9th-generation architecture for CUDA compute applications. Applications that follow the best practices for the NVIDIA Volta architecture should typically see speedups on the Hopper GPU Architecture without any code changes. This guide summarizes the ways that applications can be fine-tuned to gain additional speedups by leveraging Hopper GPU Architectureâs features.
+
+Ada Tuning GuideThe NVIDIAÂ® Ada GPU architecture is NVIDIAâs latest architecture for CUDAÂ® compute applications. The NVIDIA Ada GPU architecture retains and extends the same CUDA programming model provided by previous NVIDIA GPU architectures such as NVIDIA Ampere and Turing, and applications that follow the best practices for those architectures should typically see speedups on the NVIDIA Ada architecture without any code changes. This guide summarizes the ways that an application can be fine-tuned to gain additional speedups by leveraging the NVIDIA Ada GPU architectureâs features.
+
+PTX ISAThis guide provides detailed instructions on the use of PTX, a low-level parallel thread execution virtual machine and instruction set architecture (ISA). PTX exposes the GPU as a data-parallel computing device.
+
+Video DecoderNVIDIA Video Decoder (NVCUVID) is deprecated. Instead, use the NVIDIA Video Codec SDK (https://developer.nvidia.com/nvidia-video-codec-sdk).
+
+PTX InteroperabilityThis document shows how to write PTX that is ABI-compliant and interoperable with other CUDA code.
+
+Inline PTX AssemblyThis document shows how to inline PTX (parallel thread execution) assembly language statements into CUDA code. It describes available assembler statement parameters and constraints, and the document also provides a list of some pitfalls that you may encounter.
+
+
+
+
+
+CUDA API Referencesï
+
+CUDA Runtime APIFields in structures might appear in order that is different from the order of declaration.
+
+CUDA Driver APIFields in structures might appear in order that is different from the order of declaration.
+
+CUDA Math APIThe CUDA math API.
+
+cuBLASThe cuBLAS library is an implementation of BLAS (Basic Linear Algebra Subprograms) on top of the NVIDIA CUDA runtime. It allows the user to access the computational resources of NVIDIA Graphical Processing Unit (GPU), but does not auto-parallelize across multiple GPUs.
+
+cuDLA APIThe cuDLA API.
+
+NVBLASThe NVBLAS library is a multi-GPUs accelerated drop-in BLAS (Basic Linear Algebra Subprograms) built on top of the NVIDIA cuBLAS Library.
+
+nvJPEGThe nvJPEG Library provides high-performance GPU accelerated JPEG decoding functionality for image formats commonly used in deep learning and hyperscale multimedia applications.
+
+cuFFTThe cuFFT library user guide.
+
+CUBThe user guide for CUB.
+
+CUDA C++ Standard LibraryThe API reference for libcu++, the CUDA C++ standard library.
+
+cuFile API Reference GuideThe NVIDIAÂ® GPUDirectÂ® Storage cuFile API Reference Guide provides information about the preliminary version of the cuFile API reference guide that is used in applications and frameworks to leverage GDS technology and describes the intent, context, and operation of those APIs, which are part of the GDS technology.
+
+cuRANDThe cuRAND library user guide.
+
+cuSPARSEThe cuSPARSE library user guide.
+
+NPPNVIDIA NPP is a library of functions for performing CUDA accelerated processing. The initial set of functionality in the library focuses on imaging and video processing and is widely applicable for developers in these areas. NPP will evolve over time to encompass more of the compute heavy tasks in a variety of problem domains. The NPP library is written to maximize flexibility, while maintaining high performance.
+
+nvJitLinkThe user guide for the nvJitLink library.
+
+nvFatbinThe user guide for the nvFatbin library.
+
+NVRTC (Runtime Compilation)NVRTC is a runtime compilation library for CUDA C++. It accepts CUDA C++ source code in character string form and creates handles that can be used to obtain the PTX. The PTX string generated by NVRTC can be loaded by cuModuleLoadData and cuModuleLoadDataEx, and linked with other modules by cuLinkAddData of the CUDA Driver API. This facility can often provide optimizations and performance not possible in a purely offline static compilation.
+
+ThrustThe C++ parallel algorithms library.
+
+cuSOLVERThe cuSOLVER library user guide.
+
+
+
+
+
+PTX Compiler API Referencesï
+
+PTX Compiler APIsThis guide shows how to compile a PTX program into GPU assembly code using APIs provided by the static PTX Compiler library.
+
+
+
+
+
+
+Miscellaneousï
+CUDA Demo SuiteThis document describes the demo applications shipped with the CUDA Demo Suite.
+
+CUDA on WSLThis guide is intended to help users get started with using NVIDIA CUDA on Windows Subsystem for Linux (WSL 2). The guide covers installation and running CUDA applications and containers in this environment.
+
+Multi-Instance GPU (MIG)This edition of the user guide describes the Multi-Instance GPU feature of the NVIDIAÂ® A100 GPU.
+
+CUDA CompatibilityThis document describes CUDA Compatibility, including CUDA Enhanced Compatibility and CUDA Forward Compatible Upgrade.
+
+CUPTIThe CUPTI-API. The CUDA Profiling Tools Interface (CUPTI) enables the creation of profiling and tracing tools that target CUDA applications.
+
+Debugger APIThe CUDA debugger API.
+
+GPUDirect RDMAA technology introduced in Kepler-class GPUs and CUDA 5.0, enabling a direct path for communication between the GPU and a third-party peer device on the PCI Express bus when the devices share the same upstream root complex using standard features of PCI Express. This document introduces the technology and describes the steps necessary to enable a GPUDirect RDMA connection to NVIDIA GPUs within the Linux device driver model.
+
+GPUDirect StorageThe documentation for GPUDirect Storage.
+
+vGPUvGPUs that support CUDA.
+
+
+
+
+
+Toolsï
+
+NVCCThis is a reference document for nvcc, the CUDA compiler driver. nvcc accepts a range of conventional compiler options, such as for defining macros and include/library paths, and for steering the compilation process.
+
+CUDA-GDBThe NVIDIA tool for debugging CUDA applications running on Linux and QNX, providing developers with a mechanism for debugging CUDA applications running on actual hardware. CUDA-GDB is an extension to the x86-64 port of GDB, the GNU Project debugger.
+
+Compute SanitizerThe user guide for Compute Sanitizer.
+
+Nsight Eclipse Plugins Installation GuideNsight Eclipse Plugins Installation Guide
+
+Nsight Eclipse Plugins EditionNsight Eclipse Plugins Edition getting started guide
+
+Nsight SystemsThe documentation for Nsight Systems.
+
+Nsight ComputeThe NVIDIA Nsight Compute is the next-generation interactive kernel profiler for CUDA applications. It provides detailed performance metrics and API debugging via a user interface and command line tool.
+
+Nsight Visual Studio EditionThe documentation for Nsight Visual Studio Edition.
+
+ProfilerThis is the guide to the Profiler.
+
+CUDA Binary UtilitiesThe application notes for cuobjdump, nvdisasm, and nvprune.
+
+
+
+
+
+White Papersï
+
+Floating Point and IEEE 754A number of issues related to floating point accuracy and compliance are a frequent source of confusion on both CPUs and GPUs. The purpose of this white paper is to discuss the most common issues related to NVIDIA GPUs and to supplement the documentation in the CUDA C++ Programming Guide.
+
+Incomplete-LU and Cholesky Preconditioned Iterative MethodsIn this white paper we show how to use the cuSPARSE and cuBLAS libraries to achieve a 2x speedup over CPU in the incomplete-LU and Cholesky preconditioned iterative methods. We focus on the Bi-Conjugate Gradient Stabilized and Conjugate Gradient iterative methods, that can be used to solve large sparse nonsymmetric and symmetric positive definite linear systems, respectively. Also, we comment on the parallel sparse triangular solve, which is an essential building block in these algorithms.
+
+
+
+
+
+Application Notesï
+
+CUDA for TegraThis application note provides an overview of NVIDIAÂ® TegraÂ® memory architecture and considerations for porting code from a discrete GPU (dGPU) attached to an x86 system to the TegraÂ® integrated GPU (iGPU). It also discusses EGL interoperability.
+
+
+
+
+
+Compiler SDKï
+
+libNVVM APIThe libNVVM API.
+
+libdevice Userâs GuideThe libdevice library is an LLVM bitcode library that implements common functions for GPU kernels.
+
+NVVM IRNVVM IR is a compiler IR (intermediate representation) based on the LLVM IR. The NVVM IR is designed to represent GPU compute kernels (for example, CUDA kernels). High-level language front-ends, like the CUDA C compiler front-end, can generate NVVM IR.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Privacy Policy
+|
+Manage My Privacy
+|
+Do Not Sell or Share My Data
+|
+Terms of Service
+|
+Accessibility
+|
+Corporate Policies
+|
+Product Security
+|
+Contact
+
+© Copyright 2007-2024, NVIDIA Corporation & affiliates. All rights reserved.
+      Last updated on Jul 1, 2024.
+      
+
+
+
+
+
+
+
+
+
+
