@@ -40,7 +40,10 @@ index_name = "chatwithpdf"
 # If a PDF file is uploaded
 if uploaded_file is not None:
     
-    
+    if "chat_history" not in st.session_state:
+        st.session_state.chat_history = [
+            AIMessage(content="Hello, I am a bot. How can I help you?"),
+        ]
     # Extract and display text
     pdf_text = get_pdf_text(uploaded_file)
     
@@ -77,7 +80,15 @@ if uploaded_file is not None:
             retriever=vector_store.as_retriever()
         )
         response = qa.invoke(query)
-        st.write(f"Answer: {response['result']}")
+        st.session_state.chat_history.append(HumanMessage(content=query))
+        st.session_state.chat_history.append(AIMessage(content=response))
+    for message in st.session_state.chat_history:
+        if isinstance(message,AIMessage):
+            with st.chat_message("AI"):
+                st.write(message.content)
+        elif isinstance(message,HumanMessage):
+            with st.chat_message("Human"):
+                st.write(message.content)
 
 else:
     st.write("Please upload a PDF to get started.")
