@@ -38,11 +38,10 @@ index_name = "chatwithpdf"
 
 # If a PDF file is uploaded
 if uploaded_file is not None:
-    st.write("Processing the PDF file...")
+    
     
     # Extract and display text
     pdf_text = get_pdf_text(uploaded_file)
-    st.text_area("Extracted Text", pdf_text[:1000], height=300)  
     
     # Split into chunks
     text_chunks = get_text_chunks(pdf_text)
