@@ -49,7 +49,7 @@ if uploaded_file is not None:
     
     
     # Create OpenAI embeddings
-    openai_api_key = st.secrets['open_api_key']
+    openai_api_key = st.secrets['openai_api_key']
     embedding = OpenAIEmbeddings(openai_api_key=openai_api_key)
     
     # Store in Pinecone vector store
