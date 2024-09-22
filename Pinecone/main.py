@@ -68,7 +68,7 @@ if uploaded_file is not None:
     st.write("PDF text has been processed and stored in Pinecone.")
 
     # Query input
-    query = st.chat_input("Ask a question based on the document", "")
+    query = st.chat_input("Ask a question based on the document")
     
     # Query processing
     if query:
