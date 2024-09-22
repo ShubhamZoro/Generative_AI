@@ -47,6 +47,7 @@ def get_vectorstore_from_url(pdf_docs):
     openai_api_key = st.secrets['openai_api_key']
     embedding = OpenAIEmbeddings(openai_api_key=openai_api_key)
     # Store in Pinecone vector store
+    index_name="chatwithpdf"
     pinecone_key =st.secrets['pinecone_api_key']
     os.environ["PINECONE_API_KEY"] = pinecone_key
     vector_store = PineconeVectorStore.from_texts(
