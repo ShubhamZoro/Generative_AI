@@ -39,7 +39,7 @@ def get_text_chunks(text):
     chunks = text_splitter.split_text(text)
     return chunks
 
-def get_vectorstore_from_url(pdf_docs):
+def get_vectorstore(pdf_docs):
     #get the text document forms
     text=get_pdf_text(pdf_docs)
     text_chunks=get_text_chunks(text)
@@ -101,7 +101,7 @@ else:
         ]
     #create coversation chain
     if "vector_store" not in st.session_state:
-        st.session_state.vector_store = get_vectorstore_from_url(pdf_docs)
+        st.session_state.vector_store = get_vectorstore(pdf_docs)
     retriever_chain=get_context_retriever_chain(st.session_state.vector_store)
 
     #user input
@@ -118,9 +118,3 @@ else:
         elif isinstance(message,HumanMessage):
             with st.chat_message("Human"):
                 st.write(message.content)
-
-
-
-
-
-
