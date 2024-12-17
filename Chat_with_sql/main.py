@@ -9,7 +9,7 @@ load_dotenv()
 #To load the database
 os.environ["OPENAI_API_KEY"]=st.secrets['api_key']
 
-def load_db(db_name):
+def load_db():
     db=SQLDatabase.from_uri(f"sqlite:///Chinook.db")
     return db
 
@@ -49,9 +49,10 @@ def main():
     st.title("SQL Chat bot")
     col1,col2,=st.columns([2,3])
     with col1:
-        file_name=st.text_input("Enter name of a DB file")
+        #file_name=st.text_input("Enter name of a DB file")
+        file_name="Chinook.db"
         if st.button("Load DB"):
-            db=load_db(file_name)
+            db=load_db()
 
             st.subheader("Table Names")
             st.code(db.get_usable_table_names())
@@ -60,7 +61,7 @@ def main():
 
     with col2:
         if file_name !="":
-            db=load_db(file_name)
+            db=load_db()
             chain=chain_create(db)
             question=st.text_input("Write a question about the data",key="question")
             if st.button("Get Answer"):
