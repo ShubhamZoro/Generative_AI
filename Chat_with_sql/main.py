@@ -7,7 +7,7 @@ import os
 import streamlit as st
 load_dotenv()
 #To load the database
-os.environ["OPENAI_API_KEY"]=os.getenv("OPENAI_API_KEY")
+os.environ["OPENAI_API_KEY"]=st.secrets['api_key']
 
 def load_db(db_name):
     db=SQLDatabase.from_uri(f"sqlite:///Chinook.db")
