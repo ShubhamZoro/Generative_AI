@@ -18,7 +18,7 @@ st.set_page_config(layout="wide", page_title="Database Administrator")
 
 load_dotenv()
 
-os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
+os.environ["OPENAI_API_KEY"] = st.secrets['api_key']
 
 def create_dataframe(result, columns):
     json_data = []
@@ -150,7 +150,7 @@ def main():
             if st.button("Create Graph"):
                 try:
                     if st.session_state.df is not None:
-                        llm = OpenAI(api_token=os.getenv("OPENAI_API_KEY"))
+                        llm = OpenAI(api_token=st.secrets['api_key'])
                         df = SmartDataframe(st.session_state.df, config={
                             "llm": llm
                         })
