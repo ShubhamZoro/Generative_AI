@@ -5,4 +5,4 @@ pandasai
 seaborn
 python-dotenv
 streamlit
-pandas
+pandas==2.1.2
