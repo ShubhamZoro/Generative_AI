@@ -109,7 +109,7 @@ def main():
         st.session_state.graph_response = None
 
     with col1:
-        file_name = st.text_input("Enter name of a DB file")
+        file_name = st.text_input("Enter name of a DB file eg:Chinook.db")
         if st.button("Load DB"):
             try:
                 db = load_db(file_name)
