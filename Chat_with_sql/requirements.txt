@@ -1,4 +1,7 @@
 langchain_community
+langchain
 langchain_openai
+pandasai
+seaborn
 python-dotenv
 streamlit
