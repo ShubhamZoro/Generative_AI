@@ -12,7 +12,6 @@ from qa_agent import (
     PlaywrightScriptGenerator, TestExecutor, ReportGenerator
 )
 import os
-
 # Page config
 st.set_page_config(
     page_title="QAGenie - AI QA Agent",
