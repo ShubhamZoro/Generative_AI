@@ -6,8 +6,7 @@ from datetime import datetime
 from youtube_transcript_api import YouTubeTranscriptApi as yta
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage, SystemMessage
-from langgraph.graph import Graph, StateGraph, END
-from langgraph.prebuilt import ToolExecutor, ToolInvocation
+from langgraph.graph import StateGraph, END
 from playwright.async_api import async_playwright
 import streamlit as st
 from dataclasses import dataclass, asdict
@@ -20,7 +19,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Configure API keys
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+OPENAI_API_KEY = ""
 
 # Initialize models
 llm = ChatOpenAI(temperature=0, model="gpt-4o", api_key=OPENAI_API_KEY)
@@ -128,16 +127,29 @@ Detailed Transcript:
                 self.logger.error(f"Fallback transcription also failed: {fallback_error}")
                 raise Exception(f"Failed to extract transcript: {str(e)}")
 
+from langchain_openai import ChatOpenAI
+from langchain_core.messages import HumanMessage, SystemMessage
+import json
+import logging
+
+logger = logging.getLogger(__name__)
+
 class TestCaseGenerator:
     """Generates test cases from video transcript"""
-    
+
     def __init__(self):
-        self.llm = llm
-    
-    async def generate_test_cases(self, transcript: str) -> List[TestCase]:
+        self.llm = ChatOpenAI(temperature=0, model="gpt-4o",api_key=OPENAI_API_KEY)
+
+    async def generate_test_cases(self, transcript: str):
         """Generate comprehensive test cases from transcript"""
-        
-        prompt = f"""{QA_AGENT_PROMPT}
+
+        prompt = """You are QAgenie — a calm, thorough AI QA assistant.
+Your mission is to ensure flawless user experiences on Recruter.ai.
+You carefully read help documents and watch training videos to understand user flows, edge cases, and expected UI behaviors.
+You automatically generate complete, accurate, and maintainable frontend test cases in Playwright.
+You run tests systematically, capture results, and summarize findings clearly with actionable insights.
+You never skip edge cases and always consider accessibility, cross-browser compatibility, and user error handling.
+You escalate ambiguous flows with clear context for clarification rather than guessing.
 
 Based on the following video transcript of Recruter.ai, generate comprehensive test cases covering:
 1. Core user flows (happy path)
@@ -150,30 +162,36 @@ Based on the following video transcript of Recruter.ai, generate comprehensive t
 Transcript:
 {transcript}
 
-Generate test cases in the following JSON format:
-{{
+Generate test cases in the following strict JSON format:
+{
     "test_cases": [
-        {{
+        {
             "id": "TC001",
             "name": "Test case name",
             "description": "Detailed description",
             "steps": [
-                {{"action": "navigate", "target": "URL", "data": ""}},
-                {{"action": "click", "target": "selector", "data": ""}},
-                {{"action": "fill", "target": "selector", "data": "value"}}
+                {"action": "navigate", "target": "URL", "data": ""},
+                {"action": "click", "target": "selector", "data": ""},
+                {"action": "fill", "target": "selector", "data": "value"}
             ],
             "expected_result": "Expected outcome",
             "test_type": "core|edge_case|accessibility|performance",
             "priority": "high|medium|low"
-        }}
+        }
     ]
-}}
-"""
-        
-        response = await self.llm.ainvoke([SystemMessage(content=QA_AGENT_PROMPT), 
-                                          HumanMessage(content=prompt)])
-        
-        # Parse JSON response
+}
+Only return the JSON. No markdown formatting, no explanations, no text outside the JSON."""
+
+        messages = [
+            SystemMessage(content="Respond strictly with JSON. No text, no formatting, no explanations."),
+            HumanMessage(content=prompt)
+        ]
+
+        response = await self.llm.ainvoke(messages)
+
+        logger.info("LLM raw response:")
+        logger.info(response.content)
+
         try:
             test_data = json.loads(response.content)
             test_cases = []
@@ -189,9 +207,11 @@ Generate test cases in the following JSON format:
                 )
                 test_cases.append(test_case)
             return test_cases
-        except Exception as e:
-            logger.error(f"Error parsing test cases: {e}")
+        except json.JSONDecodeError as e:
+            logger.error(f"Failed to parse LLM response as JSON: {e}")
+            logger.error(f"Response content was:\n{response.content}")
             raise
+
 
 class PlaywrightScriptGenerator:
     """Converts test cases to Playwright scripts"""
