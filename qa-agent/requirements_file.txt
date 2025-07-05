@@ -1,0 +1,50 @@
+# Core dependencies
+langchain==0.1.0
+langchain-openai==0.0.2
+langgraph==0.0.20
+openai==1.10.0
+google-generativeai==0.3.2
+
+# Playwright for test automation
+playwright==1.41.0
+
+# Web framework
+streamlit==1.29.0
+
+# Data processing
+pandas==2.1.4
+numpy==1.26.2
+
+# Visualization
+plotly==5.18.0
+
+# Utilities
+python-dotenv==1.0.0
+asyncio==3.4.3
+aiofiles==23.2.1
+
+# Testing utilities
+pytest==7.4.3
+pytest-asyncio==0.21.1
+
+# Logging and monitoring
+loguru==0.7.2
+
+# JSON handling
+jsonschema==4.20.0
+
+# File handling
+pathlib==1.0.1
+
+# Date and time
+python-dateutil==2.8.2
+
+# Type hints
+typing-extensions==4.9.0
+
+# Optional: For accessibility testing
+axe-playwright==0.1.0
+
+# Optional: For PDF generation (future feature)
+# reportlab==4.0.8
+# weasyprint==60.2
