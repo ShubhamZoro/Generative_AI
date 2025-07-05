@@ -3,7 +3,7 @@ import json
 import asyncio
 from typing import List, Dict, Any, TypedDict
 from datetime import datetime
-import google.generativeai as genai
+from youtube_transcript_api import YouTubeTranscriptApi as yta
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage, SystemMessage
 from langgraph.graph import Graph, StateGraph, END
@@ -21,10 +21,8 @@ logger = logging.getLogger(__name__)
 
 # Configure API keys
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 # Initialize models
-genai.configure(api_key=GOOGLE_API_KEY)
 llm = ChatOpenAI(temperature=0, model="gpt-4o", api_key=OPENAI_API_KEY)
 
 # QA Agent System Prompt
@@ -68,28 +66,67 @@ class QAAgentState(TypedDict):
     summary_report: str
 
 class VideoTranscriber:
-    """Handles video transcription using Gemini"""
+    """Handles video transcription using YouTube Transcript API"""
     
     def __init__(self):
-        self.model = genai.GenerativeModel('gemini-2.0-flash')
+        self.logger = logging.getLogger(__name__)
     
     async def transcribe_video(self, video_url: str) -> str:
-        """Extract detailed transcription from video"""
+        """Extract detailed transcription from YouTube video"""
         try:
-            response = self.model.generate_content([
-                genai.types.FileData(file_uri=video_url),
-                "Analyze this video in great detail. Extract every step, button click, form field, and user interaction. Include:\n"
-                "1. All UI elements mentioned or shown\n"
-                "2. Step-by-step user workflows\n"
-                "3. Form validations and error messages\n"
-                "4. Navigation flows\n"
-                "5. Any edge cases or special scenarios mentioned\n"
-                "Format as a detailed transcript that can be used to generate comprehensive test cases."
-            ])
-            return response.text
+            # Extract video ID from URL
+            if 'watch?v=' in video_url:
+                vid_id = video_url.split('watch?v=')[-1].split('&')[0]
+            elif 'youtu.be/' in video_url:
+                vid_id = video_url.split('youtu.be/')[-1].split('?')[0]
+            else:
+                vid_id = video_url.split('=')[-1]
+            
+            self.logger.info(f"Extracting transcript for video ID: {vid_id}")
+            
+            # Get transcript data
+            transcript_data = yta.get_transcript(vid_id)
+            
+            # Process transcript with timestamps for better context
+            processed_transcript = []
+            for entry in transcript_data:
+                timestamp = entry['start']
+                text = entry['text'].strip()
+                if text:  # Only add non-empty text
+                    minutes = int(timestamp // 60)
+                    seconds = int(timestamp % 60)
+                    processed_transcript.append(f"[{minutes:02d}:{seconds:02d}] {text}")
+            
+            # Join all text with proper spacing
+            final_transcript = '\n'.join(processed_transcript)
+            
+            # Add metadata about the video
+            metadata = f"""Video URL: {video_url}
+Video ID: {vid_id}
+Transcript Length: {len(transcript_data)} segments
+Total Duration: ~{int(transcript_data[-1]['start'] / 60)} minutes
+
+Detailed Transcript:
+{final_transcript}
+"""
+            
+            self.logger.info(f"Successfully extracted transcript with {len(transcript_data)} segments")
+            return metadata
+            
         except Exception as e:
-            logger.error(f"Error transcribing video: {e}")
-            raise
+            self.logger.error(f"Error transcribing video: {e}")
+            # Fallback to basic extraction if detailed fails
+            try:
+                data = yta.get_transcript(vid_id)
+                final_data = ''
+                for val in data:
+                    for key, value in val.items():
+                        if key == 'text':
+                            final_data += value + ' '
+                return final_data.strip()
+            except Exception as fallback_error:
+                self.logger.error(f"Fallback transcription also failed: {fallback_error}")
+                raise Exception(f"Failed to extract transcript: {str(e)}")
 
 class TestCaseGenerator:
     """Generates test cases from video transcript"""
