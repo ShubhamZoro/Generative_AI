@@ -1786,7 +1786,7 @@ class QAWorkflow:
         logger.info("✅ Test report generated")
         return {"summary_report": report}
 
-Now I want that use this code below to understand the image(create testcase json and .py file) and use the above code to do what is in the document 
+Now I want that use this code below to understand the image(create testcase json and test script.py file) and use the above code to do what is in the document 
 from google import genai
 from google.genai import types
 
