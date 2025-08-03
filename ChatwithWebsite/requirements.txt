@@ -8,3 +8,4 @@ chromadb==0.3.29
 beautifulsoup4==4.12.2
 requests
 selenium
+playwright
