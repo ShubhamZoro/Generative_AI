@@ -108,7 +108,7 @@ import time
 import re
 
 api_key = st.secrets['api_key']
-
+os.system("playwright install")
 class PlaywrightWebLoader:
     def __init__(self):
         self.headers = {
@@ -402,6 +402,7 @@ else:
     
     else:
         st.warning("⚠️ Website content not loaded. Please check the URL or try reloading.")
+
 
 
 
