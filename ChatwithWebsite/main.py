@@ -106,6 +106,7 @@ from bs4 import BeautifulSoup
 import asyncio
 import time
 import re
+import os
 
 api_key = st.secrets['api_key']
 os.system("playwright install")
@@ -402,6 +403,7 @@ else:
     
     else:
         st.warning("⚠️ Website content not loaded. Please check the URL or try reloading.")
+
 
 
 
