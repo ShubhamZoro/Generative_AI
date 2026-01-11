@@ -21,9 +21,12 @@ Python + OpenAI + Selenium + Pandas
 
 Clone the Project
 
-- python -m venv venva
+- `python -m venv venva`
 - venva\Scripts\activate
 - pip install -r requirements.txt
 
+### 🧱 Execute
+
+-
 
 
