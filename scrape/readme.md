@@ -1,23 +1,23 @@
 # 🧠 AI Job Scraper
 
-An AI-powered web scraping tool built with Python that automates data extraction and processing using modern AI/LLM workflows.
+An AI-powered job scraping tool that collects jobs from **Naukri** and **Foundit**, then uses **OpenAI** to score each job against your resume and ranks them by match percentage.
 ---
 
 ## 💡 Features
 
-- Automated web scraping
-- AI/LLM-based data processing
-- Environment-based configuration
-
+- Headless Selenium-based job scraping
+- Resume parsing (PDF & TXT)
+- Excel-based multi-user input
+- Ranked Excel output per user
 ---
 
 ## 🔧 Tech Stack
-Python + LangGraph + OpenAI + Selenium  
+Python + OpenAI + Selenium + Pandas 
 
 ---
 
 
-### 🧱 Prerequisites
+### 🧱 Setup
 
 Clone the Project
 
