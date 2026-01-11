@@ -19,12 +19,11 @@ Python + LangGraph + OpenAI + Selenium
 
 ### 🧱 Prerequisites
 
-- Python 3.11+
 Clone the Project
 
-> python -m venv venva
-> venva\Scripts\activate
-> Install: pip install -r requirements.txt
+- python -m venv venva
+- venva\Scripts\activate
+- pip install -r requirements.txt
 
 
 
