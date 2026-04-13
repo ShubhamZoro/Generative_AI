@@ -1,4 +1,4 @@
-agno==.5.16
+agno==2.5.16
 streamlit==1.56.0
 python-dotenv==1.2.2
 openai==2.31.0
