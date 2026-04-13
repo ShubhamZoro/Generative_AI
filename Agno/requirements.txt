@@ -1,0 +1,8 @@
+agno
+streamlit
+python-dotenv
+openai
+groq
+ddgs
+yfinance
+sqlalchemy
